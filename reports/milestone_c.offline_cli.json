@@ -1,0 +1,599 @@
+{
+  "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_demo_20261031/healthy",
+  "storage_id": "sqlite3",
+  "topics": {
+    "/testbench/raw/joint_states": {
+      "type": "sensor_msgs/msg/JointState",
+      "count": 47,
+      "sha256": "2ff22402f78f3ae3f15093e7c4c91b41a6f2dcd0065c3d65c06d7a136ad8206d",
+      "bag_receive": {
+        "first_ns": 1793441769010491211,
+        "last_ns": 1793441769872436323,
+        "minimum_ns": 1793441769010491211,
+        "maximum_ns": 1793441769872436323,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 1575315,
+          "maximum": 20713677,
+          "mean": 18737937.217391305,
+          "median": 20007867.5
+        }
+      },
+      "message_stamp": {
+        "first_ns": 0,
+        "last_ns": 300000000,
+        "minimum_ns": 0,
+        "maximum_ns": 320000000,
+        "backwards_jumps": 2,
+        "intervals_ns": {
+          "minimum": -320000000,
+          "maximum": 20000000,
+          "mean": 6521739.130434782,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/raw/ee_pose": {
+      "type": "geometry_msgs/msg/PoseStamped",
+      "count": 48,
+      "sha256": "a17837305732e68d9790db5173b35ed5e61f0cf89763c274a07cb7501d7c8094",
+      "bag_receive": {
+        "first_ns": 1793441768992633577,
+        "last_ns": 1793441769872646401,
+        "minimum_ns": 1793441768992633577,
+        "maximum_ns": 1793441769872646401,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 1601052,
+          "maximum": 20878055,
+          "mean": 18723677.106382977,
+          "median": 20010657
+        }
+      },
+      "message_stamp": {
+        "first_ns": 3240000000,
+        "last_ns": 300000000,
+        "minimum_ns": 0,
+        "maximum_ns": 3240000000,
+        "backwards_jumps": 3,
+        "intervals_ns": {
+          "minimum": -3240000000,
+          "maximum": 20000000,
+          "mean": -62553191.4893617,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/simulation_state": {
+      "type": "reliability_interfaces/msg/SimulationState",
+      "count": 47,
+      "sha256": "6884d040de61081f850e21be46c1108b865238eee0f18aa199cbb91d279c094c",
+      "bag_receive": {
+        "first_ns": 1793441769010689705,
+        "last_ns": 1793441769872669275,
+        "minimum_ns": 1793441769010689705,
+        "maximum_ns": 1793441769872669275,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 1595674,
+          "maximum": 20937520,
+          "mean": 18738686.304347824,
+          "median": 19998626.5
+        }
+      },
+      "message_stamp": {
+        "first_ns": 0,
+        "last_ns": 300000000,
+        "minimum_ns": 0,
+        "maximum_ns": 320000000,
+        "backwards_jumps": 2,
+        "intervals_ns": {
+          "minimum": -320000000,
+          "maximum": 20000000,
+          "mean": 6521739.130434782,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/task_events": {
+      "type": "reliability_interfaces/msg/TaskEvent",
+      "count": 12,
+      "sha256": "61658f0c300abb19873142df9da70e090bd3644b758870f38dc74c3621b2b17d",
+      "bag_receive": {
+        "first_ns": 1793441769012846462,
+        "last_ns": 1793441769875691564,
+        "minimum_ns": 1793441769012846462,
+        "maximum_ns": 1793441769875691564,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 34028,
+          "maximum": 304637557,
+          "mean": 78440463.81818181,
+          "median": 6371127
+        }
+      },
+      "message_stamp": {
+        "first_ns": 0,
+        "last_ns": 300000000,
+        "minimum_ns": 0,
+        "maximum_ns": 320000000,
+        "backwards_jumps": 2,
+        "intervals_ns": {
+          "minimum": -320000000,
+          "maximum": 320000000,
+          "mean": 27272727.272727273,
+          "median": 0
+        }
+      }
+    },
+    "/clock": {
+      "type": "rosgraph_msgs/msg/Clock",
+      "count": 48,
+      "sha256": "a194c886b901e6f56911de93bbcd51b37cc77e4f56ffcf224a9db58f4438206b",
+      "bag_receive": {
+        "first_ns": 1793441768992606388,
+        "last_ns": 1793441769872391073,
+        "minimum_ns": 1793441768992606388,
+        "maximum_ns": 1793441769872391073,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 1642908,
+          "maximum": 20692666,
+          "mean": 18718823.085106384,
+          "median": 19996853
+        }
+      },
+      "message_stamp": {
+        "first_ns": 3240000000,
+        "last_ns": 300000000,
+        "minimum_ns": 0,
+        "maximum_ns": 3240000000,
+        "backwards_jumps": 3,
+        "intervals_ns": {
+          "minimum": -3240000000,
+          "maximum": 20000000,
+          "mean": -62553191.4893617,
+          "median": 20000000
+        }
+      }
+    }
+  },
+  "bag_receive_duration_seconds": 0.883085176,
+  "task_events": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 1,
+      "goal_id": "reset:16f01a084cba42ff9ebba8eb5b68a540",
+      "event": "RESET",
+      "outcome": "",
+      "generation": 1,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "has_position": false,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "final_error": 0.0,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0,
+      "tolerance": 0.005,
+      "detail": "Initial state restored; simulation time reset to zero",
+      "bag_receive_ns": 1793441769012846462,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 2,
+      "goal_id": "26f16ff5e7fb441cb2a0b525553b6b9f",
+      "event": "ACCEPTED",
+      "outcome": "",
+      "generation": 1,
+      "target": {
+        "x": 0.5945,
+        "y": 0.03,
+        "z": 0.5945
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.058311127007556654,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0002507839999452699,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769018697643,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 3,
+      "goal_id": "26f16ff5e7fb441cb2a0b525553b6b9f",
+      "event": "TARGET",
+      "outcome": "",
+      "generation": 1,
+      "target": {
+        "x": 0.5945,
+        "y": 0.03,
+        "z": 0.5945
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.058311127007556654,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.00043284700041112956,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769018812501,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 4,
+      "goal_id": "26f16ff5e7fb441cb2a0b525553b6b9f",
+      "event": "COMPLETED",
+      "outcome": "succeeded",
+      "generation": 1,
+      "target": {
+        "x": 0.5945,
+        "y": 0.03,
+        "z": 0.5945
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.591106269127573,
+        "y": 0.027476523104266123,
+        "z": 0.5970423181195952
+      },
+      "final_error": 0.004934442855985737,
+      "elapsed_simulation_seconds": 0.24000000000000016,
+      "elapsed_wall_seconds": 0.23702903800040076,
+      "tolerance": 0.005,
+      "detail": "Target reached",
+      "bag_receive_ns": 1793441769255637881,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 5,
+      "goal_id": "reset:f2a623dcfc1c49d6adfeea3c48823039",
+      "event": "RESET",
+      "outcome": "",
+      "generation": 2,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "has_position": false,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "final_error": 0.0,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0,
+      "tolerance": 0.005,
+      "detail": "Initial state restored; simulation time reset to zero",
+      "bag_receive_ns": 1793441769264570766,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 6,
+      "goal_id": "5f0689949cb6437fa0f759181190a606",
+      "event": "ACCEPTED",
+      "outcome": "",
+      "generation": 2,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.12215074746101563,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.00019449699993856484,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769270941893,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 7,
+      "goal_id": "5f0689949cb6437fa0f759181190a606",
+      "event": "TARGET",
+      "outcome": "",
+      "generation": 2,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.12215074746101563,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0003477609998299158,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769270975921,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 8,
+      "goal_id": "5f0689949cb6437fa0f759181190a606",
+      "event": "COMPLETED",
+      "outcome": "succeeded",
+      "generation": 2,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5027820907506624,
+        "y": -0.07747610252273027,
+        "z": 0.5526675317798695
+      },
+      "final_error": 0.004607148056802946,
+      "elapsed_simulation_seconds": 0.32000000000000023,
+      "elapsed_wall_seconds": 0.304922620999605,
+      "tolerance": 0.005,
+      "detail": "Target reached",
+      "bag_receive_ns": 1793441769575613478,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 9,
+      "goal_id": "reset:fdff763122f64f55835ef2cf0a18efd9",
+      "event": "RESET",
+      "outcome": "",
+      "generation": 3,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "has_position": false,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "final_error": 0.0,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0,
+      "tolerance": 0.005,
+      "detail": "Initial state restored; simulation time reset to zero",
+      "bag_receive_ns": 1793441769583109301,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 10,
+      "goal_id": "2da2da6a3e7547d0ae0df5a3d80f496c",
+      "event": "ACCEPTED",
+      "outcome": "",
+      "generation": 3,
+      "target": {
+        "x": 0.55,
+        "y": 0.1,
+        "z": 0.65
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.1032974898271658,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.00020723500074382173,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769587758336,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 11,
+      "goal_id": "2da2da6a3e7547d0ae0df5a3d80f496c",
+      "event": "TARGET",
+      "outcome": "",
+      "generation": 3,
+      "target": {
+        "x": 0.55,
+        "y": 0.1,
+        "z": 0.65
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.1032974898271658,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0003518070006975904,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793441769587847952,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "sequence": 12,
+      "goal_id": "2da2da6a3e7547d0ae0df5a3d80f496c",
+      "event": "COMPLETED",
+      "outcome": "succeeded",
+      "generation": 3,
+      "target": {
+        "x": 0.55,
+        "y": 0.1,
+        "z": 0.65
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5505504402709958,
+        "y": 0.09550211072924093,
+        "z": 0.6489189437154008
+      },
+      "final_error": 0.004658612998996036,
+      "elapsed_simulation_seconds": 0.3000000000000002,
+      "elapsed_wall_seconds": 0.28800778100048774,
+      "tolerance": 0.005,
+      "detail": "Target reached",
+      "bag_receive_ns": 1793441769875691564,
+      "message_stamp_ns": 300000000
+    }
+  ],
+  "outcomes": [
+    {
+      "goal_id": "26f16ff5e7fb441cb2a0b525553b6b9f",
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "final_position_metres": [
+        0.591106269127573,
+        0.027476523104266123,
+        0.5970423181195952
+      ],
+      "final_error_metres": 0.004934442855985737,
+      "event_final_error_metres": 0.004934442855985737,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.24000000000000016,
+      "elapsed_wall_seconds": 0.23702903800040076,
+      "bag_receive_duration_seconds": 0.236940238,
+      "terminal_message_stamp_ns": 260000000,
+      "generation": 1
+    },
+    {
+      "goal_id": "5f0689949cb6437fa0f759181190a606",
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "final_position_metres": [
+        0.5027820907506624,
+        -0.07747610252273027,
+        0.5526675317798695
+      ],
+      "final_error_metres": 0.004607148056802946,
+      "event_final_error_metres": 0.004607148056802946,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.32000000000000023,
+      "elapsed_wall_seconds": 0.304922620999605,
+      "bag_receive_duration_seconds": 0.304671585,
+      "terminal_message_stamp_ns": 320000000,
+      "generation": 2
+    },
+    {
+      "goal_id": "2da2da6a3e7547d0ae0df5a3d80f496c",
+      "session_id": "95f10b86764b4615a589d4e1013ca8b6",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "final_position_metres": [
+        0.5505504402709958,
+        0.09550211072924093,
+        0.6489189437154008
+      ],
+      "final_error_metres": 0.004658612998996036,
+      "event_final_error_metres": 0.004658612998996036,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.3000000000000002,
+      "elapsed_wall_seconds": 0.28800778100048774,
+      "bag_receive_duration_seconds": 0.287933228,
+      "terminal_message_stamp_ns": 300000000,
+      "generation": 3
+    }
+  ],
+  "total_stored_messages": 202,
+  "ignored_topics": [],
+  "numerical_error_tolerance_metres": 1e-09,
+  "timing_notes": "Bag receive ns use recorder system time. Message stamps are simulation time, with backwards jumps at reset. Task simulation and monotonic wall durations come from recorded events. Receive duration includes DDS transport/scheduling."
+}

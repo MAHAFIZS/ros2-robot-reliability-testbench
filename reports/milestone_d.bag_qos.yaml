@@ -1,0 +1,60 @@
+/testbench/raw/joint_states:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/raw/ee_pose:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/simulation_state:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/task_events:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/clock:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/observed/state:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/observed/joint_states:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/observed/ee_pose:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/task_intent:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/fault_events:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/command_events:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000
+/testbench/diagnostics:
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 1000

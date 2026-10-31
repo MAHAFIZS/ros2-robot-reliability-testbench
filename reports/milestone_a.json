@@ -1,0 +1,25 @@
+{
+  "milestone": "A",
+  "success": true,
+  "target_metres": [
+    0.5944994780317353,
+    0.03,
+    0.5945024294875894
+  ],
+  "initial_metres": [
+    0.5544994780317353,
+    -6.5943841295818954e-34,
+    0.6245024294875894
+  ],
+  "final_error_metres": 0.004934292522436103,
+  "tolerance_metres": 0.005,
+  "timeout_seconds": 5,
+  "completion_wall_seconds": 0.23839198099994974,
+  "pose_messages": 14,
+  "joint_messages": 13,
+  "simulation_seconds": 0.2800000000000002,
+  "python": "3.12.3",
+  "mujoco": "3.16.0",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "ros_distro": "jazzy"
+}

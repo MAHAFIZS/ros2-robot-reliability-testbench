@@ -1,0 +1,343 @@
+<!doctype html><meta charset="utf-8"><title>30-minute endurance investigation</title><style>body{font:16px sans-serif;max-width:1100px;margin:2em}pre{white-space:pre-wrap}</style><h1>30-minute run completed; acceptance failed</h1><p>4303/4303 tasks succeeded. One criterion failed: maximum runner receive gap 232.241 ms &gt; 150 ms.</p><p>No runtime exception or timeout is recorded. Source of the receive delay remains unresolved. No rerun, code change or threshold change was made.</p><p><a href="endurance_30m_investigation.json">Machine-readable investigation</a></p><pre>{
+  &quot;reviewed_utc&quot;: &quot;2026-10-31T13:18:05.395374+00:00&quot;,
+  &quot;source_directory&quot;: &quot;artifacts/reports/endurance-30m&quot;,
+  &quot;original_files&quot;: [
+    {
+      &quot;path&quot;: &quot;artifacts/reports/endurance-30m/acceptance.before_run.json&quot;,
+      &quot;bytes&quot;: 247,
+      &quot;sha256&quot;: &quot;3a2d7ce9759d79d87e1e339202d3927f9439b2d36f6d0fab55535b394a532499&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/endurance-30m/endurance.html&quot;,
+      &quot;bytes&quot;: 1678016,
+      &quot;sha256&quot;: &quot;70efb5b74d112b8f607af0d165ac9b7039072061c8fcb1a13a04992d98d514f5&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/endurance-30m/endurance.json&quot;,
+      &quot;bytes&quot;: 1327092,
+      &quot;sha256&quot;: &quot;ee724247c16503a480634cb1f8401a880714d508ad33e6c9f31cfde21ebba52f&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/endurance-30m/endurance.junit.xml&quot;,
+      &quot;bytes&quot;: 1343,
+      &quot;sha256&quot;: &quot;606d6f890d7e3ee4ac4838e824323c6a783bd16cf04dc6ec6928561d71826175&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/endurance-30m/launch.log&quot;,
+      &quot;bytes&quot;: 1013,
+      &quot;sha256&quot;: &quot;7bf2821e5753f237be491235075e8ca40c762c49f82157e4acbd904a3813f9c4&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/2026-10-31-12-39-19-270929-ef7356e8402d-28/launch.log&quot;,
+      &quot;bytes&quot;: 1298,
+      &quot;sha256&quot;: &quot;e35db42e39134bc65ace7f8cb9c66c5d142471ca6e4c6d170bb372b794eb88f4&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/python_42_1793450359467.log&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/python_43_1793450359462.log&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/python_44_1793450359440.log&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/python_45_1793450359409.log&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;artifacts/reports/ros-logs/python_7_1793450359090.log&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    }
+  ],
+  &quot;long_run_rerun&quot;: false,
+  &quot;ros_workloads_executed_for_review&quot;: false,
+  &quot;code_changed&quot;: false,
+  &quot;thresholds_changed&quot;: false,
+  &quot;exit_status&quot;: {
+    &quot;reported_by_user&quot;: 1,
+    &quot;reconstructed_from_report&quot;: 1,
+    &quot;explanation&quot;: &quot;One failed acceptance criterion: continuous_observations&quot;
+  },
+  &quot;duration&quot;: {
+    &quot;full_30_minute_window_completed&quot;: true,
+    &quot;required_wall_seconds&quot;: 1800.0,
+    &quot;measurement_wall_seconds&quot;: 1800.0097341029996,
+    &quot;simulation_duration_seconds&quot;: 1800.0399999712467,
+    &quot;startup_wall_seconds&quot;: 1.097885237999435,
+    &quot;total_wall_seconds&quot;: 1801.6349068769978,
+    &quot;completed_utc&quot;: &quot;2026-10-31T13:09:20.721061+00:00&quot;,
+    &quot;note&quot;: &quot;Measurement excludes startup and shutdown. Last six seconds reserve bounded action completion; no new goals then.&quot;
+  },
+  &quot;tasks&quot;: {
+    &quot;attempts&quot;: 4303,
+    &quot;completed_results&quot;: 4303,
+    &quot;successes&quot;: 4303,
+    &quot;failures&quot;: 0,
+    &quot;timeouts&quot;: 0,
+    &quot;incomplete_attempts&quot;: 0,
+    &quot;status_counts&quot;: {
+      &quot;4&quot;: 4303
+    },
+    &quot;message_counts&quot;: {
+      &quot;Target reached&quot;: 4303
+    },
+    &quot;max_position_error_metres&quot;: 0.004921259286498321,
+    &quot;max_task_wall_seconds&quot;: 0.5365517970003566,
+    &quot;max_task_simulation_seconds&quot;: 0.40000000000190994
+  },
+  &quot;acceptance&quot;: {
+    &quot;total_criteria&quot;: 12,
+    &quot;passed&quot;: 11,
+    &quot;failed&quot;: [
+      {
+        &quot;name&quot;: &quot;continuous_observations&quot;,
+        &quot;passed&quot;: false,
+        &quot;observed&quot;: {
+          &quot;count&quot;: 90002,
+          &quot;missing_sequences&quot;: 0,
+          &quot;max_receive_interval_seconds&quot;: 0.2322406580005918,
+          &quot;max_simulation_interval_seconds&quot;: 0.020000000000095497
+        },
+        &quot;required&quot;: {
+          &quot;min_count&quot;: 1,
+          &quot;missing_sequences&quot;: 0,
+          &quot;max_interval&quot;: 0.15
+        }
+      }
+    ],
+    &quot;threshold_config&quot;: {
+      &quot;profile&quot;: &quot;local&quot;,
+      &quot;seed&quot;: 7,
+      &quot;action_wall_timeout&quot;: 6.0,
+      &quot;max_final_error&quot;: 0.005,
+      &quot;max_observation_gap_seconds&quot;: 0.15,
+      &quot;max_rss_mib&quot;: 512.0,
+      &quot;expected_injected_faults&quot;: false,
+      &quot;duration_seconds&quot;: 1800.0,
+      &quot;min_tasks&quot;: 1000
+    },
+    &quot;recomputed_criteria_match&quot;: true,
+    &quot;predeclared_configuration_matches&quot;: true,
+    &quot;junit&quot;: {
+      &quot;name&quot;: &quot;healthy_endurance&quot;,
+      &quot;tests&quot;: &quot;12&quot;,
+      &quot;failures&quot;: &quot;1&quot;
+    },
+    &quot;html_embedded_json_matches&quot;: true,
+    &quot;offline_writer_returned_1&quot;: true
+  },
+  &quot;observations&quot;: {
+    &quot;count&quot;: 90002,
+    &quot;missing_sequences&quot;: 0,
+    &quot;max_receive_interval_seconds&quot;: 0.2322406580005918,
+    &quot;max_simulation_interval_seconds&quot;: 0.020000000000095497
+  },
+  &quot;unexpected_diagnostics&quot;: {},
+  &quot;fault_events&quot;: [],
+  &quot;runtime&quot;: {
+    &quot;reported_exceptions&quot;: [],
+    &quot;json_complete&quot;: true,
+    &quot;junit_complete&quot;: true,
+    &quot;html_complete&quot;: true,
+    &quot;all_attempts_have_results&quot;: true,
+    &quot;shutdown&quot;: &quot;Launch log shows SIGINT followed by clean exits for all four ROS nodes; this is runner-requested normal cleanup, not evidence of manual interruption&quot;,
+    &quot;node_and_runner_logs&quot;: &quot;Five per-process log files empty; launch logs contain lifecycle only&quot;,
+    &quot;unavailable&quot;: [
+      &quot;Container inspection/exit metadata after removal&quot;,
+      &quot;Container stdout beyond copied logs&quot;,
+      &quot;Per-message steady receive times&quot;,
+      &quot;Raw source publish wall timestamps&quot;,
+      &quot;Bag of this workload&quot;,
+      &quot;Per-sample CPU/RSS timestamps and values&quot;,
+      &quot;Monitor end-of-run status counters&quot;
+    ]
+  },
+  &quot;resources&quot;: [
+    {
+      &quot;pid&quot;: 28,
+      &quot;command&quot;: [
+        &quot;/usr/bin/python3&quot;,
+        &quot;/opt/ros/jazzy/bin/ros2&quot;,
+        &quot;launch&quot;,
+        &quot;robot_reliability_testbench&quot;,
+        &quot;normal.launch.py&quot;
+      ],
+      &quot;samples&quot;: 1770,
+      &quot;first_rss_mib&quot;: 39.83984375,
+      &quot;last_rss_mib&quot;: 39.83984375,
+      &quot;peak_rss_mib&quot;: 39.83984375,
+      &quot;mean_cpu_percent&quot;: 0.0,
+      &quot;peak_cpu_percent&quot;: 0.0,
+      &quot;sampled_wall_seconds&quot;: 1800.011979641,
+      &quot;rss_endpoint_change_mib&quot;: 0.0,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.0,
+      &quot;role&quot;: &quot;ros2&quot;
+    },
+    {
+      &quot;pid&quot;: 42,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=panda_simulator&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 1770,
+      &quot;first_rss_mib&quot;: 295.109375,
+      &quot;last_rss_mib&quot;: 295.83984375,
+      &quot;peak_rss_mib&quot;: 295.83984375,
+      &quot;mean_cpu_percent&quot;: 12.152696897252214,
+      &quot;peak_cpu_percent&quot;: 15.95233442473557,
+      &quot;sampled_wall_seconds&quot;: 1800.011979641,
+      &quot;rss_endpoint_change_mib&quot;: 0.73046875,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.02434879628342319,
+      &quot;role&quot;: &quot;simulator&quot;
+    },
+    {
+      &quot;pid&quot;: 43,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=task_server&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 1770,
+      &quot;first_rss_mib&quot;: 293.9375,
+      &quot;last_rss_mib&quot;: 309.5,
+      &quot;peak_rss_mib&quot;: 309.5,
+      &quot;mean_cpu_percent&quot;: 22.558738752449077,
+      &quot;peak_cpu_percent&quot;: 334.76893393272024,
+      &quot;sampled_wall_seconds&quot;: 1800.011979641,
+      &quot;rss_endpoint_change_mib&quot;: 15.5625,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.5187465475569947,
+      &quot;role&quot;: &quot;task_server&quot;
+    },
+    {
+      &quot;pid&quot;: 44,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=fault_boundary&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;
+      ],
+      &quot;samples&quot;: 1770,
+      &quot;first_rss_mib&quot;: 73.5859375,
+      &quot;last_rss_mib&quot;: 73.8828125,
+      &quot;peak_rss_mib&quot;: 73.8828125,
+      &quot;mean_cpu_percent&quot;: 40.64528504670933,
+      &quot;peak_cpu_percent&quot;: 48.82987573631162,
+      &quot;sampled_wall_seconds&quot;: 1800.011979641,
+      &quot;rss_endpoint_change_mib&quot;: 0.296875,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.009895767473476804,
+      &quot;role&quot;: &quot;fault_boundary&quot;
+    },
+    {
+      &quot;pid&quot;: 45,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=health_monitor&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 1770,
+      &quot;first_rss_mib&quot;: 70.109375,
+      &quot;last_rss_mib&quot;: 70.2578125,
+      &quot;peak_rss_mib&quot;: 70.2578125,
+      &quot;mean_cpu_percent&quot;: 28.41425533745654,
+      &quot;peak_cpu_percent&quot;: 34.92500752201441,
+      &quot;sampled_wall_seconds&quot;: 1800.011979641,
+      &quot;rss_endpoint_change_mib&quot;: 0.1484375,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.004947883736738402,
+      &quot;role&quot;: &quot;health_monitor&quot;
+    }
+  ],
+  &quot;resource_limits&quot;: [
+    &quot;Scope is ros2 launch and four descendant nodes; excludes the endurance runner, kernel, Docker daemon and unrelated processes.&quot;,
+    &quot;1770 samples per process over 1800.012 seconds; approximately 1.018 seconds between samples on average, not a continuous trace.&quot;,
+    &quot;Only endpoints, sampled peaks and aggregate CPU are retained; no plateau, monotonic growth, transient spike or causal alignment can be established.&quot;,
+    &quot;Task server RSS rose 15.5625 MiB, averaging 0.51875 MiB/minute by endpoints; this alone proves neither a leak nor its absence.&quot;,
+    &quot;CPU percent is process CPU-time delta / steady interval. Short final intervals and CPU-time quantization can distort sampled peaks; 334.77% is not sustained CPU usage.&quot;,
+    &quot;No failing RSS criterion: every process remained below 512 MiB at recorded samples. Unobserved between-sample peaks are possible.&quot;
+  ],
+  &quot;earlier_gap_comparison&quot;: {
+    &quot;same_runtime_source_fingerprint&quot;: true,
+    &quot;same_dependencies&quot;: true,
+    &quot;same_seed&quot;: true,
+    &quot;threshold_seconds&quot;: 0.15,
+    &quot;previous&quot;: {
+      &quot;max_receive_gap_seconds&quot;: 0.3537509309990128,
+      &quot;observations&quot;: 886,
+      &quot;missing_sequences&quot;: 0,
+      &quot;diagnostics&quot;: {
+        &quot;STALE_OBSERVATIONS&quot;: 1,
+        &quot;OBSERVATIONS_RECOVERED&quot;: 1
+      },
+      &quot;wall_seconds&quot;: 18.000815231998786,
+      &quot;simulation_seconds&quot;: 17.72000000000078
+    },
+    &quot;current&quot;: {
+      &quot;max_receive_gap_seconds&quot;: 0.2322406580005918,
+      &quot;observations&quot;: 90002,
+      &quot;missing_sequences&quot;: 0,
+      &quot;diagnostics&quot;: {},
+      &quot;wall_seconds&quot;: 1800.0097341029996,
+      &quot;simulation_seconds&quot;: 1800.0399999712467
+    },
+    &quot;conclusion&quot;: &quot;Same measured failure category, not proven same root cause. Earlier run had monitor stale/recovery; this run has none and simulation progression did not fall behind overall.&quot;
+  },
+  &quot;cause&quot;: {
+    &quot;established&quot;: &quot;Runner-side affected-observation receive/callback interval exceeded 0.15 seconds; acceptance failure generated exit 1&quot;,
+    &quot;source_publication_pause_proven&quot;: false,
+    &quot;recording_delay_measured&quot;: false,
+    &quot;code_defect_established&quot;: false,
+    &quot;root_cause&quot;: &quot;Unresolved: no timestamped raw publish/receive trace or event location retained&quot;,
+    &quot;candidate_runner_blocking&quot;: &quot;Resources.sample synchronously enumerates processes and samples /proc in the same loop that spins subscriptions. Its duration was not recorded, so contribution cannot be established.&quot;,
+    &quot;monitor_interpretation&quot;: &quot;No diagnostic received is consistent with runner-specific backlog, but cannot prove source freshness or exclude delayed/lost diagnostic handling.&quot;,
+    &quot;sampling_interpretation&quot;: &quot;Zero missing sequences and 20 ms simulation-stamp intervals do not exclude a wall-time source stall or buffered delivery.&quot;
+  },
+  &quot;provenance&quot;: {
+    &quot;git_revision&quot;: null,
+    &quot;git_revision_state&quot;: &quot;unborn&quot;,
+    &quot;dirty_worktree&quot;: true,
+    &quot;source_sha256&quot;: &quot;d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319&quot;,
+    &quot;python&quot;: &quot;3.12.3&quot;,
+    &quot;platform&quot;: &quot;Linux-7.0.0-38-generic-x86_64-with-glibc2.39&quot;,
+    &quot;dependencies&quot;: {
+      &quot;mujoco&quot;: &quot;3.16.0&quot;,
+      &quot;numpy&quot;: &quot;1.26.4&quot;,
+      &quot;pytest&quot;: &quot;7.4.4&quot;,
+      &quot;psutil&quot;: &quot;5.9.8&quot;,
+      &quot;rclpy&quot;: &quot;7.1.12&quot;,
+      &quot;rosbag2_py&quot;: &quot;0.26.11&quot;,
+      &quot;colcon-core&quot;: &quot;0.21.3&quot;
+    },
+    &quot;ros_distro&quot;: &quot;jazzy&quot;
+  },
+  &quot;next_action&quot;: &quot;Do not repeat 30 minutes unchanged. First collect time-aligned raw/boundary/runner/monitor publish/receive and resource-sampling durations in a bounded short investigation; keep 150 ms and 5 mm criteria. No runtime fix is justified by the present aggregate evidence.&quot;
+}</pre>

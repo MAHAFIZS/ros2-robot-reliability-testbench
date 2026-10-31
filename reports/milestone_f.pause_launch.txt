@@ -1,0 +1,15 @@
+1793448773.4259856 [INFO] [launch]: All log files can be found below /workspace/reports/ros-logs/2026-10-31-12-12-53-425481-c61252bf831d-453
+1793448773.4260595 [INFO] [launch]: Default logging verbosity is set to INFO
+1793448773.4414415 [INFO] [simulator-1]: process started with pid [467]
+1793448773.4415133 [INFO] [task_server-2]: process started with pid [468]
+1793448773.4415472 [INFO] [fault_boundary-3]: process started with pid [469]
+1793448773.4415739 [INFO] [health_monitor-4]: process started with pid [470]
+1793448792.3822856 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1793448792.3868337 [INFO] [health_monitor-4]: sending signal 'SIGINT' to process[health_monitor-4]
+1793448792.3879642 [INFO] [fault_boundary-3]: sending signal 'SIGINT' to process[fault_boundary-3]
+1793448792.3888960 [INFO] [task_server-2]: sending signal 'SIGINT' to process[task_server-2]
+1793448792.3897281 [INFO] [simulator-1]: sending signal 'SIGINT' to process[simulator-1]
+1793448792.6047792 [INFO] [health_monitor-4]: process has finished cleanly [pid 470]
+1793448792.6189322 [INFO] [fault_boundary-3]: process has finished cleanly [pid 469]
+1793448792.6674347 [INFO] [simulator-1]: process has finished cleanly [pid 467]
+1793448792.6684873 [INFO] [task_server-2]: process has finished cleanly [pid 468]

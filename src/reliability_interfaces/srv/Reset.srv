@@ -1,0 +1,9 @@
+---
+bool success
+string message
+uint64 generation
+float64 simulation_time
+float64[7] joint_positions
+# Snapshot immediately before restoring the initial state, for active-goal results.
+float64 previous_simulation_time
+geometry_msgs/Point previous_position

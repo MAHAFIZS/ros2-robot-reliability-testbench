@@ -1,0 +1,1457 @@
+{
+  "milestone": "C",
+  "executed_utc": "2026-10-31T11:15:29.831080+00:00",
+  "rosbag2_py": "0.26.10",
+  "live_domain": 87,
+  "replay_domain": 88,
+  "captures": [
+    {
+      "scenario": "healthy",
+      "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_test_ff33b60a4a/healthy",
+      "original_actions": [
+        {
+          "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+          "status": 4,
+          "success": true,
+          "target_metres": [
+            0.5945,
+            0.03,
+            0.5945
+          ],
+          "final_error_metres": 0.004934442855985737,
+          "elapsed_simulation_seconds": 0.24000000000000019,
+          "client_wall_seconds": 0.2482028510003147,
+          "feedback_messages": 12
+        },
+        {
+          "goal_id": "a8d5310756554479a7242bd181fa857e",
+          "status": 4,
+          "success": true,
+          "target_metres": [
+            0.5,
+            -0.08,
+            0.55
+          ],
+          "final_error_metres": 0.004607148056802946,
+          "elapsed_simulation_seconds": 0.32000000000000023,
+          "client_wall_seconds": 0.3251443660010409,
+          "feedback_messages": 16
+        },
+        {
+          "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+          "status": 4,
+          "success": true,
+          "target_metres": [
+            0.55,
+            0.1,
+            0.65
+          ],
+          "final_error_metres": 0.004658612998996036,
+          "elapsed_simulation_seconds": 0.3000000000000002,
+          "client_wall_seconds": 0.3053800029992999,
+          "feedback_messages": 15
+        }
+      ],
+      "offline": {
+        "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_test_ff33b60a4a/healthy",
+        "storage_id": "sqlite3",
+        "topics": {
+          "/testbench/raw/joint_states": {
+            "type": "sensor_msgs/msg/JointState",
+            "count": 191,
+            "sha256": "d4baf1a68e4ea91c365e2f1dc1e2054807a7af6b57913dc0fce1029cde3ffbbd",
+            "bag_receive": {
+              "first_ns": 1793445330328163398,
+              "last_ns": 1793445334068243163,
+              "minimum_ns": 1793445330328163398,
+              "maximum_ns": 1793445334068243163,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 1469619,
+                "maximum": 21036485,
+                "mean": 19684630.342105262,
+                "median": 19994010.5
+              }
+            },
+            "message_stamp": {
+              "first_ns": 520000000,
+              "last_ns": 300000000,
+              "minimum_ns": 0,
+              "maximum_ns": 3360000000,
+              "backwards_jumps": 3,
+              "intervals_ns": {
+                "minimum": -3360000000,
+                "maximum": 20000000,
+                "mean": -1157894.7368421052,
+                "median": 20000000.0
+              }
+            }
+          },
+          "/testbench/raw/ee_pose": {
+            "type": "geometry_msgs/msg/PoseStamped",
+            "count": 190,
+            "sha256": "387dc7373fc378d06f00c5941bfba7abe9969c31d3e02b72bdee30909199eb54",
+            "bag_receive": {
+              "first_ns": 1793445330348091506,
+              "last_ns": 1793445334068290688,
+              "minimum_ns": 1793445330348091506,
+              "maximum_ns": 1793445334068290688,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 1445037,
+                "maximum": 21052675,
+                "mean": 19683593.555555556,
+                "median": 19992111
+              }
+            },
+            "message_stamp": {
+              "first_ns": 540000000,
+              "last_ns": 300000000,
+              "minimum_ns": 0,
+              "maximum_ns": 3360000000,
+              "backwards_jumps": 3,
+              "intervals_ns": {
+                "minimum": -3360000000,
+                "maximum": 20000000,
+                "mean": -1269841.2698412698,
+                "median": 20000000
+              }
+            }
+          },
+          "/testbench/simulation_state": {
+            "type": "reliability_interfaces/msg/SimulationState",
+            "count": 190,
+            "sha256": "476fc05911896a5d2910203ff29eaf339ddcee3b0cf084c1d7fd6afa2a844ff0",
+            "bag_receive": {
+              "first_ns": 1793445330348187291,
+              "last_ns": 1793445334068379816,
+              "minimum_ns": 1793445330348187291,
+              "maximum_ns": 1793445334068379816,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 1430274,
+                "maximum": 20942220,
+                "mean": 19683558.333333332,
+                "median": 19987743
+              }
+            },
+            "message_stamp": {
+              "first_ns": 540000000,
+              "last_ns": 300000000,
+              "minimum_ns": 0,
+              "maximum_ns": 3360000000,
+              "backwards_jumps": 3,
+              "intervals_ns": {
+                "minimum": -3360000000,
+                "maximum": 20000000,
+                "mean": -1269841.2698412698,
+                "median": 20000000
+              }
+            }
+          },
+          "/testbench/task_events": {
+            "type": "reliability_interfaces/msg/TaskEvent",
+            "count": 12,
+            "sha256": "9e93e806ccaef9c625a32c3cecca004b53e5872fa5357195e75383ce8cd00f92",
+            "bag_receive": {
+              "first_ns": 1793445333175099187,
+              "last_ns": 1793445334083897322,
+              "minimum_ns": 1793445333175099187,
+              "maximum_ns": 1793445334083897322,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 28485,
+                "maximum": 318931051,
+                "mean": 82618012.27272727,
+                "median": 6789438
+              }
+            },
+            "message_stamp": {
+              "first_ns": 0,
+              "last_ns": 300000000,
+              "minimum_ns": 0,
+              "maximum_ns": 320000000,
+              "backwards_jumps": 2,
+              "intervals_ns": {
+                "minimum": -320000000,
+                "maximum": 320000000,
+                "mean": 27272727.272727273,
+                "median": 0
+              }
+            }
+          },
+          "/clock": {
+            "type": "rosgraph_msgs/msg/Clock",
+            "count": 191,
+            "sha256": "e2263491d52e3e1063f0939d4e036307685bd294b893d4b214ed372bc915140f",
+            "bag_receive": {
+              "first_ns": 1793445330327944713,
+              "last_ns": 1793445334068197444,
+              "minimum_ns": 1793445330327944713,
+              "maximum_ns": 1793445334068197444,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 1491562,
+                "maximum": 20443803,
+                "mean": 19685540.689473685,
+                "median": 19998153.0
+              }
+            },
+            "message_stamp": {
+              "first_ns": 520000000,
+              "last_ns": 300000000,
+              "minimum_ns": 0,
+              "maximum_ns": 3360000000,
+              "backwards_jumps": 3,
+              "intervals_ns": {
+                "minimum": -3360000000,
+                "maximum": 20000000,
+                "mean": -1157894.7368421052,
+                "median": 20000000.0
+              }
+            }
+          }
+        },
+        "bag_receive_duration_seconds": 3.755952609,
+        "task_events": [
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 2,
+            "goal_id": "reset:7093a4d81e014955ac17e8b4c7bd099c",
+            "event": "RESET",
+            "outcome": "",
+            "generation": 2,
+            "target": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "has_position": false,
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "final_error": 0.0,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.0,
+            "tolerance": 0.005,
+            "detail": "Initial state restored; simulation time reset to zero",
+            "bag_receive_ns": 1793445333175099187,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 3,
+            "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+            "event": "ACCEPTED",
+            "outcome": "",
+            "generation": 2,
+            "target": {
+              "x": 0.5945,
+              "y": 0.03,
+              "z": 0.5945
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.058311127007556654,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.00026289699962944724,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333181888625,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 4,
+            "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+            "event": "TARGET",
+            "outcome": "",
+            "generation": 2,
+            "target": {
+              "x": 0.5945,
+              "y": 0.03,
+              "z": 0.5945
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.058311127007556654,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.000431496000601328,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333181917110,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 240000000
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 5,
+            "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+            "event": "COMPLETED",
+            "outcome": "succeeded",
+            "generation": 2,
+            "target": {
+              "x": 0.5945,
+              "y": 0.03,
+              "z": 0.5945
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.591106269127573,
+              "y": 0.027476523104266123,
+              "z": 0.5970423181195952
+            },
+            "final_error": 0.004934442855985737,
+            "elapsed_simulation_seconds": 0.24000000000000019,
+            "elapsed_wall_seconds": 0.2423335009989387,
+            "tolerance": 0.005,
+            "detail": "Target reached",
+            "bag_receive_ns": 1793445333423943038,
+            "message_stamp_ns": 240000000
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 6,
+            "goal_id": "reset:348e4c7384d844418d05b7e4a6f09305",
+            "event": "RESET",
+            "outcome": "",
+            "generation": 3,
+            "target": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "has_position": false,
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "final_error": 0.0,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.0,
+            "tolerance": 0.005,
+            "detail": "Initial state restored; simulation time reset to zero",
+            "bag_receive_ns": 1793445333438403884,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 7,
+            "goal_id": "a8d5310756554479a7242bd181fa857e",
+            "event": "ACCEPTED",
+            "outcome": "",
+            "generation": 3,
+            "target": {
+              "x": 0.5,
+              "y": -0.08,
+              "z": 0.55
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.12215074746101563,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.000292037999315653,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333445169942,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 8,
+            "goal_id": "a8d5310756554479a7242bd181fa857e",
+            "event": "TARGET",
+            "outcome": "",
+            "generation": 3,
+            "target": {
+              "x": 0.5,
+              "y": -0.08,
+              "z": 0.55
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.12215074746101563,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.0004519340000115335,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333445260923,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 320000000
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 9,
+            "goal_id": "a8d5310756554479a7242bd181fa857e",
+            "event": "COMPLETED",
+            "outcome": "succeeded",
+            "generation": 3,
+            "target": {
+              "x": 0.5,
+              "y": -0.08,
+              "z": 0.55
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5027820907506624,
+              "y": -0.07747610252273027,
+              "z": 0.5526675317798695
+            },
+            "final_error": 0.004607148056802946,
+            "elapsed_simulation_seconds": 0.32000000000000023,
+            "elapsed_wall_seconds": 0.31930290200034506,
+            "tolerance": 0.005,
+            "detail": "Target reached",
+            "bag_receive_ns": 1793445333764191974,
+            "message_stamp_ns": 320000000
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 10,
+            "goal_id": "reset:593ff712535543e4aeb6acd45911a00d",
+            "event": "RESET",
+            "outcome": "",
+            "generation": 4,
+            "target": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "has_position": false,
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "final_error": 0.0,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.0,
+            "tolerance": 0.005,
+            "detail": "Initial state restored; simulation time reset to zero",
+            "bag_receive_ns": 1793445333777574181,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 11,
+            "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+            "event": "ACCEPTED",
+            "outcome": "",
+            "generation": 4,
+            "target": {
+              "x": 0.55,
+              "y": 0.1,
+              "z": 0.65
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.1032974898271658,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.00022846899992146064,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333783200872,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 12,
+            "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+            "event": "TARGET",
+            "outcome": "",
+            "generation": 4,
+            "target": {
+              "x": 0.55,
+              "y": 0.1,
+              "z": 0.65
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.1032974898271658,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.00039377900066028815,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445333783323643,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 300000000
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 13,
+            "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+            "event": "COMPLETED",
+            "outcome": "succeeded",
+            "generation": 4,
+            "target": {
+              "x": 0.55,
+              "y": 0.1,
+              "z": 0.65
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5505504402709958,
+              "y": 0.09550211072924093,
+              "z": 0.6489189437154008
+            },
+            "final_error": 0.004658612998996036,
+            "elapsed_simulation_seconds": 0.3000000000000002,
+            "elapsed_wall_seconds": 0.3008285639989481,
+            "tolerance": 0.005,
+            "detail": "Target reached",
+            "bag_receive_ns": 1793445334083897322,
+            "message_stamp_ns": 300000000
+          }
+        ],
+        "outcomes": [
+          {
+            "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "outcome": "succeeded",
+            "target_metres": [
+              0.5945,
+              0.03,
+              0.5945
+            ],
+            "final_position_metres": [
+              0.591106269127573,
+              0.027476523104266123,
+              0.5970423181195952
+            ],
+            "final_error_metres": 0.004934442855985737,
+            "event_final_error_metres": 0.004934442855985737,
+            "matching_state_snapshot": true,
+            "elapsed_simulation_seconds": 0.24000000000000019,
+            "elapsed_wall_seconds": 0.2423335009989387,
+            "bag_receive_duration_seconds": 0.242054413,
+            "terminal_message_stamp_ns": 240000000,
+            "generation": 2
+          },
+          {
+            "goal_id": "a8d5310756554479a7242bd181fa857e",
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "outcome": "succeeded",
+            "target_metres": [
+              0.5,
+              -0.08,
+              0.55
+            ],
+            "final_position_metres": [
+              0.5027820907506624,
+              -0.07747610252273027,
+              0.5526675317798695
+            ],
+            "final_error_metres": 0.004607148056802946,
+            "event_final_error_metres": 0.004607148056802946,
+            "matching_state_snapshot": true,
+            "elapsed_simulation_seconds": 0.32000000000000023,
+            "elapsed_wall_seconds": 0.31930290200034506,
+            "bag_receive_duration_seconds": 0.319022032,
+            "terminal_message_stamp_ns": 320000000,
+            "generation": 3
+          },
+          {
+            "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "outcome": "succeeded",
+            "target_metres": [
+              0.55,
+              0.1,
+              0.65
+            ],
+            "final_position_metres": [
+              0.5505504402709958,
+              0.09550211072924093,
+              0.6489189437154008
+            ],
+            "final_error_metres": 0.004658612998996036,
+            "event_final_error_metres": 0.004658612998996036,
+            "matching_state_snapshot": true,
+            "elapsed_simulation_seconds": 0.3000000000000002,
+            "elapsed_wall_seconds": 0.3008285639989481,
+            "bag_receive_duration_seconds": 0.30069645,
+            "terminal_message_stamp_ns": 300000000,
+            "generation": 4
+          }
+        ],
+        "total_stored_messages": 774,
+        "ignored_topics": [],
+        "numerical_error_tolerance_metres": 1e-09,
+        "timing_notes": "Bag receive ns use recorder system time. Message stamps are simulation time, with backwards jumps at reset. Task simulation and monotonic wall durations come from recorded events. Receive duration includes DDS transport/scheduling."
+      },
+      "comparisons": [
+        {
+          "goal_id": "2f6b4eddf2734d639cbf4a5982943d73",
+          "outcome_match": true,
+          "error_delta_metres": 0.0,
+          "simulation_duration_delta_seconds": 0.0
+        },
+        {
+          "goal_id": "a8d5310756554479a7242bd181fa857e",
+          "outcome_match": true,
+          "error_delta_metres": 0.0,
+          "simulation_duration_delta_seconds": 0.0
+        },
+        {
+          "goal_id": "79b09b147b80445c91df1b0ccdf582da",
+          "outcome_match": true,
+          "error_delta_metres": 0.0,
+          "simulation_duration_delta_seconds": 0.0
+        }
+      ],
+      "recorder_ready_before_goals": true,
+      "recorder_returncode": 0,
+      "terminal_persistence_barrier": true,
+      "recorder_readiness_wall_seconds": 3.323462502001348,
+      "replay": {
+        "success": true,
+        "live_domain": 87,
+        "replay_domain": 88,
+        "topics": {
+          "/testbench/raw/joint_states": {
+            "count": 191,
+            "sha256": "d4baf1a68e4ea91c365e2f1dc1e2054807a7af6b57913dc0fce1029cde3ffbbd"
+          },
+          "/testbench/raw/ee_pose": {
+            "count": 190,
+            "sha256": "387dc7373fc378d06f00c5941bfba7abe9969c31d3e02b72bdee30909199eb54"
+          },
+          "/testbench/simulation_state": {
+            "count": 190,
+            "sha256": "476fc05911896a5d2910203ff29eaf339ddcee3b0cf084c1d7fd6afa2a844ff0"
+          },
+          "/testbench/task_events": {
+            "count": 12,
+            "sha256": "9e93e806ccaef9c625a32c3cecca004b53e5872fa5357195e75383ce8cd00f92"
+          },
+          "/clock": {
+            "count": 191,
+            "sha256": "e2263491d52e3e1063f0939d4e036307685bd294b893d4b214ed372bc915140f"
+          }
+        },
+        "task_event_order": [
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            2,
+            "reset:7093a4d81e014955ac17e8b4c7bd099c",
+            "RESET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            3,
+            "2f6b4eddf2734d639cbf4a5982943d73",
+            "ACCEPTED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            4,
+            "2f6b4eddf2734d639cbf4a5982943d73",
+            "TARGET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            5,
+            "2f6b4eddf2734d639cbf4a5982943d73",
+            "COMPLETED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            6,
+            "reset:348e4c7384d844418d05b7e4a6f09305",
+            "RESET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            7,
+            "a8d5310756554479a7242bd181fa857e",
+            "ACCEPTED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            8,
+            "a8d5310756554479a7242bd181fa857e",
+            "TARGET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            9,
+            "a8d5310756554479a7242bd181fa857e",
+            "COMPLETED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            10,
+            "reset:593ff712535543e4aeb6acd45911a00d",
+            "RESET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            11,
+            "79b09b147b80445c91df1b0ccdf582da",
+            "ACCEPTED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            12,
+            "79b09b147b80445c91df1b0ccdf582da",
+            "TARGET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            13,
+            "79b09b147b80445c91df1b0ccdf582da",
+            "COMPLETED"
+          ]
+        ],
+        "publisher_nodes": {
+          "/testbench/raw/joint_states": "rosbag2_player",
+          "/testbench/raw/ee_pose": "rosbag2_player",
+          "/testbench/simulation_state": "rosbag2_player",
+          "/testbench/task_events": "rosbag2_player",
+          "/clock": "rosbag2_player"
+        },
+        "clock_policy": "Recorded /clock only; no synthetic player clock",
+        "command_services_in_replay": [],
+        "subscribers_ready_before_resume": true,
+        "unexpected_testbench_topics": [],
+        "excluded_bag_topics": [],
+        "readiness_wall_seconds": 3.660007308999411,
+        "playback_wall_seconds": 3.9830237120004313,
+        "timing_comparison": "Wall timing is not required to match capture; per-topic contents and event order are exact",
+        "live_domain_isolation_check": {
+          "graph_samples": 430,
+          "clock_publisher_count": 1,
+          "replay_nodes_discovered": false,
+          "live_health_after": true
+        }
+      }
+    },
+    {
+      "scenario": "cancellation",
+      "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_test_ff33b60a4a/cancellation",
+      "original_actions": [
+        {
+          "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+          "status": 5,
+          "success": false,
+          "target_metres": [
+            0.45,
+            0.25,
+            0.45
+          ],
+          "final_error_metres": 0.27329837483760316,
+          "elapsed_simulation_seconds": 0.06000000000000004,
+          "client_wall_seconds": 0.08301877299891203,
+          "feedback_messages": 2
+        }
+      ],
+      "offline": {
+        "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_test_ff33b60a4a/cancellation",
+        "storage_id": "sqlite3",
+        "topics": {
+          "/testbench/raw/joint_states": {
+            "type": "sensor_msgs/msg/JointState",
+            "count": 6,
+            "sha256": "b5dcd31505644789cda1d71b688558a3bf0675630e214a8a945520198ad1378b",
+            "bag_receive": {
+              "first_ns": 1793445345208253487,
+              "last_ns": 1793445345288176749,
+              "minimum_ns": 1793445345208253487,
+              "maximum_ns": 1793445345288176749,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 8314744,
+                "maximum": 20080864,
+                "mean": 15984652.4,
+                "median": 19975765
+              }
+            },
+            "message_stamp": {
+              "first_ns": 11440000000,
+              "last_ns": 80000000,
+              "minimum_ns": 0,
+              "maximum_ns": 11440000000,
+              "backwards_jumps": 1,
+              "intervals_ns": {
+                "minimum": -11440000000,
+                "maximum": 20000000,
+                "mean": -2272000000,
+                "median": 20000000
+              }
+            }
+          },
+          "/testbench/raw/ee_pose": {
+            "type": "geometry_msgs/msg/PoseStamped",
+            "count": 6,
+            "sha256": "49268b5341cb44962736db2a5ea3e6ed2831329b0a087fdc498ca2f4f60724b5",
+            "bag_receive": {
+              "first_ns": 1793445345208400176,
+              "last_ns": 1793445345288404089,
+              "minimum_ns": 1793445345208400176,
+              "maximum_ns": 1793445345288404089,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 8303716,
+                "maximum": 20134773,
+                "mean": 16000782.6,
+                "median": 19985834
+              }
+            },
+            "message_stamp": {
+              "first_ns": 11440000000,
+              "last_ns": 80000000,
+              "minimum_ns": 0,
+              "maximum_ns": 11440000000,
+              "backwards_jumps": 1,
+              "intervals_ns": {
+                "minimum": -11440000000,
+                "maximum": 20000000,
+                "mean": -2272000000,
+                "median": 20000000
+              }
+            }
+          },
+          "/testbench/simulation_state": {
+            "type": "reliability_interfaces/msg/SimulationState",
+            "count": 6,
+            "sha256": "a601b41dde4f40de2034c512a64836984673a83a6234d5f4ee91788df915577a",
+            "bag_receive": {
+              "first_ns": 1793445345208509230,
+              "last_ns": 1793445345288431912,
+              "minimum_ns": 1793445345208509230,
+              "maximum_ns": 1793445345288431912,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 8297900,
+                "maximum": 20076403,
+                "mean": 15984536.4,
+                "median": 19970865
+              }
+            },
+            "message_stamp": {
+              "first_ns": 11440000000,
+              "last_ns": 80000000,
+              "minimum_ns": 0,
+              "maximum_ns": 11440000000,
+              "backwards_jumps": 1,
+              "intervals_ns": {
+                "minimum": -11440000000,
+                "maximum": 20000000,
+                "mean": -2272000000,
+                "median": 20000000
+              }
+            }
+          },
+          "/testbench/task_events": {
+            "type": "reliability_interfaces/msg/TaskEvent",
+            "count": 5,
+            "sha256": "26bb67cf1cfab9660d66ae433611ddc1653b8449065b1649f7dc5818604fdb9a",
+            "bag_receive": {
+              "first_ns": 1793445345220747609,
+              "last_ns": 1793445345303744445,
+              "minimum_ns": 1793445345220747609,
+              "maximum_ns": 1793445345303744445,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 37669,
+                "maximum": 77049294,
+                "mean": 20749209,
+                "median": 2954936.5
+              }
+            },
+            "message_stamp": {
+              "first_ns": 0,
+              "last_ns": 60000000,
+              "minimum_ns": 0,
+              "maximum_ns": 60000000,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 0,
+                "maximum": 60000000,
+                "mean": 15000000,
+                "median": 0.0
+              }
+            }
+          },
+          "/clock": {
+            "type": "rosgraph_msgs/msg/Clock",
+            "count": 6,
+            "sha256": "cd59acd7528ebbec20694b3bd93f7d44d4daa718a79250827c8ff511d1c45144",
+            "bag_receive": {
+              "first_ns": 1793445345208020946,
+              "last_ns": 1793445345288064271,
+              "minimum_ns": 1793445345208020946,
+              "maximum_ns": 1793445345288064271,
+              "backwards_jumps": 0,
+              "intervals_ns": {
+                "minimum": 8363847,
+                "maximum": 20169831,
+                "mean": 16008665,
+                "median": 19951411
+              }
+            },
+            "message_stamp": {
+              "first_ns": 11440000000,
+              "last_ns": 80000000,
+              "minimum_ns": 0,
+              "maximum_ns": 11440000000,
+              "backwards_jumps": 1,
+              "intervals_ns": {
+                "minimum": -11440000000,
+                "maximum": 20000000,
+                "mean": -2272000000,
+                "median": 20000000
+              }
+            }
+          }
+        },
+        "bag_receive_duration_seconds": 0.095723499,
+        "task_events": [
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 14,
+            "goal_id": "reset:fcfb61b828164f9188f31d5ce3f2c5a9",
+            "event": "RESET",
+            "outcome": "",
+            "generation": 5,
+            "target": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "has_position": false,
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "final_error": 0.0,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.0,
+            "tolerance": 0.005,
+            "detail": "Initial state restored; simulation time reset to zero",
+            "bag_receive_ns": 1793445345220747609,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 15,
+            "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+            "event": "ACCEPTED",
+            "outcome": "",
+            "generation": 5,
+            "target": {
+              "x": 0.45,
+              "y": 0.25,
+              "z": 0.45
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.3222906123454051,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.00023144700026023202,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445345226544504,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 0
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 16,
+            "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+            "event": "TARGET",
+            "outcome": "",
+            "generation": 5,
+            "target": {
+              "x": 0.45,
+              "y": 0.25,
+              "z": 0.45
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5544994780317353,
+              "y": -6.5943841295818954e-34,
+              "z": 0.6245024294875894
+            },
+            "final_error": 0.3222906123454051,
+            "elapsed_simulation_seconds": 0.0,
+            "elapsed_wall_seconds": 0.00037596699985442683,
+            "tolerance": 0.005,
+            "detail": "",
+            "bag_receive_ns": 1793445345226657482,
+            "message_stamp_ns": 0
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 60000000
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 17,
+            "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+            "event": "CANCELED",
+            "outcome": "canceled",
+            "generation": 5,
+            "target": {
+              "x": 0.45,
+              "y": 0.25,
+              "z": 0.45
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5479903544257378,
+              "y": 0.0368590034935178,
+              "z": 0.5902170023093386
+            },
+            "final_error": 0.27329837483760316,
+            "elapsed_simulation_seconds": 0.06000000000000004,
+            "elapsed_wall_seconds": 0.07727589599926432,
+            "tolerance": 0.005,
+            "detail": "Canceled; holding current joint positions",
+            "bag_receive_ns": 1793445345303706776,
+            "message_stamp_ns": 60000000
+          },
+          {
+            "stamp": {
+              "sec": 0,
+              "nanosec": 60000000
+            },
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "sequence": 18,
+            "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+            "event": "COMPLETED",
+            "outcome": "canceled",
+            "generation": 5,
+            "target": {
+              "x": 0.45,
+              "y": 0.25,
+              "z": 0.45
+            },
+            "has_position": true,
+            "position": {
+              "x": 0.5479903544257378,
+              "y": 0.0368590034935178,
+              "z": 0.5902170023093386
+            },
+            "final_error": 0.27329837483760316,
+            "elapsed_simulation_seconds": 0.06000000000000004,
+            "elapsed_wall_seconds": 0.0774265079999168,
+            "tolerance": 0.005,
+            "detail": "Canceled; holding current joint positions",
+            "bag_receive_ns": 1793445345303744445,
+            "message_stamp_ns": 60000000
+          }
+        ],
+        "outcomes": [
+          {
+            "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+            "session_id": "3e0ccc04c6074f08927094f484292916",
+            "outcome": "canceled",
+            "target_metres": [
+              0.45,
+              0.25,
+              0.45
+            ],
+            "final_position_metres": [
+              0.5479903544257378,
+              0.0368590034935178,
+              0.5902170023093386
+            ],
+            "final_error_metres": 0.27329837483760316,
+            "event_final_error_metres": 0.27329837483760316,
+            "matching_state_snapshot": true,
+            "elapsed_simulation_seconds": 0.06000000000000004,
+            "elapsed_wall_seconds": 0.0774265079999168,
+            "bag_receive_duration_seconds": 0.077199941,
+            "terminal_message_stamp_ns": 60000000,
+            "generation": 5
+          }
+        ],
+        "total_stored_messages": 29,
+        "ignored_topics": [],
+        "numerical_error_tolerance_metres": 1e-09,
+        "timing_notes": "Bag receive ns use recorder system time. Message stamps are simulation time, with backwards jumps at reset. Task simulation and monotonic wall durations come from recorded events. Receive duration includes DDS transport/scheduling."
+      },
+      "comparisons": [
+        {
+          "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+          "outcome_match": true,
+          "error_delta_metres": 0.0,
+          "simulation_duration_delta_seconds": 0.0
+        }
+      ],
+      "recorder_ready_before_goals": true,
+      "recorder_returncode": 0,
+      "terminal_persistence_barrier": true,
+      "recorder_readiness_wall_seconds": 1.7745939449996513,
+      "replay": {
+        "success": true,
+        "live_domain": 87,
+        "replay_domain": 88,
+        "topics": {
+          "/testbench/raw/joint_states": {
+            "count": 6,
+            "sha256": "b5dcd31505644789cda1d71b688558a3bf0675630e214a8a945520198ad1378b"
+          },
+          "/testbench/raw/ee_pose": {
+            "count": 6,
+            "sha256": "49268b5341cb44962736db2a5ea3e6ed2831329b0a087fdc498ca2f4f60724b5"
+          },
+          "/testbench/simulation_state": {
+            "count": 6,
+            "sha256": "a601b41dde4f40de2034c512a64836984673a83a6234d5f4ee91788df915577a"
+          },
+          "/testbench/task_events": {
+            "count": 5,
+            "sha256": "26bb67cf1cfab9660d66ae433611ddc1653b8449065b1649f7dc5818604fdb9a"
+          },
+          "/clock": {
+            "count": 6,
+            "sha256": "cd59acd7528ebbec20694b3bd93f7d44d4daa718a79250827c8ff511d1c45144"
+          }
+        },
+        "task_event_order": [
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            14,
+            "reset:fcfb61b828164f9188f31d5ce3f2c5a9",
+            "RESET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            15,
+            "84bd8d1a26d742d383c852cc096a3032",
+            "ACCEPTED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            16,
+            "84bd8d1a26d742d383c852cc096a3032",
+            "TARGET"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            17,
+            "84bd8d1a26d742d383c852cc096a3032",
+            "CANCELED"
+          ],
+          [
+            "3e0ccc04c6074f08927094f484292916",
+            18,
+            "84bd8d1a26d742d383c852cc096a3032",
+            "COMPLETED"
+          ]
+        ],
+        "publisher_nodes": {
+          "/testbench/raw/joint_states": "rosbag2_player",
+          "/testbench/raw/ee_pose": "rosbag2_player",
+          "/testbench/simulation_state": "rosbag2_player",
+          "/testbench/task_events": "rosbag2_player",
+          "/clock": "rosbag2_player"
+        },
+        "clock_policy": "Recorded /clock only; no synthetic player clock",
+        "command_services_in_replay": [],
+        "subscribers_ready_before_resume": true,
+        "unexpected_testbench_topics": [],
+        "excluded_bag_topics": [],
+        "readiness_wall_seconds": 0.6824298900010035,
+        "playback_wall_seconds": 0.3245688219994918,
+        "timing_comparison": "Wall timing is not required to match capture; per-topic contents and event order are exact",
+        "live_domain_isolation_check": {
+          "graph_samples": 105,
+          "clock_publisher_count": 1,
+          "replay_nodes_discovered": false,
+          "live_health_after": true
+        }
+      }
+    }
+  ],
+  "fault_injection": false,
+  "success": true,
+  "limitations": [
+    "Local host, SQLite3, 50 Hz, short runs; no endurance/cross-host/load validation",
+    "Replay verifies per-topic counts/content/order and task-event order, not identical wall timing",
+    "No fault injection or frozen/missing-state monitoring results are claimed"
+  ],
+  "suite": {
+    "executed_utc": "2026-10-31T11:16:25.784988+00:00",
+    "pytest_exit_status": 0,
+    "tests": [
+      {
+        "test": "test/test_bags.py::test_bags_healthy_record_analysis_and_isolated_replay",
+        "outcome": "passed",
+        "wall_seconds": 0.000518642998940777
+      },
+      {
+        "test": "test/test_bags.py::test_bags_cancellation_record_analysis_and_replay",
+        "outcome": "passed",
+        "wall_seconds": 0.0003772670006583212
+      },
+      {
+        "test": "test/test_bags.py::test_bags_missing_and_nonbag_paths",
+        "outcome": "passed",
+        "wall_seconds": 0.0031342450001830002
+      },
+      {
+        "test": "test/test_bags.py::test_bags_missing_required_topics",
+        "outcome": "passed",
+        "wall_seconds": 0.011810971000159043
+      },
+      {
+        "test": "test/test_bags.py::test_bags_empty_recording",
+        "outcome": "passed",
+        "wall_seconds": 0.015457726000022376
+      },
+      {
+        "test": "test/test_bags.py::test_bags_wrong_topic_type",
+        "outcome": "passed",
+        "wall_seconds": 0.010695809000026202
+      },
+      {
+        "test": "test/test_bags.py::test_bags_corrupt_cdr",
+        "outcome": "passed",
+        "wall_seconds": 0.00810110599923064
+      },
+      {
+        "test": "test/test_bags.py::test_bags_detect_missing_task_event",
+        "outcome": "passed",
+        "wall_seconds": 0.04357754699958605
+      },
+      {
+        "test": "test/test_bags.py::test_bags_detect_inconsistent_error",
+        "outcome": "passed",
+        "wall_seconds": 0.035554178999518626
+      },
+      {
+        "test": "test/test_bags.py::test_bags_detect_unfinished_goals",
+        "outcome": "passed",
+        "wall_seconds": 0.03543650500068907
+      },
+      {
+        "test": "test/test_bags.py::test_bags_filter_extra_command_topic",
+        "outcome": "passed",
+        "wall_seconds": 1.6995158250010718
+      },
+      {
+        "test": "test/test_bags.py::test_bags_replay_launch_rejects_live_domain",
+        "outcome": "passed",
+        "wall_seconds": 0.4690073109995865
+      },
+      {
+        "test": "test/test_bags.py::test_bags_timeout_and_active_reset_event_contract",
+        "outcome": "passed",
+        "wall_seconds": 0.10343555100007507
+      },
+      {
+        "test": "test/test_bags.py::test_bags_reject_unsafe_domains[87-87]",
+        "outcome": "passed",
+        "wall_seconds": 0.00048090499876707327
+      },
+      {
+        "test": "test/test_bags.py::test_bags_reject_unsafe_domains[-1-88]",
+        "outcome": "passed",
+        "wall_seconds": 0.0003595179987314623
+      },
+      {
+        "test": "test/test_bags.py::test_bags_reject_unsafe_domains[87-233]",
+        "outcome": "passed",
+        "wall_seconds": 0.0002669280002010055
+      },
+      {
+        "test": "test/test_ros.py::test_ros_success_and_feedback[target0]",
+        "outcome": "passed",
+        "wall_seconds": 0.2605176899996877
+      },
+      {
+        "test": "test/test_ros.py::test_ros_success_and_feedback[target1]",
+        "outcome": "passed",
+        "wall_seconds": 0.34133235000081186
+      },
+      {
+        "test": "test/test_ros.py::test_ros_success_and_feedback[target2]",
+        "outcome": "passed",
+        "wall_seconds": 0.32101042800059076
+      },
+      {
+        "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target0]",
+        "outcome": "passed",
+        "wall_seconds": 0.004781056000865647
+      },
+      {
+        "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target1]",
+        "outcome": "passed",
+        "wall_seconds": 0.0034308340000279713
+      },
+      {
+        "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target2]",
+        "outcome": "passed",
+        "wall_seconds": 0.003540323999914108
+      },
+      {
+        "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target3]",
+        "outcome": "passed",
+        "wall_seconds": 0.0039171959997474914
+      },
+      {
+        "test": "test/test_ros.py::test_ros_cancel",
+        "outcome": "passed",
+        "wall_seconds": 0.2840665700005047
+      },
+      {
+        "test": "test/test_ros.py::test_ros_simulation_timeout",
+        "outcome": "passed",
+        "wall_seconds": 0.05392836200007878
+      },
+      {
+        "test": "test/test_ros.py::test_ros_concurrent_goal_rejected",
+        "outcome": "passed",
+        "wall_seconds": 0.44259012499969685
+      },
+      {
+        "test": "test/test_ros.py::test_ros_reset_active_goal_and_stale_command",
+        "outcome": "passed",
+        "wall_seconds": 0.43924056099967856
+      },
+      {
+        "test": "test/test_ros.py::test_ros_health_and_parameters",
+        "outcome": "passed",
+        "wall_seconds": 0.4207751049998478
+      },
+      {
+        "test": "test/test_ros.py::test_ros_parameter_update_during_goal",
+        "outcome": "passed",
+        "wall_seconds": 0.5991863060007745
+      },
+      {
+        "test": "test/test_simulation.py::test_reach_with_physics",
+        "outcome": "passed",
+        "wall_seconds": 0.3661779599988222
+      },
+      {
+        "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target0]",
+        "outcome": "passed",
+        "wall_seconds": 0.13981343699924764
+      },
+      {
+        "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target1]",
+        "outcome": "passed",
+        "wall_seconds": 0.11790880099943024
+      },
+      {
+        "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target2]",
+        "outcome": "passed",
+        "wall_seconds": 0.1691752290007571
+      },
+      {
+        "test": "test/test_simulation.py::test_configured_initial_state_and_reset",
+        "outcome": "passed",
+        "wall_seconds": 0.17200355399836553
+      },
+      {
+        "test": "test/test_simulation.py::test_invalid_initial_state[initial0]",
+        "outcome": "passed",
+        "wall_seconds": 0.17817501799981983
+      },
+      {
+        "test": "test/test_simulation.py::test_invalid_initial_state[initial1]",
+        "outcome": "passed",
+        "wall_seconds": 0.17725587900167739
+      },
+      {
+        "test": "test/test_simulation.py::test_invalid_initial_state[initial2]",
+        "outcome": "passed",
+        "wall_seconds": 0.16857468499983952
+      }
+    ],
+    "passed": 37,
+    "failed": 0
+  }
+}

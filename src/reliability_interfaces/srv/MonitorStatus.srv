@@ -1,0 +1,8 @@
+---
+bool ready
+string[] active_reasons
+uint64 observations
+uint64 diagnostics
+uint64 generation
+uint64 observation_sequence
+float64 observation_age_steady_seconds

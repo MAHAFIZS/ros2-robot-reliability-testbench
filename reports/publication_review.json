@@ -1,0 +1,63 @@
+{
+  "preserved_original_evidence_files": 571,
+  "verified_asset_checksums": 71,
+  "workflow_static_review": "passed; hosted execution unverified",
+  "ignore_positive_negative_checks": "passed",
+  "limited_credential_pattern_scan": "no matches; not an exhaustive secret audit",
+  "publication_candidate_files": 214,
+  "publication_candidate_bytes": 36281130,
+  "git_remote": "",
+  "head_exists": false,
+  "review": "GitHub publication preparation",
+  "executed_utc": "2026-10-31T14:15:47.361344+00:00",
+  "changes": [
+    "Root Apache-2.0 license and attribution/provenance notices",
+    "Credential, environment and bulky artifact exclusions",
+    "License files included in Docker build and source fingerprint",
+    "Checkout credentials not persisted",
+    "Current publication checklist, explicit timing defaults and honest evidence summary"
+  ],
+  "verification": {
+    "docker_build": "passed; image rebuilt from current packaging inputs",
+    "container_network": "none; no host environment/build mounts",
+    "focused_tests": {
+      "passed": 26,
+      "failures": 0,
+      "errors": 0,
+      "junit": "publication_short.junit.xml",
+      "scope": "endurance/report and timing unit tests; no endurance workload"
+    },
+    "default_flags": {
+      "timing_instrumentation": false,
+      "resource_sampling": true
+    },
+    "packaged_license_files": "present",
+    "historical_full_suite": "91 passed; not rerun for this documentation/packaging review",
+    "hosted_ci": "unverified; no configured remote or HEAD",
+    "endurance_rerun": false,
+    "new_timing_experiments": false,
+    "docker_image_id": "sha256:37a2eb2bfa2f426bbd20ae27db38046c11bf5629204b12881842d7383e390293"
+  },
+  "preservation": {
+    "all_original_report_and_artifact_hashes_unchanged": true,
+    "files": 571,
+    "baseline_manifest_sha256": "f4c16e7b5e6d21ee4e81628f4b7842431dc8d60def30c49c6d5c240392073c3b",
+    "control_and_acceptance_code_changed": false,
+    "freshness_threshold_seconds": 0.15
+  },
+  "remaining_issues": [
+    "Confirm ownership/permission for attributed local controller adaptation before public release",
+    "Review original machine/path metadata before public release",
+    "Hosted CI must execute successfully before claiming it passed",
+    "Observation freshness failed full endurance despite 4303 successful reaches; cause unresolved",
+    "Reproduced 324.675 ms runner-specific delay does not identify DDS/executor root cause or establish connection to earlier anomalies",
+    "Task-server RSS endpoint growth remains unexplained; no leak claim"
+  ],
+  "git_actions": {
+    "staged": false,
+    "committed": false,
+    "remote_created": false,
+    "pushed": false
+  },
+  "publication_manifest_note": "214 Git-eligible entries including this review and relative directory symlinks. Byte count excludes this JSON. See docs/publication.md for allowed publication paths."
+}

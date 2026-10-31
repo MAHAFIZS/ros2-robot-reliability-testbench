@@ -1,0 +1,193 @@
+{
+  "executed_utc": "2026-10-31T11:16:25.784988+00:00",
+  "pytest_exit_status": 0,
+  "tests": [
+    {
+      "test": "test/test_bags.py::test_bags_healthy_record_analysis_and_isolated_replay",
+      "outcome": "passed",
+      "wall_seconds": 0.000518642998940777
+    },
+    {
+      "test": "test/test_bags.py::test_bags_cancellation_record_analysis_and_replay",
+      "outcome": "passed",
+      "wall_seconds": 0.0003772670006583212
+    },
+    {
+      "test": "test/test_bags.py::test_bags_missing_and_nonbag_paths",
+      "outcome": "passed",
+      "wall_seconds": 0.0031342450001830002
+    },
+    {
+      "test": "test/test_bags.py::test_bags_missing_required_topics",
+      "outcome": "passed",
+      "wall_seconds": 0.011810971000159043
+    },
+    {
+      "test": "test/test_bags.py::test_bags_empty_recording",
+      "outcome": "passed",
+      "wall_seconds": 0.015457726000022376
+    },
+    {
+      "test": "test/test_bags.py::test_bags_wrong_topic_type",
+      "outcome": "passed",
+      "wall_seconds": 0.010695809000026202
+    },
+    {
+      "test": "test/test_bags.py::test_bags_corrupt_cdr",
+      "outcome": "passed",
+      "wall_seconds": 0.00810110599923064
+    },
+    {
+      "test": "test/test_bags.py::test_bags_detect_missing_task_event",
+      "outcome": "passed",
+      "wall_seconds": 0.04357754699958605
+    },
+    {
+      "test": "test/test_bags.py::test_bags_detect_inconsistent_error",
+      "outcome": "passed",
+      "wall_seconds": 0.035554178999518626
+    },
+    {
+      "test": "test/test_bags.py::test_bags_detect_unfinished_goals",
+      "outcome": "passed",
+      "wall_seconds": 0.03543650500068907
+    },
+    {
+      "test": "test/test_bags.py::test_bags_filter_extra_command_topic",
+      "outcome": "passed",
+      "wall_seconds": 1.6995158250010718
+    },
+    {
+      "test": "test/test_bags.py::test_bags_replay_launch_rejects_live_domain",
+      "outcome": "passed",
+      "wall_seconds": 0.4690073109995865
+    },
+    {
+      "test": "test/test_bags.py::test_bags_timeout_and_active_reset_event_contract",
+      "outcome": "passed",
+      "wall_seconds": 0.10343555100007507
+    },
+    {
+      "test": "test/test_bags.py::test_bags_reject_unsafe_domains[87-87]",
+      "outcome": "passed",
+      "wall_seconds": 0.00048090499876707327
+    },
+    {
+      "test": "test/test_bags.py::test_bags_reject_unsafe_domains[-1-88]",
+      "outcome": "passed",
+      "wall_seconds": 0.0003595179987314623
+    },
+    {
+      "test": "test/test_bags.py::test_bags_reject_unsafe_domains[87-233]",
+      "outcome": "passed",
+      "wall_seconds": 0.0002669280002010055
+    },
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.2605176899996877
+    },
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.34133235000081186
+    },
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.32101042800059076
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.004781056000865647
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.0034308340000279713
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.003540323999914108
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target3]",
+      "outcome": "passed",
+      "wall_seconds": 0.0039171959997474914
+    },
+    {
+      "test": "test/test_ros.py::test_ros_cancel",
+      "outcome": "passed",
+      "wall_seconds": 0.2840665700005047
+    },
+    {
+      "test": "test/test_ros.py::test_ros_simulation_timeout",
+      "outcome": "passed",
+      "wall_seconds": 0.05392836200007878
+    },
+    {
+      "test": "test/test_ros.py::test_ros_concurrent_goal_rejected",
+      "outcome": "passed",
+      "wall_seconds": 0.44259012499969685
+    },
+    {
+      "test": "test/test_ros.py::test_ros_reset_active_goal_and_stale_command",
+      "outcome": "passed",
+      "wall_seconds": 0.43924056099967856
+    },
+    {
+      "test": "test/test_ros.py::test_ros_health_and_parameters",
+      "outcome": "passed",
+      "wall_seconds": 0.4207751049998478
+    },
+    {
+      "test": "test/test_ros.py::test_ros_parameter_update_during_goal",
+      "outcome": "passed",
+      "wall_seconds": 0.5991863060007745
+    },
+    {
+      "test": "test/test_simulation.py::test_reach_with_physics",
+      "outcome": "passed",
+      "wall_seconds": 0.3661779599988222
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.13981343699924764
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.11790880099943024
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.1691752290007571
+    },
+    {
+      "test": "test/test_simulation.py::test_configured_initial_state_and_reset",
+      "outcome": "passed",
+      "wall_seconds": 0.17200355399836553
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial0]",
+      "outcome": "passed",
+      "wall_seconds": 0.17817501799981983
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial1]",
+      "outcome": "passed",
+      "wall_seconds": 0.17725587900167739
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial2]",
+      "outcome": "passed",
+      "wall_seconds": 0.16857468499983952
+    }
+  ],
+  "passed": 37,
+  "failed": 0
+}

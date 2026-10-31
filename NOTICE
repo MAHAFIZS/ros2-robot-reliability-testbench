@@ -1,0 +1,17 @@
+ROS 2 Robot Reliability Testbench
+
+The original project code is offered under Apache License 2.0 as declared in
+the ROS package manifests. See LICENSE and THIRD_PARTY_NOTICES.md.
+
+The bundled Franka Emika Panda MJCF and mesh subset comes from MuJoCo Menagerie,
+commit 62ab00f2bc44f6f20c1c9b7a13f3fb1dd41a4e35, directory franka_emika_panda.
+Its upstream Apache-2.0 license, README and changelog are retained unchanged in
+src/robot_reliability_testbench/models/franka_emika_panda/.
+
+The position-only damped-Jacobian IK and actuator bias-compensation approach was
+adapted from the local robot-data-pipeline project, robotics_dataset/franka.py.
+That reference is not a runtime dependency and is not vendored wholesale here.
+See the provenance/authorization review in THIRD_PARTY_NOTICES.md.
+
+Third-party components retain their own licenses and notices. This project does
+not claim authorship of the upstream model assets or of installed dependencies.

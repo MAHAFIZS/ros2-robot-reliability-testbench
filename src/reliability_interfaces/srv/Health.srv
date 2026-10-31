@@ -1,0 +1,9 @@
+---
+bool healthy
+bool ready
+bool active_goal
+bool resetting
+float64 state_age_wall_seconds
+float64 simulation_time
+uint64 generation
+string message

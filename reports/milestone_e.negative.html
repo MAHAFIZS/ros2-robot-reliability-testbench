@@ -1,0 +1,468 @@
+<!doctype html><meta charset="utf-8"><title>Robot endurance</title><style>body{font:16px sans-serif;margin:2em}td,th{border:1px solid #aaa;padding:.5em}pre{white-space:pre-wrap}</style><h1>Healthy endurance: FAIL</h1><table><tr><th>Criterion</th><th>Result</th><th>Observed</th><th>Required before run</th></tr><tr><td>completed_window</td><td>PASS</td><td><pre>8.003762008000194</pre></td><td><pre>8.0</pre></td></tr><tr><td>minimum_tasks</td><td>FAIL</td><td><pre>6</pre></td><td><pre>1000000</pre></td></tr><tr><td>all_tasks_succeeded</td><td>PASS</td><td><pre>6</pre></td><td><pre>6</pre></td></tr><tr><td>final_position_error</td><td>PASS</td><td><pre>0.004913082026250242</pre></td><td><pre>0.005</pre></td></tr><tr><td>bounded_task_wall_time</td><td>PASS</td><td><pre>0.36010015700048825</pre></td><td><pre>6.0</pre></td></tr><tr><td>continuous_observations</td><td>FAIL</td><td><pre>{
+  &quot;count&quot;: 402,
+  &quot;missing_sequences&quot;: 0,
+  &quot;max_receive_interval_seconds&quot;: 0.3283807030002208,
+  &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+}</pre></td><td><pre>{&quot;min_count&quot;: 1, &quot;missing_sequences&quot;: 0, &quot;max_interval&quot;: 0.15}</pre></td></tr><tr><td>no_unexpected_diagnostics</td><td>PASS</td><td><pre>{}</pre></td><td><pre>[]</pre></td></tr><tr><td>no_injected_faults</td><td>PASS</td><td><pre>[]</pre></td><td><pre>[]</pre></td></tr><tr><td>resources_collected</td><td>PASS</td><td><pre>5</pre></td><td><pre>&quot;all tracked processes &gt;=2 samples&quot;</pre></td></tr><tr><td>all_nodes_measured</td><td>PASS</td><td><pre>[
+  [
+    &quot;/usr/bin/python3&quot;,
+    &quot;/opt/ros/jazzy/bin/ros2&quot;,
+    &quot;launch&quot;,
+    &quot;robot_reliability_testbench&quot;,
+    &quot;normal.launch.py&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=panda_simulator&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=task_server&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=fault_boundary&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=health_monitor&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ]
+]</pre></td><td><pre>&quot;simulator, task_server, fault_boundary, health_monitor&quot;</pre></td></tr><tr><td>per_process_rss_bound</td><td>PASS</td><td><pre>295.80078125</pre></td><td><pre>512.0</pre></td></tr><tr><td>no_infrastructure_failure</td><td>PASS</td><td><pre>[]</pre></td><td><pre>[]</pre></td></tr></table><h2>Measurements, provenance, failures and limitations</h2><pre>{
+  &quot;configuration&quot;: {
+    &quot;profile&quot;: &quot;short&quot;,
+    &quot;seed&quot;: 7,
+    &quot;action_wall_timeout&quot;: 6.0,
+    &quot;max_final_error&quot;: 0.005,
+    &quot;max_observation_gap_seconds&quot;: 0.15,
+    &quot;max_rss_mib&quot;: 512.0,
+    &quot;expected_injected_faults&quot;: false,
+    &quot;duration_seconds&quot;: 8.0,
+    &quot;min_tasks&quot;: 1000000
+  },
+  &quot;acceptance_declared_utc&quot;: &quot;2026-10-31T12:17:29.131533+00:00&quot;,
+  &quot;provenance&quot;: {
+    &quot;git_revision&quot;: null,
+    &quot;git_revision_state&quot;: &quot;unborn&quot;,
+    &quot;dirty_worktree&quot;: true,
+    &quot;source_sha256&quot;: &quot;d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319&quot;,
+    &quot;python&quot;: &quot;3.12.3&quot;,
+    &quot;platform&quot;: &quot;Linux-7.0.0-38-generic-x86_64-with-glibc2.39&quot;,
+    &quot;dependencies&quot;: {
+      &quot;mujoco&quot;: &quot;3.16.0&quot;,
+      &quot;numpy&quot;: &quot;1.26.4&quot;,
+      &quot;pytest&quot;: &quot;7.4.4&quot;,
+      &quot;psutil&quot;: &quot;5.9.8&quot;,
+      &quot;rclpy&quot;: &quot;7.1.12&quot;,
+      &quot;rosbag2_py&quot;: &quot;0.26.11&quot;,
+      &quot;colcon-core&quot;: &quot;0.21.3&quot;
+    },
+    &quot;ros_distro&quot;: &quot;jazzy&quot;
+  },
+  &quot;tasks&quot;: [
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004607148056802946,
+      &quot;simulation_seconds&quot;: 0.3400000000000003,
+      &quot;wall_seconds&quot;: 0.33742325300045195,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004719047955394538,
+      &quot;simulation_seconds&quot;: 0.3600000000000002,
+      &quot;wall_seconds&quot;: 0.3600903599999583,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004432132393597623,
+      &quot;simulation_seconds&quot;: 0.3200000000000003,
+      &quot;wall_seconds&quot;: 0.3197510299996793,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.00424393958123158,
+      &quot;simulation_seconds&quot;: 0.3200000000000003,
+      &quot;wall_seconds&quot;: 0.31976695299999847,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004913082026250242,
+      &quot;simulation_seconds&quot;: 0.3599999999999757,
+      &quot;wall_seconds&quot;: 0.3599034180006129,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004704685975661958,
+      &quot;simulation_seconds&quot;: 0.35999999999996035,
+      &quot;wall_seconds&quot;: 0.36010015700048825,
+      &quot;message&quot;: &quot;Target reached&quot;
+    }
+  ],
+  &quot;observations&quot;: {
+    &quot;count&quot;: 402,
+    &quot;missing_sequences&quot;: 0,
+    &quot;max_receive_interval_seconds&quot;: 0.3283807030002208,
+    &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+  },
+  &quot;diagnostics&quot;: {},
+  &quot;fault_events&quot;: [],
+  &quot;resources&quot;: [
+    {
+      &quot;pid&quot;: 561,
+      &quot;command&quot;: [
+        &quot;/usr/bin/python3&quot;,
+        &quot;/opt/ros/jazzy/bin/ros2&quot;,
+        &quot;launch&quot;,
+        &quot;robot_reliability_testbench&quot;,
+        &quot;normal.launch.py&quot;
+      ],
+      &quot;samples&quot;: 10,
+      &quot;first_rss_mib&quot;: 38.2265625,
+      &quot;last_rss_mib&quot;: 38.2265625,
+      &quot;peak_rss_mib&quot;: 38.2265625,
+      &quot;mean_cpu_percent&quot;: 0.0,
+      &quot;peak_cpu_percent&quot;: 0.0,
+      &quot;sampled_wall_seconds&quot;: 8.005942591998974,
+      &quot;rss_endpoint_change_mib&quot;: 0.0,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.0
+    },
+    {
+      &quot;pid&quot;: 575,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=panda_simulator&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 10,
+      &quot;first_rss_mib&quot;: 294.74609375,
+      &quot;last_rss_mib&quot;: 295.80078125,
+      &quot;peak_rss_mib&quot;: 295.80078125,
+      &quot;mean_cpu_percent&quot;: 11.741278296692046,
+      &quot;peak_cpu_percent&quot;: 14.86251188152763,
+      &quot;sampled_wall_seconds&quot;: 8.005942591998974,
+      &quot;rss_endpoint_change_mib&quot;: 1.0546875,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 7.90428475758025
+    },
+    {
+      &quot;pid&quot;: 576,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=task_server&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 10,
+      &quot;first_rss_mib&quot;: 293.65625,
+      &quot;last_rss_mib&quot;: 294.6015625,
+      &quot;peak_rss_mib&quot;: 294.6015625,
+      &quot;mean_cpu_percent&quot;: 19.11080403610514,
+      &quot;peak_cpu_percent&quot;: 23.92466780038391,
+      &quot;sampled_wall_seconds&quot;: 8.005942591998974,
+      &quot;rss_endpoint_change_mib&quot;: 0.9453125,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 7.084581153090446
+    },
+    {
+      &quot;pid&quot;: 577,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=fault_boundary&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;
+      ],
+      &quot;samples&quot;: 10,
+      &quot;first_rss_mib&quot;: 73.37890625,
+      &quot;last_rss_mib&quot;: 73.62109375,
+      &quot;peak_rss_mib&quot;: 73.62109375,
+      &quot;mean_cpu_percent&quot;: 40.96956682249989,
+      &quot;peak_cpu_percent&quot;: 45.855613284069165,
+      &quot;sampled_wall_seconds&quot;: 8.005942591998974,
+      &quot;rss_endpoint_change_mib&quot;: 0.2421875,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 1.8150579813702794
+    },
+    {
+      &quot;pid&quot;: 578,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=health_monitor&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 10,
+      &quot;first_rss_mib&quot;: 70.2421875,
+      &quot;last_rss_mib&quot;: 70.32421875,
+      &quot;peak_rss_mib&quot;: 70.32421875,
+      &quot;mean_cpu_percent&quot;: 24.231999888917628,
+      &quot;peak_cpu_percent&quot;: 27.659047651544377,
+      &quot;sampled_wall_seconds&quot;: 8.005942591998974,
+      &quot;rss_endpoint_change_mib&quot;: 0.08203125,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.6147777033673527
+    }
+  ],
+  &quot;failures&quot;: [],
+  &quot;diagnostic_examples&quot;: [],
+  &quot;tasks_attempted&quot;: 6,
+  &quot;robot_configuration&quot;: {
+    &quot;/testbench/panda_simulator&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;publication_rate&quot;: 50.0,
+        &quot;initial_joint_positions&quot;: [
+          0.0,
+          0.0,
+          0.0,
+          -1.57079,
+          0.0,
+          1.57079,
+          -0.7853
+        ]
+      }
+    },
+    &quot;/testbench/task_server&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;use_sim_time&quot;: true,
+        &quot;target_tolerance&quot;: 0.005,
+        &quot;task_timeout&quot;: 5.0,
+        &quot;infrastructure_timeout&quot;: 3.0
+      }
+    },
+    &quot;/testbench/health_monitor&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;freshness_seconds&quot;: 0.15,
+        &quot;progress_window_seconds&quot;: 0.2,
+        &quot;movement_threshold_metres&quot;: 0.001,
+        &quot;startup_grace_seconds&quot;: 0.3
+      }
+    }
+  },
+  &quot;measurement_wall_seconds&quot;: 8.003762008000194,
+  &quot;simulation_duration_seconds&quot;: 8.039999999999521,
+  &quot;limitations&quot;: [
+    &quot;Healthy raw-state controller workload; injected faults are tested separately.&quot;,
+    &quot;Resources cover ros2 launch and its descendant processes, excluding runner, Docker daemon and kernel.&quot;,
+    &quot;CPU percent is process CPU time / steady wall interval; multithreaded values may exceed 100%.&quot;,
+    &quot;RSS endpoint trends are descriptive; short runs cannot establish absence of memory leaks.&quot;,
+    &quot;Measurement window excludes startup/warmup/shutdown; final six seconds reserve bounded action completion.&quot;,
+    &quot;Receive intervals use steady time; task durations and observation stamps use simulator time.&quot;
+  ],
+  &quot;startup_wall_seconds&quot;: 1.4224042429996189,
+  &quot;total_wall_seconds&quot;: 9.853964252000878,
+  &quot;completed_utc&quot;: &quot;2026-10-31T12:17:38.992633+00:00&quot;,
+  &quot;criteria&quot;: [
+    {
+      &quot;name&quot;: &quot;completed_window&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 8.003762008000194,
+      &quot;required&quot;: 8.0
+    },
+    {
+      &quot;name&quot;: &quot;minimum_tasks&quot;,
+      &quot;passed&quot;: false,
+      &quot;observed&quot;: 6,
+      &quot;required&quot;: 1000000
+    },
+    {
+      &quot;name&quot;: &quot;all_tasks_succeeded&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 6,
+      &quot;required&quot;: 6
+    },
+    {
+      &quot;name&quot;: &quot;final_position_error&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 0.004913082026250242,
+      &quot;required&quot;: 0.005
+    },
+    {
+      &quot;name&quot;: &quot;bounded_task_wall_time&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 0.36010015700048825,
+      &quot;required&quot;: 6.0
+    },
+    {
+      &quot;name&quot;: &quot;continuous_observations&quot;,
+      &quot;passed&quot;: false,
+      &quot;observed&quot;: {
+        &quot;count&quot;: 402,
+        &quot;missing_sequences&quot;: 0,
+        &quot;max_receive_interval_seconds&quot;: 0.3283807030002208,
+        &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+      },
+      &quot;required&quot;: {
+        &quot;min_count&quot;: 1,
+        &quot;missing_sequences&quot;: 0,
+        &quot;max_interval&quot;: 0.15
+      }
+    },
+    {
+      &quot;name&quot;: &quot;no_unexpected_diagnostics&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: {},
+      &quot;required&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;no_injected_faults&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [],
+      &quot;required&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;resources_collected&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 5,
+      &quot;required&quot;: &quot;all tracked processes &gt;=2 samples&quot;
+    },
+    {
+      &quot;name&quot;: &quot;all_nodes_measured&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [
+        [
+          &quot;/usr/bin/python3&quot;,
+          &quot;/opt/ros/jazzy/bin/ros2&quot;,
+          &quot;launch&quot;,
+          &quot;robot_reliability_testbench&quot;,
+          &quot;normal.launch.py&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=panda_simulator&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=task_server&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=fault_boundary&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=health_monitor&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ]
+      ],
+      &quot;required&quot;: &quot;simulator, task_server, fault_boundary, health_monitor&quot;
+    },
+    {
+      &quot;name&quot;: &quot;per_process_rss_bound&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 295.80078125,
+      &quot;required&quot;: 512.0
+    },
+    {
+      &quot;name&quot;: &quot;no_infrastructure_failure&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [],
+      &quot;required&quot;: []
+    }
+  ],
+  &quot;success&quot;: false
+}</pre>

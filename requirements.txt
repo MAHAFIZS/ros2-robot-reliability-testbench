@@ -1,0 +1,21 @@
+# Python 3.12; ROS bindings and colcon come from the Jazzy system installation.
+mujoco==3.16.0
+numpy==1.26.4
+pytest==7.4.4
+psutil==5.9.8
+# MuJoCo and pytest transitive dependencies, resolved in the verified Jazzy image.
+absl-py==2.5.1
+etils==1.14.0
+fsspec==2026.9.0
+glfw==2.11.0
+PyOpenGL==3.1.10
+typing_extensions==4.16.0
+websockets==17.4
+zipp==1.0.0
+more-itertools==10.2.0
+iniconfig==1.1.1
+packaging==24.0
+pluggy==1.4.0
+setuptools==68.1.2
+wheel==0.42.0
+PyYAML==6.0.1

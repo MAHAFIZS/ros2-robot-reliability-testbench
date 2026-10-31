@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "live_domain": 87,
+  "replay_domain": 88,
+  "topics": {
+    "/testbench/raw/joint_states": {
+      "count": 191,
+      "sha256": "d4baf1a68e4ea91c365e2f1dc1e2054807a7af6b57913dc0fce1029cde3ffbbd"
+    },
+    "/testbench/raw/ee_pose": {
+      "count": 190,
+      "sha256": "387dc7373fc378d06f00c5941bfba7abe9969c31d3e02b72bdee30909199eb54"
+    },
+    "/testbench/simulation_state": {
+      "count": 190,
+      "sha256": "476fc05911896a5d2910203ff29eaf339ddcee3b0cf084c1d7fd6afa2a844ff0"
+    },
+    "/testbench/task_events": {
+      "count": 12,
+      "sha256": "9e93e806ccaef9c625a32c3cecca004b53e5872fa5357195e75383ce8cd00f92"
+    },
+    "/clock": {
+      "count": 191,
+      "sha256": "e2263491d52e3e1063f0939d4e036307685bd294b893d4b214ed372bc915140f"
+    }
+  },
+  "task_event_order": [
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      2,
+      "reset:7093a4d81e014955ac17e8b4c7bd099c",
+      "RESET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      3,
+      "2f6b4eddf2734d639cbf4a5982943d73",
+      "ACCEPTED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      4,
+      "2f6b4eddf2734d639cbf4a5982943d73",
+      "TARGET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      5,
+      "2f6b4eddf2734d639cbf4a5982943d73",
+      "COMPLETED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      6,
+      "reset:348e4c7384d844418d05b7e4a6f09305",
+      "RESET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      7,
+      "a8d5310756554479a7242bd181fa857e",
+      "ACCEPTED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      8,
+      "a8d5310756554479a7242bd181fa857e",
+      "TARGET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      9,
+      "a8d5310756554479a7242bd181fa857e",
+      "COMPLETED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      10,
+      "reset:593ff712535543e4aeb6acd45911a00d",
+      "RESET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      11,
+      "79b09b147b80445c91df1b0ccdf582da",
+      "ACCEPTED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      12,
+      "79b09b147b80445c91df1b0ccdf582da",
+      "TARGET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      13,
+      "79b09b147b80445c91df1b0ccdf582da",
+      "COMPLETED"
+    ]
+  ],
+  "publisher_nodes": {
+    "/testbench/raw/joint_states": "rosbag2_player",
+    "/testbench/raw/ee_pose": "rosbag2_player",
+    "/testbench/simulation_state": "rosbag2_player",
+    "/testbench/task_events": "rosbag2_player",
+    "/clock": "rosbag2_player"
+  },
+  "clock_policy": "Recorded /clock only; no synthetic player clock",
+  "command_services_in_replay": [],
+  "subscribers_ready_before_resume": true,
+  "unexpected_testbench_topics": [],
+  "excluded_bag_topics": [],
+  "readiness_wall_seconds": 3.660007308999411,
+  "playback_wall_seconds": 3.9830237120004313,
+  "timing_comparison": "Wall timing is not required to match capture; per-topic contents and event order are exact"
+}

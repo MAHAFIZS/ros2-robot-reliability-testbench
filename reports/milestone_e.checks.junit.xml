@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="container_checks" tests="3" failures="0"><testcase name="regression" time="50.40881940899999" /><testcase name="short" time="20.071950872999878" /><testcase name="intentional_failure" time="10.393605900000694" /></testsuite>

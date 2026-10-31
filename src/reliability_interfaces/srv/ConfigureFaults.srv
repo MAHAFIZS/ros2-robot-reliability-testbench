@@ -1,0 +1,8 @@
+reliability_interfaces/FaultConfiguration configuration
+---
+bool accepted
+string message
+uint64 revision
+reliability_interfaces/FaultConfiguration configuration
+uint32 pending_commands
+uint64 observation_sequence

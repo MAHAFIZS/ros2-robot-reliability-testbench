@@ -1,0 +1,76 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.69kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ros:jazzy-ros-base@sha256:8eed0a4669bbf43ee331878a4c39bd8ebddea8e3312a58b4fae8edb14526b617
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 186B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [ 1/12] FROM docker.io/library/ros:jazzy-ros-base@sha256:8eed0a4669bbf43ee331878a4c39bd8ebddea8e3312a58b4fae8edb14526b617
+#5 resolve docker.io/library/ros:jazzy-ros-base@sha256:8eed0a4669bbf43ee331878a4c39bd8ebddea8e3312a58b4fae8edb14526b617
+#5 resolve docker.io/library/ros:jazzy-ros-base@sha256:8eed0a4669bbf43ee331878a4c39bd8ebddea8e3312a58b4fae8edb14526b617 0.0s done
+#5 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 58.04kB 0.0s done
+#4 DONE 0.0s
+
+#6 [ 2/12] COPY docker/apt-packages.lock /tmp/apt-packages.lock
+#6 CACHED
+
+#7 [ 3/12] RUN apt-get update && xargs -a /tmp/apt-packages.lock apt-get install -y --no-install-recommends     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [ 4/12] RUN /usr/bin/python3 -m venv --system-site-packages /opt/venv
+#8 CACHED
+
+#9 [ 5/12] WORKDIR /workspace
+#9 CACHED
+
+#10 [ 6/12] COPY requirements.txt .
+#10 CACHED
+
+#11 [ 7/12] RUN python -m pip install --no-cache-dir -r requirements.txt
+#11 CACHED
+
+#12 [ 8/12] COPY src/ src/
+#12 DONE 0.1s
+
+#13 [ 9/12] COPY scripts/ scripts/
+#13 DONE 0.1s
+
+#14 [10/12] COPY docker/ docker/
+#14 DONE 0.1s
+
+#15 [11/12] RUN source /opt/ros/jazzy/setup.bash &&     python -m colcon build --base-paths src       --cmake-args -DPython3_EXECUTABLE=/opt/venv/bin/python -DPYTHON_EXECUTABLE=/opt/venv/bin/python       2>&1 | tee /workspace/build.log
+#15 1.066 Starting >>> reliability_interfaces
+#15 14.76 Finished <<< reliability_interfaces [13.7s]
+#15 14.76 Starting >>> robot_reliability_testbench
+#15 16.07 Finished <<< robot_reliability_testbench [1.31s]
+#15 16.07 
+#15 16.07 Summary: 2 packages finished [15.1s]
+#15 DONE 16.3s
+
+#16 [12/12] RUN mkdir -p /opt/testbench && dpkg-query -W > /opt/testbench/dpkg-versions.txt &&     python -m pip freeze > /opt/testbench/python-versions.txt &&     cp /workspace/build.log /opt/testbench/build.log
+#16 DONE 0.8s
+
+#17 exporting to image
+#17 exporting layers
+#17 exporting layers 4.1s done
+#17 exporting manifest sha256:06ed2336be4b86992984ac93eb412f1e57e722465ed0a122e77090ed0f97f13a 0.0s done
+#17 exporting config sha256:338d1a18497b41d321d73947f33f0254963ab413e682d49a6f27f3313be0b211 0.0s done
+#17 exporting attestation manifest sha256:a27f577232a9967477083cbc5995d0986999e4654afa0ba6229479337aef2401 0.1s done
+#17 exporting manifest list sha256:d8529fded609348b0d9a83b015a22c143d0522a62b905651c219778f7dbbd030
+#17 exporting manifest list sha256:d8529fded609348b0d9a83b015a22c143d0522a62b905651c219778f7dbbd030 0.0s done
+#17 naming to docker.io/library/robot-reliability:jazzy done
+#17 unpacking to docker.io/library/robot-reliability:jazzy
+#17 unpacking to docker.io/library/robot-reliability:jazzy 1.4s done
+#17 DONE 5.7s

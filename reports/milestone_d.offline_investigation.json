@@ -1,0 +1,5766 @@
+{
+  "bag": "bags/milestone_d_test_b7a229b4f7/faults",
+  "tasks": [
+    {
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "session_id": "49b8103a47874f92a6dcb2089f82072b",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_position_metres": [
+        0.4528704719570411,
+        0.2470594342887907,
+        0.4521664911016784
+      ],
+      "final_error_metres": 0.0046454515013882956,
+      "event_final_error_metres": 0.0046454515013882956,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.4200000000000003,
+      "elapsed_wall_seconds": 0.4349148389992479,
+      "bag_receive_duration_seconds": 0.434842949,
+      "terminal_message_stamp_ns": 440000000,
+      "generation": 10
+    },
+    {
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "session_id": "49b8103a47874f92a6dcb2089f82072b",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_position_metres": [
+        0.4528704719570411,
+        0.2470594342887907,
+        0.4521664911016784
+      ],
+      "final_error_metres": 0.0046454515013882956,
+      "event_final_error_metres": 0.0046454515013882956,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.4200000000000003,
+      "elapsed_wall_seconds": 0.43135188199994445,
+      "bag_receive_duration_seconds": 0.431144791,
+      "terminal_message_stamp_ns": 440000000,
+      "generation": 12
+    },
+    {
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "session_id": "49b8103a47874f92a6dcb2089f82072b",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_position_metres": [
+        0.4528704719570411,
+        0.2470594342887907,
+        0.4521664911016784
+      ],
+      "final_error_metres": 0.0046454515013882956,
+      "event_final_error_metres": 0.0046454515013882956,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 1.0200000000000007,
+      "elapsed_wall_seconds": 1.032289367998601,
+      "bag_receive_duration_seconds": 1.03221482,
+      "terminal_message_stamp_ns": 1040000000,
+      "generation": 13
+    },
+    {
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "session_id": "49b8103a47874f92a6dcb2089f82072b",
+      "outcome": "timeout",
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_position_metres": [
+        0.5544994780317353,
+        -6.5943841295818954e-34,
+        0.6245024294875894
+      ],
+      "final_error_metres": 0.3222906123454052,
+      "event_final_error_metres": 0.3222906123454051,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.18000000000000016,
+      "elapsed_wall_seconds": 0.1864362729993445,
+      "bag_receive_duration_seconds": 0.186169019,
+      "terminal_message_stamp_ns": 200000000,
+      "generation": 14
+    },
+    {
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "session_id": "49b8103a47874f92a6dcb2089f82072b",
+      "outcome": "succeeded",
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "final_position_metres": [
+        0.5027820907506624,
+        -0.07747610252273027,
+        0.5526675317798695
+      ],
+      "final_error_metres": 0.004607148056802946,
+      "event_final_error_metres": 0.004607148056802946,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.32000000000000023,
+      "elapsed_wall_seconds": 0.3350043509999523,
+      "bag_receive_duration_seconds": 0.334904852,
+      "terminal_message_stamp_ns": 340000000,
+      "generation": 15
+    }
+  ],
+  "bag_receive_duration_seconds": 4.859889976,
+  "topics": {
+    "/testbench/raw/joint_states": {
+      "type": "sensor_msgs/msg/JointState",
+      "count": 249,
+      "sha256": "9c850e37712dfd2d2feb776a897649da6977a2c3bc8f3c77cac6039c950aeb8d",
+      "bag_receive": {
+        "first_ns": 1793444826752718128,
+        "last_ns": 1793444831592208475,
+        "minimum_ns": 1793444826752718128,
+        "maximum_ns": 1793444831592208475,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 54503,
+          "maximum": 351232700,
+          "mean": 19514073.97983871,
+          "median": 19980090.0
+        }
+      },
+      "message_stamp": {
+        "first_ns": 500000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 20000000,
+          "mean": 241935.48387096773,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/raw/ee_pose": {
+      "type": "geometry_msgs/msg/PoseStamped",
+      "count": 249,
+      "sha256": "8aeccfd604c960d9429c7dde367d34fac556f3c305cec369a0cf038b0f326f36",
+      "bag_receive": {
+        "first_ns": 1793444826753035486,
+        "last_ns": 1793444831592371321,
+        "minimum_ns": 1793444826753035486,
+        "maximum_ns": 1793444831592371321,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 55204,
+          "maximum": 351078131,
+          "mean": 19513450.947580647,
+          "median": 19977091.0
+        }
+      },
+      "message_stamp": {
+        "first_ns": 500000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 20000000,
+          "mean": 241935.48387096773,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/simulation_state": {
+      "type": "reliability_interfaces/msg/SimulationState",
+      "count": 249,
+      "sha256": "9c2e4059ce9847131dd6c7184b24ca9e8e80d59ec771b9f22b18814dd0595d64",
+      "bag_receive": {
+        "first_ns": 1793444826753266808,
+        "last_ns": 1793444831592436681,
+        "minimum_ns": 1793444826753266808,
+        "maximum_ns": 1793444831592436681,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 45465,
+          "maximum": 350967272,
+          "mean": 19512781.745967742,
+          "median": 19978491.0
+        }
+      },
+      "message_stamp": {
+        "first_ns": 500000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 20000000,
+          "mean": 241935.48387096773,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/task_events": {
+      "type": "reliability_interfaces/msg/TaskEvent",
+      "count": 22,
+      "sha256": "e67926840e24f78bdaede1428e8f4731cd150152dd61fc86185008c3a10ced23",
+      "bag_receive": {
+        "first_ns": 1793444827546757042,
+        "last_ns": 1793444831392904558,
+        "minimum_ns": 1793444827546757042,
+        "maximum_ns": 1793444831392904558,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 99309,
+          "maximum": 1032079831,
+          "mean": 183149881.7142857,
+          "median": 16850678
+        }
+      },
+      "message_stamp": {
+        "first_ns": 0,
+        "last_ns": 340000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1040000000,
+        "backwards_jumps": 4,
+        "intervals_ns": {
+          "minimum": -1040000000,
+          "maximum": 1020000000,
+          "mean": 16190476.19047619,
+          "median": 0
+        }
+      }
+    },
+    "/clock": {
+      "type": "rosgraph_msgs/msg/Clock",
+      "count": 250,
+      "sha256": "8b29ac18e29c85d3e604814f6e2f32232e1626e6c1242cb266a1e05bfc61a782",
+      "bag_receive": {
+        "first_ns": 1793444826732546705,
+        "last_ns": 1793444831592140076,
+        "minimum_ns": 1793444826732546705,
+        "maximum_ns": 1793444831592140076,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 44170,
+          "maximum": 351350319,
+          "mean": 19516439.240963854,
+          "median": 19983480
+        }
+      },
+      "message_stamp": {
+        "first_ns": 480000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 20000000,
+          "mean": 321285.140562249,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/observed/state": {
+      "type": "reliability_interfaces/msg/ObservedState",
+      "count": 236,
+      "sha256": "e42bb7754d0a5a14db2e790ca75c789bf068c3f3a12fd7c34065c596fca34a25",
+      "bag_receive": {
+        "first_ns": 1793444827183521764,
+        "last_ns": 1793444831596210044,
+        "minimum_ns": 1793444827183521764,
+        "maximum_ns": 1793444831596210044,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 45455,
+          "maximum": 180345812,
+          "mean": 18777396.936170213,
+          "median": 19962487
+        }
+      },
+      "message_stamp": {
+        "first_ns": 600000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 180000000,
+          "mean": -170212.7659574468,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/observed/joint_states": {
+      "type": "sensor_msgs/msg/JointState",
+      "count": 219,
+      "sha256": "106849dd32bc40b5e8e009b29544315a7aeb626cc4441e6163ff011439d15c79",
+      "bag_receive": {
+        "first_ns": 1793444827192990720,
+        "last_ns": 1793444831593494524,
+        "minimum_ns": 1793444827192990720,
+        "maximum_ns": 1793444831593494524,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 5003752,
+          "maximum": 180239046,
+          "mean": 20185797.266055048,
+          "median": 19972539.5
+        }
+      },
+      "message_stamp": {
+        "first_ns": 940000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 180000000,
+          "mean": -1743119.2660550459,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/observed/ee_pose": {
+      "type": "geometry_msgs/msg/PoseStamped",
+      "count": 219,
+      "sha256": "6474a3ca42ecb4d9125e095c96000c2e663fc39c1093be2bff8cbcf72cb40e48",
+      "bag_receive": {
+        "first_ns": 1793444827194670620,
+        "last_ns": 1793444831594377319,
+        "minimum_ns": 1793444827194670620,
+        "maximum_ns": 1793444831594377319,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 4717324,
+          "maximum": 180369281,
+          "mean": 20182140.821100917,
+          "median": 19999335.0
+        }
+      },
+      "message_stamp": {
+        "first_ns": 940000000,
+        "last_ns": 560000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1280000000,
+          "maximum": 180000000,
+          "mean": -1743119.2660550459,
+          "median": 20000000.0
+        }
+      }
+    },
+    "/testbench/task_intent": {
+      "type": "reliability_interfaces/msg/TaskIntent",
+      "count": 248,
+      "sha256": "21d2ac5204914d1ab0b8c8131b2562e443bf3087c44211a7197c1393df0ca9bb",
+      "bag_receive": {
+        "first_ns": 1793444826752043089,
+        "last_ns": 1793444831592189300,
+        "minimum_ns": 1793444826752043089,
+        "maximum_ns": 1793444831592189300,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 38167,
+          "maximum": 351269585,
+          "mean": 19595733.64777328,
+          "median": 19984108
+        }
+      },
+      "message_stamp": {
+        "first_ns": 480000000,
+        "last_ns": 540000000,
+        "minimum_ns": 0,
+        "maximum_ns": 1260000000,
+        "backwards_jumps": 6,
+        "intervals_ns": {
+          "minimum": -1260000000,
+          "maximum": 20000000,
+          "mean": 242914.979757085,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/fault_events": {
+      "type": "reliability_interfaces/msg/FaultEvent",
+      "count": 13,
+      "sha256": "10093aa6d6c7477bcfd7cfd164e5a8d5f816767b20d5087175b5a761f1111725",
+      "bag_receive": {
+        "first_ns": 1793444827540547075,
+        "last_ns": 1793444831041476224,
+        "minimum_ns": 1793444827540547075,
+        "maximum_ns": 1793444831041476224,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 2506807,
+          "maximum": 1040677302,
+          "mean": 291744095.75,
+          "median": 91694661.0
+        }
+      },
+      "message_stamp": {
+        "first_ns": 1280000000,
+        "last_ns": 1020000000,
+        "minimum_ns": 20000000,
+        "maximum_ns": 1280000000,
+        "backwards_jumps": 5,
+        "intervals_ns": {
+          "minimum": -1040000000,
+          "maximum": 1040000000,
+          "mean": -21666666.666666668,
+          "median": 10000000.0
+        }
+      }
+    },
+    "/testbench/command_events": {
+      "type": "reliability_interfaces/msg/CommandEvent",
+      "count": 16,
+      "sha256": "8456c59f5ad3ce9105e328288d3f5e99c61cfceea384922d785c50966fa0e6e3",
+      "bag_receive": {
+        "first_ns": 1793444827558942572,
+        "last_ns": 1793444831062025640,
+        "minimum_ns": 1793444827558942572,
+        "maximum_ns": 1793444831062025640,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 99776,
+          "maximum": 959387569,
+          "mean": 233538871.2,
+          "median": 3690576
+        }
+      },
+      "message_stamp": {
+        "first_ns": 20000000,
+        "last_ns": 20000000,
+        "minimum_ns": 20000000,
+        "maximum_ns": 620000000,
+        "backwards_jumps": 2,
+        "intervals_ns": {
+          "minimum": -600000000,
+          "maximum": 600000000,
+          "mean": 0,
+          "median": 0
+        }
+      }
+    },
+    "/testbench/diagnostics": {
+      "type": "reliability_interfaces/msg/DiagnosticEvent",
+      "count": 7,
+      "sha256": "1fcd5c426a64f89009b62ff6d742a7eadc63f832c8e81efd00a54f8b34e3d64f",
+      "bag_receive": {
+        "first_ns": 1793444828473892255,
+        "last_ns": 1793444829595748252,
+        "minimum_ns": 1793444828473892255,
+        "maximum_ns": 1793444829595748252,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 115381,
+          "maximum": 441782356,
+          "mean": 186975999.5,
+          "median": 131629893.5
+        }
+      },
+      "message_stamp": {
+        "first_ns": 180000000,
+        "last_ns": 640000000,
+        "minimum_ns": 180000000,
+        "maximum_ns": 640000000,
+        "backwards_jumps": 1,
+        "intervals_ns": {
+          "minimum": -20000000,
+          "maximum": 400000000,
+          "mean": 76666666.66666667,
+          "median": 20000000.0
+        }
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 3,
+      "reason_code": "STALE_OBSERVATIONS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 11,
+      "observation_sequence": 2,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.15932193800108507,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "No valid affected observation within steady freshness threshold",
+      "bag_receive_ns": 1793444828473892255,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 4,
+      "reason_code": "OBSERVATION_GAP",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 11,
+      "observation_sequence": 11,
+      "missing_count": 8,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Source sequence skipped; cause is not identifiable",
+      "bag_receive_ns": 1793444828495349396,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 5,
+      "reason_code": "OBSERVATIONS_RECOVERED",
+      "active": false,
+      "recovered_reason": "STALE_OBSERVATIONS",
+      "goal_id": "",
+      "generation": 11,
+      "observation_sequence": 11,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Valid observation received",
+      "bag_receive_ns": 1793444828495464777,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 6,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "observation_sequence": 13,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000018,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished.",
+      "bag_receive_ns": 1793444828737267423,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 7,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "observation_sequence": 14,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.22000000000000014,
+      "displacement_metres": 0.29168041619154883,
+      "distance_metres": 0.032131442381656966,
+      "evidence": "Movement observed",
+      "bag_receive_ns": 1793444828754592862,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 8,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "observation_sequence": 13,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000018,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished.",
+      "bag_receive_ns": 1793444829196375218,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 640000000
+      },
+      "monitor_session": "3a72c2af628c4ebfa51dd513f4c3a4a7",
+      "sequence": 9,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "observation_sequence": 33,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.6000000000000004,
+      "displacement_metres": 0.014892555505821272,
+      "distance_metres": 0.30794035221089017,
+      "evidence": "Movement observed",
+      "bag_receive_ns": 1793444829595748252,
+      "message_stamp_ns": 640000000
+    }
+  ],
+  "faults": [
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 280000000
+      },
+      "generation": 9,
+      "revision": 10,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444827540547075,
+      "message_stamp_ns": 1280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 760000000
+      },
+      "generation": 10,
+      "revision": 11,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828296371405,
+      "message_stamp_ns": 760000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 11,
+      "revision": 12,
+      "event": "CONFIGURED",
+      "activated": [
+        "stop_publication"
+      ],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": true,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828315646923,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "generation": 11,
+      "revision": 13,
+      "event": "CONFIGURED",
+      "activated": [],
+      "deactivated": [
+        "stop_publication"
+      ],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": true,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828476534925,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "generation": 11,
+      "revision": 14,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828499036245,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 12,
+      "revision": 15,
+      "event": "CONFIGURED",
+      "activated": [
+        "freeze"
+      ],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": true,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828516453112,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "generation": 12,
+      "revision": 16,
+      "event": "CONFIGURED",
+      "activated": [],
+      "deactivated": [
+        "freeze"
+      ],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": true,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828739593409,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 460000000
+      },
+      "generation": 12,
+      "revision": 17,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828957951590,
+      "message_stamp_ns": 460000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 13,
+      "revision": 18,
+      "event": "CONFIGURED",
+      "activated": [
+        "command_delay_seconds"
+      ],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.6,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444828976221572,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 60000000
+      },
+      "generation": 13,
+      "revision": 19,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [
+        "command_delay_seconds"
+      ],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.6,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444830016898874,
+      "message_stamp_ns": 1060000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 14,
+      "revision": 20,
+      "event": "CONFIGURED",
+      "activated": [
+        "command_delay_seconds"
+      ],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.7,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444830036167968,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 20000000
+      },
+      "generation": 14,
+      "revision": 21,
+      "event": "CONFIGURED",
+      "activated": [],
+      "deactivated": [
+        "command_delay_seconds"
+      ],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.7,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444831038969417,
+      "message_stamp_ns": 1020000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 20000000
+      },
+      "generation": 14,
+      "revision": 22,
+      "event": "RESET",
+      "activated": [],
+      "deactivated": [],
+      "previous": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "configuration": {
+        "drop_every_n": 0,
+        "freeze": false,
+        "stop_publication": false,
+        "command_delay_seconds": 0.0,
+        "queue_capacity": 8,
+        "seed": 7
+      },
+      "detail": "Fixed deterministic faults; seed is metadata, no random draws",
+      "bag_receive_ns": 1793444831041476224,
+      "message_stamp_ns": 1020000000
+    }
+  ],
+  "commands": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 10,
+      "sequence": 9,
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "QUEUED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444827558942572,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 10,
+      "sequence": 9,
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "FORWARDED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444827559053677,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 10,
+      "sequence": 9,
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "APPLIED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.020000000000000004,
+      "pending_count": 1,
+      "detail": "Applied",
+      "bag_receive_ns": 1793444827562739473,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 12,
+      "sequence": 10,
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "QUEUED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444828522127042,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 12,
+      "sequence": 10,
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "FORWARDED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444828522241722,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 12,
+      "sequence": 10,
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "APPLIED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.020000000000000004,
+      "pending_count": 1,
+      "detail": "Applied",
+      "bag_receive_ns": 1793444828525933524,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 13,
+      "sequence": 11,
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "QUEUED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.62,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444828981671084,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "generation": 13,
+      "sequence": 11,
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "FORWARDED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.62,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444829575151594,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "generation": 13,
+      "sequence": 11,
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "APPLIED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.62,
+      "applied_simulation_time": 0.6200000000000004,
+      "pending_count": 1,
+      "detail": "Applied",
+      "bag_receive_ns": 1793444829578842170,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 14,
+      "sequence": 12,
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "QUEUED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.72,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444830047339052,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "generation": 14,
+      "sequence": 12,
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "operation": 0,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "event": "PURGED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.72,
+      "applied_simulation_time": 0.0,
+      "pending_count": 0,
+      "detail": "Superseded by hold",
+      "bag_receive_ns": 1793444830215423280,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "generation": 14,
+      "sequence": 13,
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "operation": 1,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "event": "FORWARDED",
+      "enqueued_simulation_time": 0.20000000000000015,
+      "due_simulation_time": 0.9000000000000001,
+      "applied_simulation_time": 0.0,
+      "pending_count": 0,
+      "detail": "Hold bypasses delay",
+      "bag_receive_ns": 1793444830215611281,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "generation": 14,
+      "sequence": 13,
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "operation": 1,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "event": "APPLIED",
+      "enqueued_simulation_time": 0.20000000000000015,
+      "due_simulation_time": 0.9000000000000001,
+      "applied_simulation_time": 0.20000000000000015,
+      "pending_count": 0,
+      "detail": "Applied",
+      "bag_receive_ns": 1793444830217611673,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 15,
+      "sequence": 14,
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "operation": 0,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "event": "QUEUED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444831058515721,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 15,
+      "sequence": 14,
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "operation": 0,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "event": "FORWARDED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.0,
+      "pending_count": 1,
+      "detail": "",
+      "bag_receive_ns": 1793444831058615497,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "generation": 15,
+      "sequence": 14,
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "operation": 0,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "event": "APPLIED",
+      "enqueued_simulation_time": 0.020000000000000004,
+      "due_simulation_time": 0.020000000000000004,
+      "applied_simulation_time": 0.020000000000000004,
+      "pending_count": 1,
+      "detail": "Applied",
+      "bag_receive_ns": 1793444831062025640,
+      "message_stamp_ns": 20000000
+    }
+  ],
+  "intent": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 480000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444826752043089,
+      "message_stamp_ns": 480000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 500000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444826772159509,
+      "message_stamp_ns": 500000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 520000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444826792133641,
+      "message_stamp_ns": 520000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 540000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444826812142803,
+      "message_stamp_ns": 540000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 560000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444826832115518,
+      "message_stamp_ns": 560000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 580000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827183385103,
+      "message_stamp_ns": 580000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 600000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827183553580,
+      "message_stamp_ns": 600000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827183643163,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 640000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827183716911,
+      "message_stamp_ns": 640000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184410695,
+      "message_stamp_ns": 660000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 680000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184448862,
+      "message_stamp_ns": 680000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 700000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184532944,
+      "message_stamp_ns": 700000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 720000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184596623,
+      "message_stamp_ns": 720000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 740000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184671040,
+      "message_stamp_ns": 740000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 760000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184718321,
+      "message_stamp_ns": 760000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 780000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184765572,
+      "message_stamp_ns": 780000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 800000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184855348,
+      "message_stamp_ns": 800000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 820000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827184969205,
+      "message_stamp_ns": 820000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 840000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827185069118,
+      "message_stamp_ns": 840000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 860000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827185144370,
+      "message_stamp_ns": 860000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 880000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827185199557,
+      "message_stamp_ns": 880000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 900000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827185244967,
+      "message_stamp_ns": 900000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 920000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827192016039,
+      "message_stamp_ns": 920000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 940000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827211959606,
+      "message_stamp_ns": 940000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 960000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827231928500,
+      "message_stamp_ns": 960000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 980000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827252253634,
+      "message_stamp_ns": 980000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827272370985,
+      "message_stamp_ns": 1000000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 20000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827292049769,
+      "message_stamp_ns": 1020000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 40000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827312219229,
+      "message_stamp_ns": 1040000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 60000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827332117778,
+      "message_stamp_ns": 1060000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 80000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827352134301,
+      "message_stamp_ns": 1080000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 100000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827372163761,
+      "message_stamp_ns": 1100000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 120000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827392186301,
+      "message_stamp_ns": 1120000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 140000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827412151405,
+      "message_stamp_ns": 1140000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 160000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827432278938,
+      "message_stamp_ns": 1160000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 180000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827452125515,
+      "message_stamp_ns": 1180000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 200000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827472153251,
+      "message_stamp_ns": 1200000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 220000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827492126016,
+      "message_stamp_ns": 1220000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 240000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827512344659,
+      "message_stamp_ns": 1240000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 260000000
+      },
+      "goal_id": "",
+      "generation": 9,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827532079774,
+      "message_stamp_ns": 1260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827552065239,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827558486513,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827572060657,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827592427804,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827612232406,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827632318315,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827652177560,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827672199831,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827692085850,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827712231115,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827732129999,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827752283947,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 220000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827772342629,
+      "message_stamp_ns": 220000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827792434181,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827812251554,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 280000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827832324545,
+      "message_stamp_ns": 280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827852358372,
+      "message_stamp_ns": 300000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827872274631,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 340000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827892180641,
+      "message_stamp_ns": 340000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 360000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827912508381,
+      "message_stamp_ns": 360000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 380000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827932277407,
+      "message_stamp_ns": 380000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 400000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827952246474,
+      "message_stamp_ns": 400000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 420000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827972266705,
+      "message_stamp_ns": 420000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 440000000
+      },
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "generation": 10,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444827992385858,
+      "message_stamp_ns": 440000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 460000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828012198388,
+      "message_stamp_ns": 460000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 480000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828032257815,
+      "message_stamp_ns": 480000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 500000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828052365990,
+      "message_stamp_ns": 500000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 520000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828072272846,
+      "message_stamp_ns": 520000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 540000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828092305494,
+      "message_stamp_ns": 540000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 560000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828112233609,
+      "message_stamp_ns": 560000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 580000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828132255299,
+      "message_stamp_ns": 580000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 600000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828152071800,
+      "message_stamp_ns": 600000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828172216262,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 640000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828192236212,
+      "message_stamp_ns": 640000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828212197525,
+      "message_stamp_ns": 660000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 680000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828232047677,
+      "message_stamp_ns": 680000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 700000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828252129557,
+      "message_stamp_ns": 700000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 720000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828272176305,
+      "message_stamp_ns": 720000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 740000000
+      },
+      "goal_id": "",
+      "generation": 10,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828292131057,
+      "message_stamp_ns": 740000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828311842103,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828332176390,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828352103389,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828372155936,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828392091161,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828412322252,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828432191858,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828452096633,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828472161151,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "",
+      "generation": 11,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828492036924,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 12,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828512075177,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828521937812,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828532138052,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828552126661,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828572201130,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828592305060,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828612206477,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828632209502,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828652213731,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828672122022,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828692106130,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828712246140,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 220000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828732134711,
+      "message_stamp_ns": 220000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828752244006,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828772163844,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 280000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828792257914,
+      "message_stamp_ns": 280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828812187581,
+      "message_stamp_ns": 300000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828832167282,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 340000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828852014905,
+      "message_stamp_ns": 340000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 360000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828872031144,
+      "message_stamp_ns": 360000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 380000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828891988134,
+      "message_stamp_ns": 380000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 400000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828911995337,
+      "message_stamp_ns": 400000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 420000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828932127608,
+      "message_stamp_ns": 420000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 440000000
+      },
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "generation": 12,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828952135532,
+      "message_stamp_ns": 440000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 13,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828972081488,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828981106043,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444828992124643,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829012125320,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829032155304,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829052181762,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829072201356,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829092197690,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829112192751,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829132194254,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829152151496,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829172142752,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 220000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829192166802,
+      "message_stamp_ns": 220000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829212614733,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829232169722,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 280000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829252142628,
+      "message_stamp_ns": 280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829272318661,
+      "message_stamp_ns": 300000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829292161932,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 340000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829312377553,
+      "message_stamp_ns": 340000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 360000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829332290514,
+      "message_stamp_ns": 360000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 380000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829352353205,
+      "message_stamp_ns": 380000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 400000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829372297932,
+      "message_stamp_ns": 400000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 420000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829392246128,
+      "message_stamp_ns": 420000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 440000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829412345071,
+      "message_stamp_ns": 440000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 460000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829432179548,
+      "message_stamp_ns": 460000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 480000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829452265170,
+      "message_stamp_ns": 480000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 500000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829472203454,
+      "message_stamp_ns": 500000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 520000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829492267627,
+      "message_stamp_ns": 520000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 540000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829512277386,
+      "message_stamp_ns": 540000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 560000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829532239696,
+      "message_stamp_ns": 560000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 580000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829552218373,
+      "message_stamp_ns": 580000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 600000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829572194145,
+      "message_stamp_ns": 600000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829592217319,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 640000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829612346664,
+      "message_stamp_ns": 640000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829632248928,
+      "message_stamp_ns": 660000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 680000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829652255183,
+      "message_stamp_ns": 680000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 700000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829672265637,
+      "message_stamp_ns": 700000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 720000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829692232299,
+      "message_stamp_ns": 720000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 740000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829712368625,
+      "message_stamp_ns": 740000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 760000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829732216500,
+      "message_stamp_ns": 760000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 780000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829752260220,
+      "message_stamp_ns": 780000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 800000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829772408820,
+      "message_stamp_ns": 800000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 820000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829792333567,
+      "message_stamp_ns": 820000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 840000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829812225286,
+      "message_stamp_ns": 840000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 860000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829832362826,
+      "message_stamp_ns": 860000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 880000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829852334256,
+      "message_stamp_ns": 880000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 900000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829872344343,
+      "message_stamp_ns": 900000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 920000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829892349737,
+      "message_stamp_ns": 920000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 940000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829912307896,
+      "message_stamp_ns": 940000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 960000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829932262998,
+      "message_stamp_ns": 960000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 980000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829952330009,
+      "message_stamp_ns": 980000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 0
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829972210431,
+      "message_stamp_ns": 1000000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 20000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444829992344916,
+      "message_stamp_ns": 1020000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 40000000
+      },
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "generation": 13,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830012334831,
+      "message_stamp_ns": 1040000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830032184858,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830046793479,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830052150325,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830072069927,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830092243820,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830112278797,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830132161400,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830152246422,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830172137439,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830192147730,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": true,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830212122222,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "goal_id": "45fabdd0ea0b4784a2ed14ecf0231e7a",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830232269654,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 220000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830252197871,
+      "message_stamp_ns": 220000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830272121737,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830292079352,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 280000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830312164702,
+      "message_stamp_ns": 280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830332210383,
+      "message_stamp_ns": 300000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830352307159,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 340000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830372245676,
+      "message_stamp_ns": 340000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 360000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830392111423,
+      "message_stamp_ns": 360000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 380000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830412197388,
+      "message_stamp_ns": 380000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 400000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830432152970,
+      "message_stamp_ns": 400000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 420000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830452061614,
+      "message_stamp_ns": 420000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 440000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830472114196,
+      "message_stamp_ns": 440000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 460000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830492159916,
+      "message_stamp_ns": 460000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 480000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830512118298,
+      "message_stamp_ns": 480000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 500000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830532145439,
+      "message_stamp_ns": 500000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 520000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830552236824,
+      "message_stamp_ns": 520000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 540000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830572112367,
+      "message_stamp_ns": 540000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 560000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830592262550,
+      "message_stamp_ns": 560000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 580000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830612148275,
+      "message_stamp_ns": 580000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 600000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830632179842,
+      "message_stamp_ns": 600000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 620000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830652080733,
+      "message_stamp_ns": 620000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 640000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830672232214,
+      "message_stamp_ns": 640000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830692217142,
+      "message_stamp_ns": 660000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 680000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830712272201,
+      "message_stamp_ns": 680000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 700000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830732272549,
+      "message_stamp_ns": 700000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 720000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830752288568,
+      "message_stamp_ns": 720000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 740000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830772268861,
+      "message_stamp_ns": 740000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 760000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830792203531,
+      "message_stamp_ns": 760000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 780000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830812186022,
+      "message_stamp_ns": 780000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 800000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830832187890,
+      "message_stamp_ns": 800000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 820000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830852347777,
+      "message_stamp_ns": 820000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 840000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830872350565,
+      "message_stamp_ns": 840000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 860000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830892238717,
+      "message_stamp_ns": 860000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 880000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830912145864,
+      "message_stamp_ns": 880000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 900000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830932168169,
+      "message_stamp_ns": 900000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 920000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830952224416,
+      "message_stamp_ns": 920000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 940000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830972204070,
+      "message_stamp_ns": 940000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 960000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444830992201811,
+      "message_stamp_ns": 960000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 980000000
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831012133224,
+      "message_stamp_ns": 980000000
+    },
+    {
+      "stamp": {
+        "sec": 1,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 14,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831032043944,
+      "message_stamp_ns": 1000000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831051891482,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831058217744,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 20000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831071921297,
+      "message_stamp_ns": 20000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 40000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831091980260,
+      "message_stamp_ns": 40000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831112346854,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 80000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831132133163,
+      "message_stamp_ns": 80000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 100000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831152172207,
+      "message_stamp_ns": 100000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 120000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831172143658,
+      "message_stamp_ns": 120000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 140000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831192252293,
+      "message_stamp_ns": 140000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831212242337,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831232468056,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 200000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831252203815,
+      "message_stamp_ns": 200000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 220000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831272255820,
+      "message_stamp_ns": 220000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831292124376,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831312213191,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 280000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831332136434,
+      "message_stamp_ns": 280000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 300000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831352180957,
+      "message_stamp_ns": 300000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 320000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831372151474,
+      "message_stamp_ns": 320000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 340000000
+      },
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "generation": 15,
+      "active": true,
+      "target": {
+        "x": 0.5,
+        "y": -0.08,
+        "z": 0.55
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831392212440,
+      "message_stamp_ns": 340000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 360000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831412141528,
+      "message_stamp_ns": 360000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 380000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831432181524,
+      "message_stamp_ns": 380000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 400000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831452287233,
+      "message_stamp_ns": 400000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 420000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831472089651,
+      "message_stamp_ns": 420000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 440000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831492270674,
+      "message_stamp_ns": 440000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 460000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831512401695,
+      "message_stamp_ns": 460000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 480000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831532159055,
+      "message_stamp_ns": 480000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 500000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831552174289,
+      "message_stamp_ns": 500000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 520000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831572163205,
+      "message_stamp_ns": 520000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 540000000
+      },
+      "goal_id": "",
+      "generation": 15,
+      "active": false,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tolerance": 0.005,
+      "bag_receive_ns": 1793444831592189300,
+      "message_stamp_ns": 540000000
+    }
+  ],
+  "command_delays": [
+    {
+      "goal_id": "147f86176aad4cf390041536978ecbfe",
+      "sequence": 9,
+      "actual_delay_simulation_seconds": 0.0,
+      "configured_delay_simulation_seconds": 0.0
+    },
+    {
+      "goal_id": "59af61245e9e42b5bad3b349ae62b7cd",
+      "sequence": 10,
+      "actual_delay_simulation_seconds": 0.0,
+      "configured_delay_simulation_seconds": 0.0
+    },
+    {
+      "goal_id": "5cea2a272268469e9bba4d386e52e525",
+      "sequence": 11,
+      "actual_delay_simulation_seconds": 0.6000000000000004,
+      "configured_delay_simulation_seconds": 0.6
+    },
+    {
+      "goal_id": "9a291e3b7e77421eb09b0236b111eac4",
+      "sequence": 14,
+      "actual_delay_simulation_seconds": 0.0,
+      "configured_delay_simulation_seconds": 0.0
+    }
+  ],
+  "fault_to_diagnostic_timing": [
+    {
+      "reason_code": "STALE_OBSERVATIONS",
+      "fault_revision": 12,
+      "receive_latency_seconds": 0.158245332,
+      "simulation_stamp_delta_seconds": 0.16
+    },
+    {
+      "reason_code": "OBSERVATION_GAP",
+      "fault_revision": 13,
+      "receive_latency_seconds": 0.018814471,
+      "simulation_stamp_delta_seconds": 0.02
+    },
+    {
+      "reason_code": "OBSERVATIONS_RECOVERED",
+      "fault_revision": 13,
+      "receive_latency_seconds": 0.018929852,
+      "simulation_stamp_delta_seconds": 0.02
+    },
+    {
+      "reason_code": "NO_PROGRESS",
+      "fault_revision": 15,
+      "receive_latency_seconds": 0.220814311,
+      "simulation_stamp_delta_seconds": 0.22
+    },
+    {
+      "reason_code": "PROGRESS_RECOVERED",
+      "fault_revision": 16,
+      "receive_latency_seconds": 0.014999453,
+      "simulation_stamp_delta_seconds": 0.02
+    },
+    {
+      "reason_code": "NO_PROGRESS",
+      "fault_revision": 18,
+      "receive_latency_seconds": 0.220153646,
+      "simulation_stamp_delta_seconds": 0.22
+    },
+    {
+      "reason_code": "PROGRESS_RECOVERED",
+      "fault_revision": 18,
+      "receive_latency_seconds": 0.61952668,
+      "simulation_stamp_delta_seconds": 0.62
+    }
+  ],
+  "diagnostic_signature": {
+    "lifecycle": [
+      [
+        "STALE_OBSERVATIONS",
+        true,
+        "",
+        ""
+      ],
+      [
+        "OBSERVATIONS_RECOVERED",
+        false,
+        "STALE_OBSERVATIONS",
+        ""
+      ],
+      [
+        "NO_PROGRESS",
+        true,
+        "",
+        "59af61245e9e42b5bad3b349ae62b7cd"
+      ],
+      [
+        "PROGRESS_RECOVERED",
+        false,
+        "NO_PROGRESS",
+        "59af61245e9e42b5bad3b349ae62b7cd"
+      ],
+      [
+        "NO_PROGRESS",
+        true,
+        "",
+        "5cea2a272268469e9bba4d386e52e525"
+      ],
+      [
+        "PROGRESS_RECOVERED",
+        false,
+        "NO_PROGRESS",
+        "5cea2a272268469e9bba4d386e52e525"
+      ]
+    ],
+    "gaps": [
+      [
+        "OBSERVATION_GAP",
+        11,
+        11,
+        8
+      ]
+    ]
+  },
+  "timing_limitations": "Receive latency includes independent DDS/recorder scheduling; simulation stamps can reset. Fault-to-diagnostic association is temporal evidence, not monitor root-cause inference."
+}

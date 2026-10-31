@@ -1,0 +1,40 @@
+[INFO] [1793449917.567330693] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+[INFO] [1793449917.707008046] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+{
+  "success": true,
+  "scenarios": [
+    {
+      "scenario": "healthy_baseline",
+      "passed": true
+    },
+    {
+      "scenario": "missing_observations",
+      "passed": true
+    },
+    {
+      "scenario": "frozen_observations",
+      "passed": true
+    },
+    {
+      "scenario": "delayed_commands",
+      "passed": true
+    },
+    {
+      "scenario": "queued_timeout",
+      "passed": true
+    },
+    {
+      "scenario": "recovery",
+      "passed": true
+    }
+  ],
+  "bag": "/workspace/bags/portfolio/faults"
+}
+[INFO] [1793449924.449137598] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+[INFO] [1793449924.504905615] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+[INFO] [launch]: All log files can be found below /workspace/reports/ros-logs/2026-10-31-12-32-04-754550-f4d5ca6ed8da-186
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [fault_replay-1]: process started with pid [189]
+[fault_replay-1] [INFO] [1793449924.877372052] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+[fault_replay-1] [INFO] [1793449924.933962359] [rosbag2_storage]: Opened database '/workspace/bags/portfolio/faults/faults_0.db3' for READ_ONLY.
+[INFO] [fault_replay-1]: process has finished cleanly [pid 189]

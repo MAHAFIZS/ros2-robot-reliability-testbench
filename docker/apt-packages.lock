@@ -1,0 +1,15 @@
+git=1:2.43.0-1ubuntu7.4
+libgl1=1.7.0-1build1
+libglfw3=3.3.10-1build1
+python3-colcon-common-extensions=0.3.0-100
+python3-pip=24.0+dfsg-1ubuntu1.3
+python3-pytest=7.4.4-1
+python3-venv=3.12.3-0ubuntu2.1
+ros-jazzy-launch-testing=3.4.12-1noble.20260920.233733
+ros-jazzy-launch-testing-ament-cmake=3.4.12-1noble.20260920.233931
+ros-jazzy-ros2launch=0.26.13-1noble.20261006.034901
+ros-jazzy-rosbag2=0.26.11-1noble.20261006.034645
+ros-jazzy-rosbag2-storage-default-plugins=0.26.11-1noble.20260911.144711
+ros-jazzy-rosidl-default-generators=1.6.1-1noble.20260911.052510
+ros-jazzy-rosidl-default-runtime=1.6.1-1noble.20260911.052508
+tini=0.19.0-1

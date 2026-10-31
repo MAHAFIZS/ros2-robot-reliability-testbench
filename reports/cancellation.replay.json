@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "live_domain": 87,
+  "replay_domain": 88,
+  "topics": {
+    "/testbench/raw/joint_states": {
+      "count": 6,
+      "sha256": "b5dcd31505644789cda1d71b688558a3bf0675630e214a8a945520198ad1378b"
+    },
+    "/testbench/raw/ee_pose": {
+      "count": 6,
+      "sha256": "49268b5341cb44962736db2a5ea3e6ed2831329b0a087fdc498ca2f4f60724b5"
+    },
+    "/testbench/simulation_state": {
+      "count": 6,
+      "sha256": "a601b41dde4f40de2034c512a64836984673a83a6234d5f4ee91788df915577a"
+    },
+    "/testbench/task_events": {
+      "count": 5,
+      "sha256": "26bb67cf1cfab9660d66ae433611ddc1653b8449065b1649f7dc5818604fdb9a"
+    },
+    "/clock": {
+      "count": 6,
+      "sha256": "cd59acd7528ebbec20694b3bd93f7d44d4daa718a79250827c8ff511d1c45144"
+    }
+  },
+  "task_event_order": [
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      14,
+      "reset:fcfb61b828164f9188f31d5ce3f2c5a9",
+      "RESET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      15,
+      "84bd8d1a26d742d383c852cc096a3032",
+      "ACCEPTED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      16,
+      "84bd8d1a26d742d383c852cc096a3032",
+      "TARGET"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      17,
+      "84bd8d1a26d742d383c852cc096a3032",
+      "CANCELED"
+    ],
+    [
+      "3e0ccc04c6074f08927094f484292916",
+      18,
+      "84bd8d1a26d742d383c852cc096a3032",
+      "COMPLETED"
+    ]
+  ],
+  "publisher_nodes": {
+    "/testbench/raw/joint_states": "rosbag2_player",
+    "/testbench/raw/ee_pose": "rosbag2_player",
+    "/testbench/simulation_state": "rosbag2_player",
+    "/testbench/task_events": "rosbag2_player",
+    "/clock": "rosbag2_player"
+  },
+  "clock_policy": "Recorded /clock only; no synthetic player clock",
+  "command_services_in_replay": [],
+  "subscribers_ready_before_resume": true,
+  "unexpected_testbench_topics": [],
+  "excluded_bag_topics": [],
+  "readiness_wall_seconds": 0.6824298900010035,
+  "playback_wall_seconds": 0.3245688219994918,
+  "timing_comparison": "Wall timing is not required to match capture; per-topic contents and event order are exact"
+}

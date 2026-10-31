@@ -1,0 +1,375 @@
+{
+  "success": true,
+  "live_domain": 87,
+  "replay_domain": 88,
+  "replayed_topics": [
+    "/testbench/observed/state",
+    "/testbench/task_intent",
+    "/clock"
+  ],
+  "forbidden_published_topics": [],
+  "inputs": {
+    "/testbench/observed/state": {
+      "count": 208,
+      "sha256": "36a5e6a226c65cabbb0d20b4ceb7c4b9c0ce319f350f52fce84ca5514d6de123"
+    },
+    "/testbench/task_intent": {
+      "count": 214,
+      "sha256": "6daea18a5f4524a3efd6718c6690e8df3c018b289bc3b29f3ce82f85849c18c6"
+    },
+    "/clock": {
+      "count": 216,
+      "sha256": "45ddfe0ca78027942380aa65be4bc74ccb3dd8c779768aedc7eaa442a740246c"
+    }
+  },
+  "recorded_diagnostics": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 3,
+      "reason_code": "STALE_OBSERVATIONS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 1,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.15597239499948046,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "No valid affected observation within steady freshness threshold",
+      "bag_receive_ns": 1793445567853996314,
+      "message_stamp_ns": 160000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 4,
+      "reason_code": "OBSERVATION_GAP",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 10,
+      "missing_count": 8,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Source sequence skipped; cause is not identifiable",
+      "bag_receive_ns": 1793445567874435127,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 5,
+      "reason_code": "OBSERVATIONS_RECOVERED",
+      "active": false,
+      "recovered_reason": "STALE_OBSERVATIONS",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 10,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Valid observation received",
+      "bag_receive_ns": 1793445567874542725,
+      "message_stamp_ns": 180000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 6,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "38860e1c11354f038de69ba248b04935",
+      "generation": 4,
+      "observation_sequence": 13,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000018,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished.",
+      "bag_receive_ns": 1793445568113327384,
+      "message_stamp_ns": 240000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 7,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "38860e1c11354f038de69ba248b04935",
+      "generation": 4,
+      "observation_sequence": 14,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.22000000000000014,
+      "displacement_metres": 0.29168041619154883,
+      "distance_metres": 0.032131442381656966,
+      "evidence": "Movement observed",
+      "bag_receive_ns": 1793445568134530371,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 8,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "53dcb2931009406ba72611a67b9580e3",
+      "generation": 5,
+      "observation_sequence": 14,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000012,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished.",
+      "bag_receive_ns": 1793445568572406901,
+      "message_stamp_ns": 260000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "monitor_session": "b00505d49bed44e49753238910c897f7",
+      "sequence": 9,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "53dcb2931009406ba72611a67b9580e3",
+      "generation": 5,
+      "observation_sequence": 34,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.6000000000000004,
+      "displacement_metres": 0.014892555505821272,
+      "distance_metres": 0.30794035221089017,
+      "evidence": "Movement observed",
+      "bag_receive_ns": 1793445568974887357,
+      "message_stamp_ns": 660000000
+    }
+  ],
+  "new_diagnostics": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 160000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 1,
+      "reason_code": "STALE_OBSERVATIONS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 1,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.15890777599997818,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "No valid affected observation within steady freshness threshold"
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 2,
+      "reason_code": "OBSERVATION_GAP",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 10,
+      "missing_count": 8,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Source sequence skipped; cause is not identifiable"
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 180000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 3,
+      "reason_code": "OBSERVATIONS_RECOVERED",
+      "active": false,
+      "recovered_reason": "STALE_OBSERVATIONS",
+      "goal_id": "",
+      "generation": 3,
+      "observation_sequence": 10,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.0,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.0,
+      "evidence": "Valid observation received"
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 240000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 4,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "38860e1c11354f038de69ba248b04935",
+      "generation": 4,
+      "observation_sequence": 13,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000018,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished."
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 5,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "38860e1c11354f038de69ba248b04935",
+      "generation": 4,
+      "observation_sequence": 14,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.22000000000000014,
+      "displacement_metres": 0.29168041619154883,
+      "distance_metres": 0.032131442381656966,
+      "evidence": "Movement observed"
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 260000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 6,
+      "reason_code": "NO_PROGRESS",
+      "active": true,
+      "recovered_reason": "",
+      "goal_id": "53dcb2931009406ba72611a67b9580e3",
+      "generation": 5,
+      "observation_sequence": 14,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.20000000000000012,
+      "displacement_metres": 0.0,
+      "distance_metres": 0.3222906123454052,
+      "evidence": "Active target outside tolerance; no significant observed displacement/error reduction. Sensor freeze, command delay or stalled motion cannot be distinguished."
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 660000000
+      },
+      "monitor_session": "31a91796de0941ca8988ed028a543dac",
+      "sequence": 7,
+      "reason_code": "PROGRESS_RECOVERED",
+      "active": false,
+      "recovered_reason": "NO_PROGRESS",
+      "goal_id": "53dcb2931009406ba72611a67b9580e3",
+      "generation": 5,
+      "observation_sequence": 34,
+      "missing_count": 0,
+      "observation_age_steady_seconds": 0.0,
+      "window_simulation_seconds": 0.6000000000000004,
+      "displacement_metres": 0.014892555505821272,
+      "distance_metres": 0.30794035221089017,
+      "evidence": "Movement observed"
+    }
+  ],
+  "new_diagnostic_topic": "/replay/diagnostics",
+  "comparison": {
+    "lifecycle": [
+      [
+        "STALE_OBSERVATIONS",
+        true,
+        "",
+        ""
+      ],
+      [
+        "OBSERVATIONS_RECOVERED",
+        false,
+        "STALE_OBSERVATIONS",
+        ""
+      ],
+      [
+        "NO_PROGRESS",
+        true,
+        "",
+        "38860e1c11354f038de69ba248b04935"
+      ],
+      [
+        "PROGRESS_RECOVERED",
+        false,
+        "NO_PROGRESS",
+        "38860e1c11354f038de69ba248b04935"
+      ],
+      [
+        "NO_PROGRESS",
+        true,
+        "",
+        "53dcb2931009406ba72611a67b9580e3"
+      ],
+      [
+        "PROGRESS_RECOVERED",
+        false,
+        "NO_PROGRESS",
+        "53dcb2931009406ba72611a67b9580e3"
+      ]
+    ],
+    "gaps": [
+      [
+        "OBSERVATION_GAP",
+        3,
+        10,
+        8
+      ]
+    ]
+  },
+  "watchdog_arming": "First captured affected observation; recorder-discovery prefix is incomplete",
+  "playback_wall_seconds": 4.403026900999976,
+  "limitation": "Reason/lifecycle order and gap order compared separately; steady watchdog timing and cross-writer interleaving need not be identical. No recorded diagnostic/fault label is an input."
+}

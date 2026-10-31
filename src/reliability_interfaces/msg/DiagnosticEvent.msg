@@ -1,0 +1,15 @@
+builtin_interfaces/Time stamp
+string monitor_session
+uint64 sequence
+string reason_code
+bool active
+string recovered_reason
+string goal_id
+uint64 generation
+uint64 observation_sequence
+uint64 missing_count
+float64 observation_age_steady_seconds
+float64 window_simulation_seconds
+float64 displacement_metres
+float64 distance_metres
+string evidence

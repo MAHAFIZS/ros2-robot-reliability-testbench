@@ -1,0 +1,9 @@
+builtin_interfaces/Time stamp
+uint64 generation
+uint64 revision
+string event
+string[] activated
+string[] deactivated
+reliability_interfaces/FaultConfiguration previous
+reliability_interfaces/FaultConfiguration configuration
+string detail

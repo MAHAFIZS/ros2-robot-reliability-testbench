@@ -1,0 +1,11 @@
+geometry_msgs/Point target
+---
+bool success
+float64 final_error
+# MuJoCo elapsed seconds since goal command, excluding startup and reset.
+float64 elapsed_time
+string message
+---
+float64 distance
+float64 progress
+float64 elapsed_time

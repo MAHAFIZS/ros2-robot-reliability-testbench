@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="milestone_f_documentation_walkthrough" tests="5" failures="0"><testcase name="historical_junit_and_runtime_fingerprint" /><testcase name="relative_links_and_bash_syntax" /><testcase name="healthy_demo" /><testcase name="fault_record_analysis_and_fresh_replay" /><testcase name="fresh_short_acceptance" /></testsuite>

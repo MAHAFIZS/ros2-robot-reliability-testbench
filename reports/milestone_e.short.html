@@ -1,0 +1,832 @@
+<!doctype html><meta charset="utf-8"><title>Robot endurance</title><style>body{font:16px sans-serif;margin:2em}td,th{border:1px solid #aaa;padding:.5em}pre{white-space:pre-wrap}</style><h1>Healthy endurance: PASS</h1><table><tr><th>Criterion</th><th>Result</th><th>Observed</th><th>Required before run</th></tr><tr><td>completed_window</td><td>PASS</td><td><pre>18.00855444300032</pre></td><td><pre>18.0</pre></td></tr><tr><td>minimum_tasks</td><td>PASS</td><td><pre>34</pre></td><td><pre>10</pre></td></tr><tr><td>all_tasks_succeeded</td><td>PASS</td><td><pre>34</pre></td><td><pre>34</pre></td></tr><tr><td>final_position_error</td><td>PASS</td><td><pre>0.004914287793266527</pre></td><td><pre>0.005</pre></td></tr><tr><td>bounded_task_wall_time</td><td>PASS</td><td><pre>0.40133865300049365</pre></td><td><pre>6.0</pre></td></tr><tr><td>continuous_observations</td><td>PASS</td><td><pre>{
+  &quot;count&quot;: 902,
+  &quot;missing_sequences&quot;: 0,
+  &quot;max_receive_interval_seconds&quot;: 0.023499892000472755,
+  &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+}</pre></td><td><pre>{&quot;min_count&quot;: 1, &quot;missing_sequences&quot;: 0, &quot;max_interval&quot;: 0.15}</pre></td></tr><tr><td>no_unexpected_diagnostics</td><td>PASS</td><td><pre>{}</pre></td><td><pre>[]</pre></td></tr><tr><td>no_injected_faults</td><td>PASS</td><td><pre>[]</pre></td><td><pre>[]</pre></td></tr><tr><td>resources_collected</td><td>PASS</td><td><pre>5</pre></td><td><pre>&quot;all tracked processes &gt;=2 samples&quot;</pre></td></tr><tr><td>all_nodes_measured</td><td>PASS</td><td><pre>[
+  [
+    &quot;/usr/bin/python3&quot;,
+    &quot;/opt/ros/jazzy/bin/ros2&quot;,
+    &quot;launch&quot;,
+    &quot;robot_reliability_testbench&quot;,
+    &quot;normal.launch.py&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=panda_simulator&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=task_server&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=fault_boundary&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;
+  ],
+  [
+    &quot;/opt/venv/bin/python&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+    &quot;--ros-args&quot;,
+    &quot;-r&quot;,
+    &quot;__node:=health_monitor&quot;,
+    &quot;-r&quot;,
+    &quot;__ns:=/testbench&quot;,
+    &quot;--params-file&quot;,
+    &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+  ]
+]</pre></td><td><pre>&quot;simulator, task_server, fault_boundary, health_monitor&quot;</pre></td></tr><tr><td>per_process_rss_bound</td><td>PASS</td><td><pre>295.39453125</pre></td><td><pre>512.0</pre></td></tr><tr><td>no_infrastructure_failure</td><td>PASS</td><td><pre>[]</pre></td><td><pre>[]</pre></td></tr></table><h2>Measurements, provenance, failures and limitations</h2><pre>{
+  &quot;configuration&quot;: {
+    &quot;profile&quot;: &quot;short&quot;,
+    &quot;seed&quot;: 7,
+    &quot;action_wall_timeout&quot;: 6.0,
+    &quot;max_final_error&quot;: 0.005,
+    &quot;max_observation_gap_seconds&quot;: 0.15,
+    &quot;max_rss_mib&quot;: 512.0,
+    &quot;expected_injected_faults&quot;: false,
+    &quot;duration_seconds&quot;: 18.0,
+    &quot;min_tasks&quot;: 10
+  },
+  &quot;acceptance_declared_utc&quot;: &quot;2026-10-31T12:17:09.050494+00:00&quot;,
+  &quot;provenance&quot;: {
+    &quot;git_revision&quot;: null,
+    &quot;git_revision_state&quot;: &quot;unborn&quot;,
+    &quot;dirty_worktree&quot;: true,
+    &quot;source_sha256&quot;: &quot;d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319&quot;,
+    &quot;python&quot;: &quot;3.12.3&quot;,
+    &quot;platform&quot;: &quot;Linux-7.0.0-38-generic-x86_64-with-glibc2.39&quot;,
+    &quot;dependencies&quot;: {
+      &quot;mujoco&quot;: &quot;3.16.0&quot;,
+      &quot;numpy&quot;: &quot;1.26.4&quot;,
+      &quot;pytest&quot;: &quot;7.4.4&quot;,
+      &quot;psutil&quot;: &quot;5.9.8&quot;,
+      &quot;rclpy&quot;: &quot;7.1.12&quot;,
+      &quot;rosbag2_py&quot;: &quot;0.26.11&quot;,
+      &quot;colcon-core&quot;: &quot;0.21.3&quot;
+    },
+    &quot;ros_distro&quot;: &quot;jazzy&quot;
+  },
+  &quot;tasks&quot;: [
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004607148056802946,
+      &quot;simulation_seconds&quot;: 0.3400000000000003,
+      &quot;wall_seconds&quot;: 0.34632143300041207,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004719047955394538,
+      &quot;simulation_seconds&quot;: 0.3400000000000002,
+      &quot;wall_seconds&quot;: 0.3593212819996552,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004432132393597623,
+      &quot;simulation_seconds&quot;: 0.30000000000000027,
+      &quot;wall_seconds&quot;: 0.31973197600018466,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.00424393958123158,
+      &quot;simulation_seconds&quot;: 0.30000000000000027,
+      &quot;wall_seconds&quot;: 0.3217647730016324,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004913082026250242,
+      &quot;simulation_seconds&quot;: 0.33999999999997566,
+      &quot;wall_seconds&quot;: 0.35811320600078034,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004704685975661958,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.35995915300009074,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004432631347505295,
+      &quot;simulation_seconds&quot;: 0.29999999999996696,
+      &quot;wall_seconds&quot;: 0.32003937599984056,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004244002083348129,
+      &quot;simulation_seconds&quot;: 0.29999999999996696,
+      &quot;wall_seconds&quot;: 0.32062287500048114,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.0049129997368047365,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.3594476769994799,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.00470023604674147,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.35987473699969996,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004780027515290862,
+      &quot;simulation_seconds&quot;: 0.339999999999963,
+      &quot;wall_seconds&quot;: 0.3600773520010989,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004509401981213157,
+      &quot;simulation_seconds&quot;: 0.37999999999995815,
+      &quot;wall_seconds&quot;: 0.4000339279991749,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004345423840162411,
+      &quot;simulation_seconds&quot;: 0.37999999999995815,
+      &quot;wall_seconds&quot;: 0.39963700199950836,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004706808198903638,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.35999680900022213,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004779623160254556,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.3610646240013011,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004691016242255706,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.3588730930005113,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004433117325991406,
+      &quot;simulation_seconds&quot;: 0.29999999999996696,
+      &quot;wall_seconds&quot;: 0.3201338549988577,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004244484654331189,
+      &quot;simulation_seconds&quot;: 0.29999999999996696,
+      &quot;wall_seconds&quot;: 0.32099817599919334,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004913324826632556,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.35880842699953064,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004684593703065267,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.35992097099915554,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004780132920775276,
+      &quot;simulation_seconds&quot;: 0.33999999999996255,
+      &quot;wall_seconds&quot;: 0.36127242800102977,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004504610693641466,
+      &quot;simulation_seconds&quot;: 0.3800000000000914,
+      &quot;wall_seconds&quot;: 0.39879024800029583,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004260535759876948,
+      &quot;simulation_seconds&quot;: 0.3000000000001002,
+      &quot;wall_seconds&quot;: 0.32134724099887535,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004911865464800401,
+      &quot;simulation_seconds&quot;: 0.34000000000011354,
+      &quot;wall_seconds&quot;: 0.3589520019995689,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004664376435433473,
+      &quot;simulation_seconds&quot;: 0.34000000000011354,
+      &quot;wall_seconds&quot;: 0.35969203599961475,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004780612276077561,
+      &quot;simulation_seconds&quot;: 0.34000000000011354,
+      &quot;wall_seconds&quot;: 0.3601133739994111,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.0044985197269295915,
+      &quot;simulation_seconds&quot;: 0.3800000000001269,
+      &quot;wall_seconds&quot;: 0.40133865300049365,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004349017573376306,
+      &quot;simulation_seconds&quot;: 0.3800000000001269,
+      &quot;wall_seconds&quot;: 0.40010888099823205,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004675005348414733,
+      &quot;simulation_seconds&quot;: 0.34000000000011354,
+      &quot;wall_seconds&quot;: 0.3600059440013865,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004781820713936437,
+      &quot;simulation_seconds&quot;: 0.34000000000011354,
+      &quot;wall_seconds&quot;: 0.35990296399904764,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.55,
+        0.1,
+        0.65
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004497223865806876,
+      &quot;simulation_seconds&quot;: 0.3800000000001269,
+      &quot;wall_seconds&quot;: 0.39771154899972316,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004261314625282461,
+      &quot;simulation_seconds&quot;: 0.3000000000001002,
+      &quot;wall_seconds&quot;: 0.31824308700015536,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004914287793266527,
+      &quot;simulation_seconds&quot;: 0.3600000000001202,
+      &quot;wall_seconds&quot;: 0.35960386599981575,
+      &quot;message&quot;: &quot;Target reached&quot;
+    },
+    {
+      &quot;target_metres&quot;: [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      &quot;success&quot;: true,
+      &quot;status&quot;: 4,
+      &quot;final_error_metres&quot;: 0.004645839478899958,
+      &quot;simulation_seconds&quot;: 0.3600000000001202,
+      &quot;wall_seconds&quot;: 0.3632784849996824,
+      &quot;message&quot;: &quot;Target reached&quot;
+    }
+  ],
+  &quot;observations&quot;: {
+    &quot;count&quot;: 902,
+    &quot;missing_sequences&quot;: 0,
+    &quot;max_receive_interval_seconds&quot;: 0.023499892000472755,
+    &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+  },
+  &quot;diagnostics&quot;: {},
+  &quot;fault_events&quot;: [],
+  &quot;resources&quot;: [
+    {
+      &quot;pid&quot;: 453,
+      &quot;command&quot;: [
+        &quot;/usr/bin/python3&quot;,
+        &quot;/opt/ros/jazzy/bin/ros2&quot;,
+        &quot;launch&quot;,
+        &quot;robot_reliability_testbench&quot;,
+        &quot;normal.launch.py&quot;
+      ],
+      &quot;samples&quot;: 20,
+      &quot;first_rss_mib&quot;: 38.1953125,
+      &quot;last_rss_mib&quot;: 38.1953125,
+      &quot;peak_rss_mib&quot;: 38.1953125,
+      &quot;mean_cpu_percent&quot;: 0.0,
+      &quot;peak_cpu_percent&quot;: 0.0,
+      &quot;sampled_wall_seconds&quot;: 18.01074986399908,
+      &quot;rss_endpoint_change_mib&quot;: 0.0,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.0
+    },
+    {
+      &quot;pid&quot;: 467,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=panda_simulator&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 20,
+      &quot;first_rss_mib&quot;: 294.73828125,
+      &quot;last_rss_mib&quot;: 295.39453125,
+      &quot;peak_rss_mib&quot;: 295.39453125,
+      &quot;mean_cpu_percent&quot;: 12.4925392723233,
+      &quot;peak_cpu_percent&quot;: 15.828479493835212,
+      &quot;sampled_wall_seconds&quot;: 18.01074986399908,
+      &quot;rss_endpoint_change_mib&quot;: 0.65625,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 2.186194372656577
+    },
+    {
+      &quot;pid&quot;: 468,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=task_server&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 20,
+      &quot;first_rss_mib&quot;: 293.7890625,
+      &quot;last_rss_mib&quot;: 294.69140625,
+      &quot;peak_rss_mib&quot;: 294.69140625,
+      &quot;mean_cpu_percent&quot;: 19.76597324865375,
+      &quot;peak_cpu_percent&quot;: 22.90163931415466,
+      &quot;sampled_wall_seconds&quot;: 18.01074986399908,
+      &quot;rss_endpoint_change_mib&quot;: 0.90234375,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 3.006017262402793
+    },
+    {
+      &quot;pid&quot;: 469,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=fault_boundary&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;
+      ],
+      &quot;samples&quot;: 20,
+      &quot;first_rss_mib&quot;: 73.51953125,
+      &quot;last_rss_mib&quot;: 73.78515625,
+      &quot;peak_rss_mib&quot;: 73.78515625,
+      &quot;mean_cpu_percent&quot;: 43.86269344504624,
+      &quot;peak_cpu_percent&quot;: 46.85176238245682,
+      &quot;sampled_wall_seconds&quot;: 18.01074986399908,
+      &quot;rss_endpoint_change_mib&quot;: 0.265625,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.8848881984562336
+    },
+    {
+      &quot;pid&quot;: 470,
+      &quot;command&quot;: [
+        &quot;/opt/venv/bin/python&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+        &quot;--ros-args&quot;,
+        &quot;-r&quot;,
+        &quot;__node:=health_monitor&quot;,
+        &quot;-r&quot;,
+        &quot;__ns:=/testbench&quot;,
+        &quot;--params-file&quot;,
+        &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+      ],
+      &quot;samples&quot;: 20,
+      &quot;first_rss_mib&quot;: 70.44140625,
+      &quot;last_rss_mib&quot;: 70.5234375,
+      &quot;peak_rss_mib&quot;: 70.5234375,
+      &quot;mean_cpu_percent&quot;: 25.20716813171012,
+      &quot;peak_cpu_percent&quot;: 28.72528578680791,
+      &quot;sampled_wall_seconds&quot;: 18.01074986399908,
+      &quot;rss_endpoint_change_mib&quot;: 0.08203125,
+      &quot;rss_endpoint_trend_mib_per_minute&quot;: 0.27327429658207214
+    }
+  ],
+  &quot;failures&quot;: [],
+  &quot;diagnostic_examples&quot;: [],
+  &quot;tasks_attempted&quot;: 34,
+  &quot;robot_configuration&quot;: {
+    &quot;/testbench/panda_simulator&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;publication_rate&quot;: 50.0,
+        &quot;initial_joint_positions&quot;: [
+          0.0,
+          0.0,
+          0.0,
+          -1.57079,
+          0.0,
+          1.57079,
+          -0.7853
+        ]
+      }
+    },
+    &quot;/testbench/task_server&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;use_sim_time&quot;: true,
+        &quot;target_tolerance&quot;: 0.005,
+        &quot;task_timeout&quot;: 5.0,
+        &quot;infrastructure_timeout&quot;: 3.0
+      }
+    },
+    &quot;/testbench/health_monitor&quot;: {
+      &quot;ros__parameters&quot;: {
+        &quot;freshness_seconds&quot;: 0.15,
+        &quot;progress_window_seconds&quot;: 0.2,
+        &quot;movement_threshold_metres&quot;: 0.001,
+        &quot;startup_grace_seconds&quot;: 0.3
+      }
+    }
+  },
+  &quot;measurement_wall_seconds&quot;: 18.00855444300032,
+  &quot;simulation_duration_seconds&quot;: 18.040000000000603,
+  &quot;limitations&quot;: [
+    &quot;Healthy raw-state controller workload; injected faults are tested separately.&quot;,
+    &quot;Resources cover ros2 launch and its descendant processes, excluding runner, Docker daemon and kernel.&quot;,
+    &quot;CPU percent is process CPU time / steady wall interval; multithreaded values may exceed 100%.&quot;,
+    &quot;RSS endpoint trends are descriptive; short runs cannot establish absence of memory leaks.&quot;,
+    &quot;Measurement window excludes startup/warmup/shutdown; final six seconds reserve bounded action completion.&quot;,
+    &quot;Receive intervals use steady time; task durations and observation stamps use simulator time.&quot;
+  ],
+  &quot;startup_wall_seconds&quot;: 1.2659841849999793,
+  &quot;total_wall_seconds&quot;: 19.65169322100155,
+  &quot;completed_utc&quot;: &quot;2026-10-31T12:17:28.708544+00:00&quot;,
+  &quot;criteria&quot;: [
+    {
+      &quot;name&quot;: &quot;completed_window&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 18.00855444300032,
+      &quot;required&quot;: 18.0
+    },
+    {
+      &quot;name&quot;: &quot;minimum_tasks&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 34,
+      &quot;required&quot;: 10
+    },
+    {
+      &quot;name&quot;: &quot;all_tasks_succeeded&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 34,
+      &quot;required&quot;: 34
+    },
+    {
+      &quot;name&quot;: &quot;final_position_error&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 0.004914287793266527,
+      &quot;required&quot;: 0.005
+    },
+    {
+      &quot;name&quot;: &quot;bounded_task_wall_time&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 0.40133865300049365,
+      &quot;required&quot;: 6.0
+    },
+    {
+      &quot;name&quot;: &quot;continuous_observations&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: {
+        &quot;count&quot;: 902,
+        &quot;missing_sequences&quot;: 0,
+        &quot;max_receive_interval_seconds&quot;: 0.023499892000472755,
+        &quot;max_simulation_interval_seconds&quot;: 0.02000000000000668
+      },
+      &quot;required&quot;: {
+        &quot;min_count&quot;: 1,
+        &quot;missing_sequences&quot;: 0,
+        &quot;max_interval&quot;: 0.15
+      }
+    },
+    {
+      &quot;name&quot;: &quot;no_unexpected_diagnostics&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: {},
+      &quot;required&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;no_injected_faults&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [],
+      &quot;required&quot;: []
+    },
+    {
+      &quot;name&quot;: &quot;resources_collected&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 5,
+      &quot;required&quot;: &quot;all tracked processes &gt;=2 samples&quot;
+    },
+    {
+      &quot;name&quot;: &quot;all_nodes_measured&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [
+        [
+          &quot;/usr/bin/python3&quot;,
+          &quot;/opt/ros/jazzy/bin/ros2&quot;,
+          &quot;launch&quot;,
+          &quot;robot_reliability_testbench&quot;,
+          &quot;normal.launch.py&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=panda_simulator&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=task_server&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=fault_boundary&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;
+        ],
+        [
+          &quot;/opt/venv/bin/python&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor&quot;,
+          &quot;--ros-args&quot;,
+          &quot;-r&quot;,
+          &quot;__node:=health_monitor&quot;,
+          &quot;-r&quot;,
+          &quot;__ns:=/testbench&quot;,
+          &quot;--params-file&quot;,
+          &quot;/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml&quot;
+        ]
+      ],
+      &quot;required&quot;: &quot;simulator, task_server, fault_boundary, health_monitor&quot;
+    },
+    {
+      &quot;name&quot;: &quot;per_process_rss_bound&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: 295.39453125,
+      &quot;required&quot;: 512.0
+    },
+    {
+      &quot;name&quot;: &quot;no_infrastructure_failure&quot;,
+      &quot;passed&quot;: true,
+      &quot;observed&quot;: [],
+      &quot;required&quot;: []
+    }
+  ],
+  &quot;success&quot;: true
+}</pre>

@@ -1,0 +1,305 @@
+{
+  "milestone": "B",
+  "executed_utc": "2026-10-31T11:16:25.783473+00:00",
+  "pytest_exit_status": 0,
+  "tests": [
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.2605176899996877
+    },
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.34133235000081186
+    },
+    {
+      "test": "test/test_ros.py::test_ros_success_and_feedback[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.32101042800059076
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.004781056000865647
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.0034308340000279713
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.003540323999914108
+    },
+    {
+      "test": "test/test_ros.py::test_ros_invalid_goal_rejected[target3]",
+      "outcome": "passed",
+      "wall_seconds": 0.0039171959997474914
+    },
+    {
+      "test": "test/test_ros.py::test_ros_cancel",
+      "outcome": "passed",
+      "wall_seconds": 0.2840665700005047
+    },
+    {
+      "test": "test/test_ros.py::test_ros_simulation_timeout",
+      "outcome": "passed",
+      "wall_seconds": 0.05392836200007878
+    },
+    {
+      "test": "test/test_ros.py::test_ros_concurrent_goal_rejected",
+      "outcome": "passed",
+      "wall_seconds": 0.44259012499969685
+    },
+    {
+      "test": "test/test_ros.py::test_ros_reset_active_goal_and_stale_command",
+      "outcome": "passed",
+      "wall_seconds": 0.43924056099967856
+    },
+    {
+      "test": "test/test_ros.py::test_ros_health_and_parameters",
+      "outcome": "passed",
+      "wall_seconds": 0.4207751049998478
+    },
+    {
+      "test": "test/test_ros.py::test_ros_parameter_update_during_goal",
+      "outcome": "passed",
+      "wall_seconds": 0.5991863060007745
+    },
+    {
+      "test": "test/test_simulation.py::test_reach_with_physics",
+      "outcome": "passed",
+      "wall_seconds": 0.3661779599988222
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target0]",
+      "outcome": "passed",
+      "wall_seconds": 0.13981343699924764
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target1]",
+      "outcome": "passed",
+      "wall_seconds": 0.11790880099943024
+    },
+    {
+      "test": "test/test_simulation.py::test_reject_invalid_or_unreachable_target[target2]",
+      "outcome": "passed",
+      "wall_seconds": 0.1691752290007571
+    },
+    {
+      "test": "test/test_simulation.py::test_configured_initial_state_and_reset",
+      "outcome": "passed",
+      "wall_seconds": 0.17200355399836553
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial0]",
+      "outcome": "passed",
+      "wall_seconds": 0.17817501799981983
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial1]",
+      "outcome": "passed",
+      "wall_seconds": 0.17725587900167739
+    },
+    {
+      "test": "test/test_simulation.py::test_invalid_initial_state[initial2]",
+      "outcome": "passed",
+      "wall_seconds": 0.16857468499983952
+    }
+  ],
+  "actions": [
+    {
+      "case": "healthy_reach",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "final_error_metres": 0.004934442855985737,
+      "elapsed_simulation_seconds": 0.2600000000000002,
+      "elapsed_wall_seconds": 0.2598942540007556,
+      "feedback_messages": 13,
+      "message": "Target reached"
+    },
+    {
+      "case": "healthy_reach",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "final_error_metres": 0.004607148056802946,
+      "elapsed_simulation_seconds": 0.34000000000000025,
+      "elapsed_wall_seconds": 0.34072241699868755,
+      "feedback_messages": 17,
+      "message": "Target reached"
+    },
+    {
+      "case": "healthy_reach",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "final_error_metres": 0.004658612998996036,
+      "elapsed_simulation_seconds": 0.32000000000000023,
+      "elapsed_wall_seconds": 0.320255451999401,
+      "feedback_messages": 16,
+      "message": "Target reached"
+    },
+    {
+      "case": "cancellation",
+      "status": 5,
+      "success": false,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.27329837483760316,
+      "elapsed_simulation_seconds": 0.06000000000000004,
+      "elapsed_wall_seconds": 0.07816795999860915,
+      "feedback_messages": 2,
+      "message": "Canceled; holding current joint positions"
+    },
+    {
+      "case": "simulation_timeout",
+      "status": 6,
+      "success": false,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.30794035221089017,
+      "elapsed_simulation_seconds": 0.020000000000000018,
+      "elapsed_wall_seconds": 0.05149107199940772,
+      "feedback_messages": 0,
+      "message": "Simulation task timeout"
+    },
+    {
+      "case": "concurrent_first",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.0046454515013882956,
+      "elapsed_simulation_seconds": 0.44000000000000034,
+      "elapsed_wall_seconds": 0.4420219420007925,
+      "feedback_messages": 22,
+      "message": "Target reached"
+    },
+    {
+      "case": "reset_active",
+      "status": 6,
+      "success": false,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.3222906123454051,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.04895900699921185,
+      "feedback_messages": 0,
+      "message": "Reset requested; active goal terminated"
+    },
+    {
+      "case": "reset_active",
+      "status": 6,
+      "success": false,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.30794035221089017,
+      "elapsed_simulation_seconds": 0.040000000000000036,
+      "elapsed_wall_seconds": 0.05517576700003701,
+      "feedback_messages": 2,
+      "message": "Reset requested; active goal terminated"
+    },
+    {
+      "case": "reset_active",
+      "status": 6,
+      "success": false,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.30794035221089017,
+      "elapsed_simulation_seconds": 0.020000000000000018,
+      "elapsed_wall_seconds": 0.0506484140005341,
+      "feedback_messages": 2,
+      "message": "Reset requested; active goal terminated"
+    },
+    {
+      "case": "reach_after_reset",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "final_error_metres": 0.004934442855985737,
+      "elapsed_simulation_seconds": 0.2600000000000002,
+      "elapsed_wall_seconds": 0.2611966990007204,
+      "feedback_messages": 13,
+      "message": "Target reached"
+    },
+    {
+      "case": "updated_tolerance",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "final_error_metres": 0.0008826062307495464,
+      "elapsed_simulation_seconds": 0.4000000000000003,
+      "elapsed_wall_seconds": 0.4108710559994506,
+      "feedback_messages": 20,
+      "message": "Target reached"
+    },
+    {
+      "case": "tolerance_updated_during_goal",
+      "status": 4,
+      "success": true,
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_error_metres": 0.00083695592969716,
+      "elapsed_simulation_seconds": 0.6000000000000004,
+      "elapsed_wall_seconds": 0.5986154129986971,
+      "feedback_messages": 30,
+      "message": "Target reached"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "mujoco": "3.16.0",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "ros_distro": "jazzy"
+  },
+  "timing": "Action elapsed_time is MuJoCo duration; wall time includes ROS request/result transport.",
+  "limitations": [
+    "Single local host, headless software simulation only",
+    "No rosbag, fault injection, Docker, CI or endurance validation"
+  ]
+}

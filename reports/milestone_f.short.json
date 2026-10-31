@@ -1,0 +1,803 @@
+{
+  "configuration": {
+    "profile": "short",
+    "seed": 7,
+    "action_wall_timeout": 6.0,
+    "max_final_error": 0.005,
+    "max_observation_gap_seconds": 0.15,
+    "max_rss_mib": 512.0,
+    "expected_injected_faults": false,
+    "duration_seconds": 18.0,
+    "min_tasks": 10
+  },
+  "acceptance_declared_utc": "2026-10-31T12:32:10.506887+00:00",
+  "provenance": {
+    "git_revision": null,
+    "git_revision_state": "unborn",
+    "dirty_worktree": true,
+    "source_sha256": "d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319",
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "dependencies": {
+      "mujoco": "3.16.0",
+      "numpy": "1.26.4",
+      "pytest": "7.4.4",
+      "psutil": "5.9.8",
+      "rclpy": "7.1.12",
+      "rosbag2_py": "0.26.11",
+      "colcon-core": "0.21.3"
+    },
+    "ros_distro": "jazzy"
+  },
+  "tasks": [
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004607148056802946,
+      "simulation_seconds": 0.3400000000000003,
+      "wall_seconds": 0.33461152400013816,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004696358354514488,
+      "simulation_seconds": 0.3400000000000002,
+      "wall_seconds": 0.33940105799956655,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.0044493553949570665,
+      "simulation_seconds": 0.30000000000000027,
+      "wall_seconds": 0.30096762900029717,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004211960736857104,
+      "simulation_seconds": 0.30000000000000027,
+      "wall_seconds": 0.2988642839991371,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004919175674303098,
+      "simulation_seconds": 0.33999999999998454,
+      "wall_seconds": 0.3400735179984622,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004679553669610491,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3401524100008828,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.0044499956260924,
+      "simulation_seconds": 0.29999999999996696,
+      "wall_seconds": 0.2996817989987903,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004212005592161952,
+      "simulation_seconds": 0.29999999999996696,
+      "wall_seconds": 0.3000784800005931,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004919120084797625,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.34033758000077796,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.00467588188942874,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3397409900007915,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.0047559815578283645,
+      "simulation_seconds": 0.339999999999963,
+      "wall_seconds": 0.3401442099984706,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.0044975199304780715,
+      "simulation_seconds": 0.37999999999995815,
+      "wall_seconds": 0.37983803899987834,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004332360894834952,
+      "simulation_seconds": 0.37999999999995815,
+      "wall_seconds": 0.3794537550002133,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004686630593499882,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3412170989995502,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004755022249224276,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3401230840008793,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.0046683126780892575,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3390154030003032,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004450570865752896,
+      "simulation_seconds": 0.29999999999996696,
+      "wall_seconds": 0.30136118900009023,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004212447469941836,
+      "simulation_seconds": 0.29999999999996696,
+      "wall_seconds": 0.2987425120008993,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004919414182400222,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3399986189997435,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004661075088093605,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.3400962129999243,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004755818801622726,
+      "simulation_seconds": 0.33999999999996255,
+      "wall_seconds": 0.33984950900048716,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.00449286426536494,
+      "simulation_seconds": 0.37999999999995815,
+      "wall_seconds": 0.3801578980001068,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004233954504669757,
+      "simulation_seconds": 0.3000000000000469,
+      "wall_seconds": 0.3005681319991709,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004916908759543787,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.340824832999715,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004640855501405635,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.3388231850003649,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004756870246557542,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.3397405260002415,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004486523310835968,
+      "simulation_seconds": 0.3800000000001269,
+      "wall_seconds": 0.3800167080007668,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004335325895119133,
+      "simulation_seconds": 0.3800000000001269,
+      "wall_seconds": 0.37964620999991894,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004655494059823765,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.3402796419995866,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.00475683073887327,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.3400895059985487,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.00448520540302004,
+      "simulation_seconds": 0.3800000000001269,
+      "wall_seconds": 0.3799009109989129,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004234686151004852,
+      "simulation_seconds": 0.3000000000001002,
+      "wall_seconds": 0.29998782300026505,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004919517816249517,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.3397912599994015,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004622602272016155,
+      "simulation_seconds": 0.34000000000011354,
+      "wall_seconds": 0.34172467200005485,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004452356916592613,
+      "simulation_seconds": 0.3000000000001002,
+      "wall_seconds": 0.29859588999897824,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004214459271024632,
+      "simulation_seconds": 0.3000000000001002,
+      "wall_seconds": 0.30161232799946447,
+      "message": "Target reached"
+    }
+  ],
+  "observations": {
+    "count": 902,
+    "missing_sequences": 0,
+    "max_receive_interval_seconds": 0.023124977000406943,
+    "max_simulation_interval_seconds": 0.02000000000000668
+  },
+  "diagnostics": {},
+  "fault_events": [],
+  "resources": [
+    {
+      "pid": 222,
+      "command": [
+        "/usr/bin/python3",
+        "/opt/ros/jazzy/bin/ros2",
+        "launch",
+        "robot_reliability_testbench",
+        "normal.launch.py"
+      ],
+      "samples": 20,
+      "first_rss_mib": 38.1171875,
+      "last_rss_mib": 38.1171875,
+      "peak_rss_mib": 38.1171875,
+      "mean_cpu_percent": 0.0,
+      "peak_cpu_percent": 0.0,
+      "sampled_wall_seconds": 18.011454653998953,
+      "rss_endpoint_change_mib": 0.0,
+      "rss_endpoint_trend_mib_per_minute": 0.0
+    },
+    {
+      "pid": 236,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+        "--ros-args",
+        "-r",
+        "__node:=panda_simulator",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 20,
+      "first_rss_mib": 294.05078125,
+      "last_rss_mib": 294.70703125,
+      "peak_rss_mib": 294.70703125,
+      "mean_cpu_percent": 13.26933357639365,
+      "peak_cpu_percent": 14.96946745088214,
+      "sampled_wall_seconds": 18.011454653998953,
+      "rss_endpoint_change_mib": 0.65625,
+      "rss_endpoint_trend_mib_per_minute": 2.1861088266548117
+    },
+    {
+      "pid": 237,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+        "--ros-args",
+        "-r",
+        "__node:=task_server",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 20,
+      "first_rss_mib": 293.6015625,
+      "last_rss_mib": 294.6015625,
+      "peak_rss_mib": 294.6015625,
+      "mean_cpu_percent": 22.097049219266417,
+      "peak_cpu_percent": 25.94707691486241,
+      "sampled_wall_seconds": 18.011454653998953,
+      "rss_endpoint_change_mib": 1.0,
+      "rss_endpoint_trend_mib_per_minute": 3.3312134501406656
+    },
+    {
+      "pid": 238,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+        "--ros-args",
+        "-r",
+        "__node:=fault_boundary",
+        "-r",
+        "__ns:=/testbench"
+      ],
+      "samples": 20,
+      "first_rss_mib": 73.34765625,
+      "last_rss_mib": 73.6796875,
+      "peak_rss_mib": 73.6796875,
+      "mean_cpu_percent": 43.91649731768777,
+      "peak_cpu_percent": 348.48426764649804,
+      "sampled_wall_seconds": 18.011454653998953,
+      "rss_endpoint_change_mib": 0.33203125,
+      "rss_endpoint_trend_mib_per_minute": 1.106066965867018
+    },
+    {
+      "pid": 239,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+        "--ros-args",
+        "-r",
+        "__node:=health_monitor",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 20,
+      "first_rss_mib": 70.17578125,
+      "last_rss_mib": 70.25390625,
+      "peak_rss_mib": 70.25390625,
+      "mean_cpu_percent": 26.705227825294337,
+      "peak_cpu_percent": 28.940970405038826,
+      "sampled_wall_seconds": 18.011454653998953,
+      "rss_endpoint_change_mib": 0.078125,
+      "rss_endpoint_trend_mib_per_minute": 0.2602510507922395
+    }
+  ],
+  "failures": [],
+  "diagnostic_examples": [],
+  "tasks_attempted": 36,
+  "robot_configuration": {
+    "/testbench/panda_simulator": {
+      "ros__parameters": {
+        "publication_rate": 50.0,
+        "initial_joint_positions": [
+          0.0,
+          0.0,
+          0.0,
+          -1.57079,
+          0.0,
+          1.57079,
+          -0.7853
+        ]
+      }
+    },
+    "/testbench/task_server": {
+      "ros__parameters": {
+        "use_sim_time": true,
+        "target_tolerance": 0.005,
+        "task_timeout": 5.0,
+        "infrastructure_timeout": 3.0
+      }
+    },
+    "/testbench/health_monitor": {
+      "ros__parameters": {
+        "freshness_seconds": 0.15,
+        "progress_window_seconds": 0.2,
+        "movement_threshold_metres": 0.001,
+        "startup_grace_seconds": 0.3
+      }
+    }
+  },
+  "measurement_wall_seconds": 18.009312423000665,
+  "simulation_duration_seconds": 18.040000000000603,
+  "limitations": [
+    "Healthy raw-state controller workload; injected faults are tested separately.",
+    "Resources cover ros2 launch and its descendant processes, excluding runner, Docker daemon and kernel.",
+    "CPU percent is process CPU time / steady wall interval; multithreaded values may exceed 100%.",
+    "RSS endpoint trends are descriptive; short runs cannot establish absence of memory leaks.",
+    "Measurement window excludes startup/warmup/shutdown; final six seconds reserve bounded action completion.",
+    "Receive intervals use steady time; task durations and observation stamps use simulator time."
+  ],
+  "startup_wall_seconds": 1.220241516999522,
+  "total_wall_seconds": 19.656172560000414,
+  "completed_utc": "2026-10-31T12:32:30.170050+00:00",
+  "criteria": [
+    {
+      "name": "completed_window",
+      "passed": true,
+      "observed": 18.009312423000665,
+      "required": 18.0
+    },
+    {
+      "name": "minimum_tasks",
+      "passed": true,
+      "observed": 36,
+      "required": 10
+    },
+    {
+      "name": "all_tasks_succeeded",
+      "passed": true,
+      "observed": 36,
+      "required": 36
+    },
+    {
+      "name": "final_position_error",
+      "passed": true,
+      "observed": 0.004919517816249517,
+      "required": 0.005
+    },
+    {
+      "name": "bounded_task_wall_time",
+      "passed": true,
+      "observed": 0.3801578980001068,
+      "required": 6.0
+    },
+    {
+      "name": "continuous_observations",
+      "passed": true,
+      "observed": {
+        "count": 902,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.023124977000406943,
+        "max_simulation_interval_seconds": 0.02000000000000668
+      },
+      "required": {
+        "min_count": 1,
+        "missing_sequences": 0,
+        "max_interval": 0.15
+      }
+    },
+    {
+      "name": "no_unexpected_diagnostics",
+      "passed": true,
+      "observed": {},
+      "required": []
+    },
+    {
+      "name": "no_injected_faults",
+      "passed": true,
+      "observed": [],
+      "required": []
+    },
+    {
+      "name": "resources_collected",
+      "passed": true,
+      "observed": 5,
+      "required": "all tracked processes >=2 samples"
+    },
+    {
+      "name": "all_nodes_measured",
+      "passed": true,
+      "observed": [
+        [
+          "/usr/bin/python3",
+          "/opt/ros/jazzy/bin/ros2",
+          "launch",
+          "robot_reliability_testbench",
+          "normal.launch.py"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+          "--ros-args",
+          "-r",
+          "__node:=panda_simulator",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+          "--ros-args",
+          "-r",
+          "__node:=task_server",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+          "--ros-args",
+          "-r",
+          "__node:=fault_boundary",
+          "-r",
+          "__ns:=/testbench"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+          "--ros-args",
+          "-r",
+          "__node:=health_monitor",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ]
+      ],
+      "required": "simulator, task_server, fault_boundary, health_monitor"
+    },
+    {
+      "name": "per_process_rss_bound",
+      "passed": true,
+      "observed": 294.70703125,
+      "required": 512.0
+    },
+    {
+      "name": "no_infrastructure_failure",
+      "passed": true,
+      "observed": [],
+      "required": []
+    }
+  ],
+  "success": true
+}

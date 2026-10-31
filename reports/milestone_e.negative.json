@@ -1,0 +1,413 @@
+{
+  "configuration": {
+    "profile": "short",
+    "seed": 7,
+    "action_wall_timeout": 6.0,
+    "max_final_error": 0.005,
+    "max_observation_gap_seconds": 0.15,
+    "max_rss_mib": 512.0,
+    "expected_injected_faults": false,
+    "duration_seconds": 8.0,
+    "min_tasks": 1000000
+  },
+  "acceptance_declared_utc": "2026-10-31T12:17:29.131533+00:00",
+  "provenance": {
+    "git_revision": null,
+    "git_revision_state": "unborn",
+    "dirty_worktree": true,
+    "source_sha256": "d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319",
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "dependencies": {
+      "mujoco": "3.16.0",
+      "numpy": "1.26.4",
+      "pytest": "7.4.4",
+      "psutil": "5.9.8",
+      "rclpy": "7.1.12",
+      "rosbag2_py": "0.26.11",
+      "colcon-core": "0.21.3"
+    },
+    "ros_distro": "jazzy"
+  },
+  "tasks": [
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004607148056802946,
+      "simulation_seconds": 0.3400000000000003,
+      "wall_seconds": 0.33742325300045195,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004719047955394538,
+      "simulation_seconds": 0.3600000000000002,
+      "wall_seconds": 0.3600903599999583,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004432132393597623,
+      "simulation_seconds": 0.3200000000000003,
+      "wall_seconds": 0.3197510299996793,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.00424393958123158,
+      "simulation_seconds": 0.3200000000000003,
+      "wall_seconds": 0.31976695299999847,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004913082026250242,
+      "simulation_seconds": 0.3599999999999757,
+      "wall_seconds": 0.3599034180006129,
+      "message": "Target reached"
+    },
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004704685975661958,
+      "simulation_seconds": 0.35999999999996035,
+      "wall_seconds": 0.36010015700048825,
+      "message": "Target reached"
+    }
+  ],
+  "observations": {
+    "count": 402,
+    "missing_sequences": 0,
+    "max_receive_interval_seconds": 0.3283807030002208,
+    "max_simulation_interval_seconds": 0.02000000000000668
+  },
+  "diagnostics": {},
+  "fault_events": [],
+  "resources": [
+    {
+      "pid": 561,
+      "command": [
+        "/usr/bin/python3",
+        "/opt/ros/jazzy/bin/ros2",
+        "launch",
+        "robot_reliability_testbench",
+        "normal.launch.py"
+      ],
+      "samples": 10,
+      "first_rss_mib": 38.2265625,
+      "last_rss_mib": 38.2265625,
+      "peak_rss_mib": 38.2265625,
+      "mean_cpu_percent": 0.0,
+      "peak_cpu_percent": 0.0,
+      "sampled_wall_seconds": 8.005942591998974,
+      "rss_endpoint_change_mib": 0.0,
+      "rss_endpoint_trend_mib_per_minute": 0.0
+    },
+    {
+      "pid": 575,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+        "--ros-args",
+        "-r",
+        "__node:=panda_simulator",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 10,
+      "first_rss_mib": 294.74609375,
+      "last_rss_mib": 295.80078125,
+      "peak_rss_mib": 295.80078125,
+      "mean_cpu_percent": 11.741278296692046,
+      "peak_cpu_percent": 14.86251188152763,
+      "sampled_wall_seconds": 8.005942591998974,
+      "rss_endpoint_change_mib": 1.0546875,
+      "rss_endpoint_trend_mib_per_minute": 7.90428475758025
+    },
+    {
+      "pid": 576,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+        "--ros-args",
+        "-r",
+        "__node:=task_server",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 10,
+      "first_rss_mib": 293.65625,
+      "last_rss_mib": 294.6015625,
+      "peak_rss_mib": 294.6015625,
+      "mean_cpu_percent": 19.11080403610514,
+      "peak_cpu_percent": 23.92466780038391,
+      "sampled_wall_seconds": 8.005942591998974,
+      "rss_endpoint_change_mib": 0.9453125,
+      "rss_endpoint_trend_mib_per_minute": 7.084581153090446
+    },
+    {
+      "pid": 577,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+        "--ros-args",
+        "-r",
+        "__node:=fault_boundary",
+        "-r",
+        "__ns:=/testbench"
+      ],
+      "samples": 10,
+      "first_rss_mib": 73.37890625,
+      "last_rss_mib": 73.62109375,
+      "peak_rss_mib": 73.62109375,
+      "mean_cpu_percent": 40.96956682249989,
+      "peak_cpu_percent": 45.855613284069165,
+      "sampled_wall_seconds": 8.005942591998974,
+      "rss_endpoint_change_mib": 0.2421875,
+      "rss_endpoint_trend_mib_per_minute": 1.8150579813702794
+    },
+    {
+      "pid": 578,
+      "command": [
+        "/opt/venv/bin/python",
+        "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+        "--ros-args",
+        "-r",
+        "__node:=health_monitor",
+        "-r",
+        "__ns:=/testbench",
+        "--params-file",
+        "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+      ],
+      "samples": 10,
+      "first_rss_mib": 70.2421875,
+      "last_rss_mib": 70.32421875,
+      "peak_rss_mib": 70.32421875,
+      "mean_cpu_percent": 24.231999888917628,
+      "peak_cpu_percent": 27.659047651544377,
+      "sampled_wall_seconds": 8.005942591998974,
+      "rss_endpoint_change_mib": 0.08203125,
+      "rss_endpoint_trend_mib_per_minute": 0.6147777033673527
+    }
+  ],
+  "failures": [],
+  "diagnostic_examples": [],
+  "tasks_attempted": 6,
+  "robot_configuration": {
+    "/testbench/panda_simulator": {
+      "ros__parameters": {
+        "publication_rate": 50.0,
+        "initial_joint_positions": [
+          0.0,
+          0.0,
+          0.0,
+          -1.57079,
+          0.0,
+          1.57079,
+          -0.7853
+        ]
+      }
+    },
+    "/testbench/task_server": {
+      "ros__parameters": {
+        "use_sim_time": true,
+        "target_tolerance": 0.005,
+        "task_timeout": 5.0,
+        "infrastructure_timeout": 3.0
+      }
+    },
+    "/testbench/health_monitor": {
+      "ros__parameters": {
+        "freshness_seconds": 0.15,
+        "progress_window_seconds": 0.2,
+        "movement_threshold_metres": 0.001,
+        "startup_grace_seconds": 0.3
+      }
+    }
+  },
+  "measurement_wall_seconds": 8.003762008000194,
+  "simulation_duration_seconds": 8.039999999999521,
+  "limitations": [
+    "Healthy raw-state controller workload; injected faults are tested separately.",
+    "Resources cover ros2 launch and its descendant processes, excluding runner, Docker daemon and kernel.",
+    "CPU percent is process CPU time / steady wall interval; multithreaded values may exceed 100%.",
+    "RSS endpoint trends are descriptive; short runs cannot establish absence of memory leaks.",
+    "Measurement window excludes startup/warmup/shutdown; final six seconds reserve bounded action completion.",
+    "Receive intervals use steady time; task durations and observation stamps use simulator time."
+  ],
+  "startup_wall_seconds": 1.4224042429996189,
+  "total_wall_seconds": 9.853964252000878,
+  "completed_utc": "2026-10-31T12:17:38.992633+00:00",
+  "criteria": [
+    {
+      "name": "completed_window",
+      "passed": true,
+      "observed": 8.003762008000194,
+      "required": 8.0
+    },
+    {
+      "name": "minimum_tasks",
+      "passed": false,
+      "observed": 6,
+      "required": 1000000
+    },
+    {
+      "name": "all_tasks_succeeded",
+      "passed": true,
+      "observed": 6,
+      "required": 6
+    },
+    {
+      "name": "final_position_error",
+      "passed": true,
+      "observed": 0.004913082026250242,
+      "required": 0.005
+    },
+    {
+      "name": "bounded_task_wall_time",
+      "passed": true,
+      "observed": 0.36010015700048825,
+      "required": 6.0
+    },
+    {
+      "name": "continuous_observations",
+      "passed": false,
+      "observed": {
+        "count": 402,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.3283807030002208,
+        "max_simulation_interval_seconds": 0.02000000000000668
+      },
+      "required": {
+        "min_count": 1,
+        "missing_sequences": 0,
+        "max_interval": 0.15
+      }
+    },
+    {
+      "name": "no_unexpected_diagnostics",
+      "passed": true,
+      "observed": {},
+      "required": []
+    },
+    {
+      "name": "no_injected_faults",
+      "passed": true,
+      "observed": [],
+      "required": []
+    },
+    {
+      "name": "resources_collected",
+      "passed": true,
+      "observed": 5,
+      "required": "all tracked processes >=2 samples"
+    },
+    {
+      "name": "all_nodes_measured",
+      "passed": true,
+      "observed": [
+        [
+          "/usr/bin/python3",
+          "/opt/ros/jazzy/bin/ros2",
+          "launch",
+          "robot_reliability_testbench",
+          "normal.launch.py"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+          "--ros-args",
+          "-r",
+          "__node:=panda_simulator",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+          "--ros-args",
+          "-r",
+          "__node:=task_server",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+          "--ros-args",
+          "-r",
+          "__node:=fault_boundary",
+          "-r",
+          "__ns:=/testbench"
+        ],
+        [
+          "/opt/venv/bin/python",
+          "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+          "--ros-args",
+          "-r",
+          "__node:=health_monitor",
+          "-r",
+          "__ns:=/testbench",
+          "--params-file",
+          "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+        ]
+      ],
+      "required": "simulator, task_server, fault_boundary, health_monitor"
+    },
+    {
+      "name": "per_process_rss_bound",
+      "passed": true,
+      "observed": 295.80078125,
+      "required": 512.0
+    },
+    {
+      "name": "no_infrastructure_failure",
+      "passed": true,
+      "observed": [],
+      "required": []
+    }
+  ],
+  "success": false
+}

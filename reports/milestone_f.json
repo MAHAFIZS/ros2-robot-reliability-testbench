@@ -1,0 +1,509 @@
+{
+  "milestone": "F",
+  "executed_utc": "2026-10-31T12:36:47.055296+00:00",
+  "scope": "Documentation/evidence/presentation only; no runtime, thresholds, dependencies or workflow changed",
+  "reviewed_regression": {
+    "A": {
+      "tests": 4,
+      "failures": 0,
+      "skipped": 0
+    },
+    "B": {
+      "tests": 21,
+      "failures": 0,
+      "skipped": 0
+    },
+    "C": {
+      "tests": 37,
+      "failures": 0,
+      "skipped": 0
+    },
+    "D": {
+      "tests": 64,
+      "failures": 0,
+      "skipped": 0
+    },
+    "E": {
+      "tests": 85,
+      "failures": 0,
+      "skipped": 0
+    }
+  },
+  "regression_rerun_in_f": false,
+  "regression_applicability": {
+    "runtime_build_fingerprint": "d2335672b960fe67ac8dd7bc0722e11ab2f0a13088ed7196f44be8d50d7ee319",
+    "matches_e_validated_image": true,
+    "reason": "Runtime/build files unchanged; reviewed E JUnit and reran published demos instead of duplicating the full suite"
+  },
+  "git": {
+    "status": {
+      "exit_status": 0,
+      "stdout": "?? .dockerignore\n?? .github/\n?? .gitignore\n?? Dockerfile\n?? README.md\n?? docker/\n?? docs/\n?? models\n?? pytest.ini\n?? reliability_testbench\n?? reports/\n?? requirements.txt\n?? scripts/\n?? src/\n?? tests",
+      "stderr": ""
+    },
+    "head": {
+      "exit_status": 128,
+      "stdout": "",
+      "stderr": "fatal: Needed a single revision"
+    },
+    "remotes": {
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "github_cli_available": false,
+    "hosted_ci_verified": false,
+    "reason": "Unborn HEAD and no configured remote; no repository/run identity to inspect",
+    "external_actions_taken": [],
+    "instructions": "docs/verification.md#hosted-ci-and-publication"
+  },
+  "endurance": {
+    "thirty_minute_verified": false,
+    "long_profile_executed_in_f": false,
+    "inventory": [
+      {
+        "path": "artifacts/first/ci/intentional_failure/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 8.0,
+        "measured_wall_seconds": 8.006959903001189,
+        "success": false,
+        "tasks": 6
+      },
+      {
+        "path": "artifacts/first/ci/short/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 18.0,
+        "measured_wall_seconds": 18.00748914900032,
+        "success": true,
+        "tasks": 34
+      },
+      {
+        "path": "artifacts/short-repeat/short/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 18.0,
+        "measured_wall_seconds": 18.004540432000795,
+        "success": true,
+        "tasks": 34
+      },
+      {
+        "path": "artifacts/complete/reports/ci/intentional_failure/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 8.0,
+        "measured_wall_seconds": 8.003762008000194,
+        "success": false,
+        "tasks": 6
+      },
+      {
+        "path": "artifacts/complete/reports/ci/short/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 18.0,
+        "measured_wall_seconds": 18.00855444300032,
+        "success": true,
+        "tasks": 34
+      },
+      {
+        "path": "artifacts/verified/reports/ci/short/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 18.0,
+        "measured_wall_seconds": 18.000815231998786,
+        "success": false,
+        "tasks": 35
+      },
+      {
+        "path": "artifacts/portfolio/reports/portfolio-short/endurance.json",
+        "profile": "short",
+        "configured_wall_seconds": 18.0,
+        "measured_wall_seconds": 18.009312423000665,
+        "success": true,
+        "tasks": 36
+      }
+    ],
+    "additional_container_check": "docker ps -a --filter name=testbench showed only the stopped F demo container before cleanup; no unexported 30-minute container found"
+  },
+  "anomaly": {
+    "source": "reports/milestone_e.observation_gap.json",
+    "maximum_affected_callback_receive_gap_seconds": 0.3537509309990128,
+    "maximum_observed_simulation_interval_seconds": 0.02000000000000668,
+    "missing_boundary_sequences": 0,
+    "diagnostic_examples": [
+      {
+        "reason_code": "STALE_OBSERVATIONS",
+        "active": true,
+        "evidence": "No valid affected observation within steady freshness threshold",
+        "goal_id": "b21edae17f134be38b716f4fc25d9d26",
+        "observation_sequence": 148,
+        "simulation_stamp_seconds": 2.94
+      },
+      {
+        "reason_code": "OBSERVATIONS_RECOVERED",
+        "active": false,
+        "evidence": "Valid observation received",
+        "goal_id": "b21edae17f134be38b716f4fc25d9d26",
+        "observation_sequence": 149,
+        "simulation_stamp_seconds": 2.96
+      }
+    ],
+    "affected_observations": 886,
+    "wall_seconds": 18.000815231998786,
+    "simulation_seconds": 17.72000000000078,
+    "wall_minus_observed_simulation_seconds": 0.2808152319980053,
+    "task8": {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "success": true,
+      "status": 4,
+      "final_error_metres": 0.004212005592161952,
+      "simulation_seconds": 0.29999999999996696,
+      "wall_seconds": 0.6005191889998969,
+      "message": "Target reached"
+    },
+    "task8_wall_minus_simulation_seconds": 0.3005191889999299,
+    "task_successes": 35,
+    "task_count": 35,
+    "failed_criteria": [
+      "continuous_observations",
+      "no_unexpected_diagnostics"
+    ],
+    "inspected_logs": [
+      {
+        "path": "artifacts/verified/reports/ci/short/launch.log",
+        "bytes": 1022,
+        "sha256": "a83f584a79d9d00f8c13358717ec2c44b46c7c41b4b6780b173e5b91fbc060f1"
+      },
+      {
+        "path": "artifacts/verified/reports/ci/short.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/verified/reports/ros-logs/2026-10-31-12-12-53-425481-c61252bf831d-453/launch.log",
+        "bytes": 1307,
+        "sha256": "4fc8fbc65fe1bf37de5ac09923441637a021658ddf0119f54cc2cda5a5112d8c"
+      },
+      {
+        "path": "artifacts/verified/reports/ros-logs/python_467_1793448773615.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/verified/reports/ros-logs/python_468_1793448773591.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/verified/reports/ros-logs/python_469_1793448773542.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/verified/reports/ros-logs/python_470_1793448773536.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "conclusion": "Affected-observation freshness interruption confirmed in runner and independent monitor; source publication timing not captured",
+    "source_publication_gap_proven": false,
+    "recorder_delay_measured": false,
+    "raw_source_publish_timestamps_available": false,
+    "per_message_steady_receive_timestamps_available": false,
+    "exact_goal_join_possible": false,
+    "possible_locations": [
+      "simulator callback/timer",
+      "fault-boundary processing/publication",
+      "DDS delivery",
+      "subscriber scheduling or common system stall"
+    ],
+    "root_cause": "Unresolved; consecutive simulation stamps and boundary sequences cannot localize a wall-time delay",
+    "historical_qualification": "E publication-pause wording is a hypothesis, not established source localization",
+    "practical_implication": "Task success is insufficient evidence of healthy feedback; maintain failed freshness criteria and do not claim real-time guarantees"
+  },
+  "executed_walkthrough": {
+    "healthy": {
+      "success": true,
+      "reaches": [
+        {
+          "target_metres": [
+            0.5945,
+            0.03,
+            0.5945
+          ],
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.004934442855985737,
+          "elapsed_simulation_seconds": 0.24000000000000019,
+          "elapsed_wall_seconds": 0.25007639400064363,
+          "feedback_messages": 12
+        },
+        {
+          "target_metres": [
+            0.5,
+            -0.08,
+            0.55
+          ],
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.004607148056802946,
+          "elapsed_simulation_seconds": 0.32000000000000023,
+          "elapsed_wall_seconds": 0.3302284179990238,
+          "feedback_messages": 16
+        },
+        {
+          "target_metres": [
+            0.55,
+            0.1,
+            0.65
+          ],
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.004658612998996036,
+          "elapsed_simulation_seconds": 0.3000000000000002,
+          "elapsed_wall_seconds": 0.30974553499981994,
+          "feedback_messages": 15
+        }
+      ],
+      "total_wall_seconds": 1.6445918570007052
+    },
+    "fault_scenarios": [
+      {
+        "scenario": "healthy_baseline",
+        "expected": "Successful raw-controlled motion; stationary without alarms",
+        "passed": true,
+        "observed_codes": [],
+        "task": {
+          "goal_id": "58410cf65f224f0da5bd5f47f2e07651",
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.0046454515013882956,
+          "elapsed_simulation_seconds": 0.4200000000000003,
+          "elapsed_wall_seconds": 0.43052347600132634,
+          "message": "Target reached"
+        }
+      },
+      {
+        "scenario": "missing_observations",
+        "expected": "Stale diagnostic then valid-observation recovery",
+        "passed": true,
+        "observed_codes": [
+          "STALE_OBSERVATIONS",
+          "OBSERVATION_GAP",
+          "OBSERVATIONS_RECOVERED"
+        ],
+        "detection_latency_wall_seconds": 0.15016080199893622,
+        "detection_bound_wall_seconds": 0.35,
+        "task": null
+      },
+      {
+        "scenario": "frozen_observations",
+        "expected": "NO_PROGRESS with fresh messages; recovery on movement",
+        "passed": true,
+        "observed_codes": [
+          "NO_PROGRESS",
+          "PROGRESS_RECOVERED"
+        ],
+        "detection_latency_simulation_seconds": 0.20000000000000018,
+        "detection_latency_wall_seconds": 0.22007897899857198,
+        "detection_bound_simulation_seconds": 0.26,
+        "task": {
+          "goal_id": "5c3f73b5504d448ba57b9ce0e62fef8f",
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.0046454515013882956,
+          "elapsed_simulation_seconds": 0.4200000000000003,
+          "elapsed_wall_seconds": 0.4272224989999813,
+          "message": "Target reached"
+        },
+        "limitation": "Raw controller succeeds; monitor cannot prove the sensor is frozen"
+      },
+      {
+        "scenario": "delayed_commands",
+        "expected": "NO_PROGRESS during queue wait, then motion recovery",
+        "passed": true,
+        "observed_codes": [
+          "NO_PROGRESS",
+          "PROGRESS_RECOVERED"
+        ],
+        "commanded_delay_simulation_seconds": 0.6,
+        "actual_delay_simulation_seconds": 0.6000000000000004,
+        "detection_latency_simulation_seconds": 0.20000000000000018,
+        "task": {
+          "goal_id": "a202691178ef4926a8502c8d20f4053b",
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.0046454515013882956,
+          "elapsed_simulation_seconds": 1.0200000000000007,
+          "elapsed_wall_seconds": 1.0254075920001924,
+          "message": "Target reached"
+        }
+      },
+      {
+        "scenario": "queued_timeout",
+        "expected": "Action abort and purge before target reaches simulator",
+        "passed": true,
+        "observed_codes": [],
+        "task": {
+          "goal_id": "97fe3a5adb3048e186f0c80cec48708c",
+          "status": 6,
+          "success": false,
+          "final_error_metres": 0.3222906123454051,
+          "elapsed_simulation_seconds": 0.16000000000000014,
+          "elapsed_wall_seconds": 0.17270147300041572,
+          "message": "Simulation task timeout"
+        }
+      },
+      {
+        "scenario": "recovery",
+        "expected": "Faults disabled, healthy action and no diagnostic alarms",
+        "passed": true,
+        "observed_codes": [],
+        "task": {
+          "goal_id": "ccfede0634c64ed382f3e2c8fd668b6f",
+          "status": 4,
+          "success": true,
+          "final_error_metres": 0.004607148056802946,
+          "elapsed_simulation_seconds": 0.32000000000000023,
+          "elapsed_wall_seconds": 0.32778936499926203,
+          "message": "Target reached"
+        }
+      }
+    ],
+    "recording": {
+      "topics": {
+        "/testbench/raw/joint_states": 222,
+        "/testbench/raw/ee_pose": 223,
+        "/testbench/simulation_state": 218,
+        "/testbench/task_events": 22,
+        "/clock": 218,
+        "/testbench/observed/state": 215,
+        "/testbench/observed/joint_states": 214,
+        "/testbench/observed/ee_pose": 215,
+        "/testbench/task_intent": 222,
+        "/testbench/fault_events": 13,
+        "/testbench/command_events": 16,
+        "/testbench/diagnostics": 7
+      },
+      "bag": "artifacts/portfolio/bags/portfolio/faults",
+      "independent_analysis_equals_original": true
+    },
+    "first_fresh_replay_success": true,
+    "explicit_fresh_replay": {
+      "success": true,
+      "inputs": [
+        "/testbench/observed/state",
+        "/testbench/task_intent",
+        "/clock"
+      ],
+      "forbidden_publishers": [],
+      "new_diagnostic_topic": "/replay/diagnostics",
+      "new_events": 7,
+      "recorded_events": 7,
+      "signature": {
+        "lifecycle": [
+          [
+            "STALE_OBSERVATIONS",
+            true,
+            "",
+            ""
+          ],
+          [
+            "OBSERVATIONS_RECOVERED",
+            false,
+            "STALE_OBSERVATIONS",
+            ""
+          ],
+          [
+            "NO_PROGRESS",
+            true,
+            "",
+            "5c3f73b5504d448ba57b9ce0e62fef8f"
+          ],
+          [
+            "PROGRESS_RECOVERED",
+            false,
+            "NO_PROGRESS",
+            "5c3f73b5504d448ba57b9ce0e62fef8f"
+          ],
+          [
+            "NO_PROGRESS",
+            true,
+            "",
+            "a202691178ef4926a8502c8d20f4053b"
+          ],
+          [
+            "PROGRESS_RECOVERED",
+            false,
+            "NO_PROGRESS",
+            "a202691178ef4926a8502c8d20f4053b"
+          ]
+        ],
+        "gaps": [
+          [
+            "OBSERVATION_GAP",
+            3,
+            10,
+            8
+          ]
+        ]
+      },
+      "recorded_session": "5351b3aba1f54283ae7df3075343d90b",
+      "fresh_session": "e6d48dfe551f43bba19ff7ba67548e57"
+    },
+    "fresh_short": {
+      "success": true,
+      "tasks": 36,
+      "task_successes": 36,
+      "max_error_metres": 0.004919517816249517,
+      "wall_seconds": 18.009312423000665,
+      "simulation_seconds": 18.040000000000603,
+      "observations": {
+        "count": 902,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.023124977000406943,
+        "max_simulation_interval_seconds": 0.02000000000000668
+      },
+      "diagnostics": {},
+      "report": "reports/milestone_f.short.json",
+      "html": "reports/milestone_f.short.html"
+    },
+    "container": {
+      "exit_status": 0,
+      "image": "sha256:d8529fded609348b0d9a83b015a22c143d0522a62b905651c219778f7dbbd030",
+      "mounts": [],
+      "network_mode": "none",
+      "privileged": false
+    }
+  },
+  "publication": {
+    "ready_for_portfolio_review": true,
+    "published": false,
+    "repository_license_present": false,
+    "remaining_before_publication": [
+      "Review intended files and attribution; add chosen repository license consistent with package metadata",
+      "Create a real commit and user-selected remote; publish only by deliberate user action",
+      "Run and inspect hosted CI; retain URL/commit/artifacts before claiming CI verified"
+    ],
+    "disclosed_verification_gaps": [
+      "Unresolved affected-observation receive anomaly",
+      "30-minute endurance unverified",
+      "No HIL, physical robot, production readiness or proven absence of memory leaks"
+    ]
+  },
+  "artifacts": [
+    "README.md",
+    "docs/operations.md",
+    "docs/demo.md",
+    "docs/verification.md",
+    "docs/test_matrix.md",
+    "docs/portfolio_summary.md"
+  ],
+  "documentation_checks": {
+    "files": 8,
+    "relative_links_checked": 95,
+    "bash_blocks_syntax_checked": 26,
+    "failures": [],
+    "passed": true
+  },
+  "verification_success": true
+}

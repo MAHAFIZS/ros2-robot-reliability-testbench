@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "reaches": [
+    {
+      "target_metres": [
+        0.5945,
+        0.03,
+        0.5945
+      ],
+      "status": 4,
+      "success": true,
+      "final_error_metres": 0.004934442855985737,
+      "elapsed_simulation_seconds": 0.24000000000000019,
+      "elapsed_wall_seconds": 0.2522202299996934,
+      "feedback_messages": 13
+    },
+    {
+      "target_metres": [
+        0.5,
+        -0.08,
+        0.55
+      ],
+      "status": 4,
+      "success": true,
+      "final_error_metres": 0.004607148056802946,
+      "elapsed_simulation_seconds": 0.32000000000000023,
+      "elapsed_wall_seconds": 0.3358393400003479,
+      "feedback_messages": 17
+    },
+    {
+      "target_metres": [
+        0.55,
+        0.1,
+        0.65
+      ],
+      "status": 4,
+      "success": true,
+      "final_error_metres": 0.004658612998996036,
+      "elapsed_simulation_seconds": 0.3000000000000002,
+      "elapsed_wall_seconds": 0.31139308599995275,
+      "feedback_messages": 16
+    }
+  ],
+  "total_wall_seconds": 1.794110843999988
+}

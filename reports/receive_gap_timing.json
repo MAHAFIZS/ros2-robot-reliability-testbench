@@ -1,0 +1,5423 @@
+{
+  "executed_utc": "2026-10-31T13:59:28.747206+00:00",
+  "experiment_design": {
+    "order": "on/off/on/off/on/off",
+    "runs": 6,
+    "duration_seconds_each": 60,
+    "seed": 7,
+    "max_observation_gap_seconds": 0.15,
+    "unchanged_acceptance": true,
+    "disabled_runs": "diagnostic experiments, not replacement endurance; missing-resource criteria remain failed"
+  },
+  "normalized_config_identical": true,
+  "robot_yaml_identical": true,
+  "common_actual_target_prefix_verified": 148,
+  "clock_comparability_verified": true,
+  "regression": {
+    "passed": 91,
+    "failed": 0,
+    "prior_cases": 85,
+    "new_timing_cases": 6
+  },
+  "experiments": [
+    {
+      "run": "01-sampling-on",
+      "resource_sampling": true,
+      "classification": "healthy_with_resource_sampling",
+      "exit_status": 0,
+      "acceptance_success": true,
+      "failed_criteria": [],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.006512255000416,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 148,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 148,
+          "required": 148
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.004914918782982072,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.40510352999990573,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": true,
+          "observed": {
+            "count": 3002,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.028190369997901144,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": true,
+          "observed": 5,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": true,
+          "observed": [
+            [
+              "/usr/bin/python3",
+              "/opt/ros/jazzy/bin/ros2",
+              "launch",
+              "robot_reliability_testbench",
+              "normal.launch.py"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+              "--ros-args",
+              "-r",
+              "__node:=panda_simulator",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+              "--ros-args",
+              "-r",
+              "__node:=task_server",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+              "--ros-args",
+              "-r",
+              "__node:=fault_boundary",
+              "-r",
+              "__ns:=/testbench"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+              "--ros-args",
+              "-r",
+              "__node:=health_monitor",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ]
+          ],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": true,
+          "observed": 296.25390625,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.006512255000416,
+      "simulation_seconds": 60.04000000002802,
+      "task_attempts": 148,
+      "task_successes": 148,
+      "task_failures": 0,
+      "max_error_metres": 0.004914918782982072,
+      "observations": {
+        "count": 3002,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.028190369997901144,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3002,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3002,
+            "max_ns": 598279,
+            "p50_ns": 67580,
+            "p99_ns": 130369
+          },
+          "source_to_boundary_entry": {
+            "count": 3002,
+            "max_ns": 3834002,
+            "p50_ns": 1790626,
+            "p99_ns": 3276471
+          },
+          "boundary_processing": {
+            "count": 3002,
+            "max_ns": 591035,
+            "p50_ns": 198675,
+            "p99_ns": 310901
+          },
+          "boundary_publish_api": {
+            "count": 3002,
+            "max_ns": 397584,
+            "p50_ns": 122622,
+            "p99_ns": 196089
+          },
+          "boundary_to_runner_entry": {
+            "count": 3002,
+            "max_ns": 18542651,
+            "p50_ns": 740032,
+            "p99_ns": 2593623
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3002,
+            "max_ns": 1955261,
+            "p50_ns": 619895,
+            "p99_ns": 1018572
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3002,
+            "max_ns": 17827691,
+            "p50_ns": 104370,
+            "p99_ns": 1880010
+          }
+        },
+        "resource_sampling": {
+          "count": 60,
+          "max_ns": 3280941,
+          "p50_ns": 2009019,
+          "p99_ns": 3222848
+        },
+        "spin_duration": {
+          "count": 9361,
+          "max_ns": 15984689,
+          "p50_ns": 5784929,
+          "p99_ns": 10741244
+        },
+        "between_spins": {
+          "count": 9360,
+          "max_ns": 3478811,
+          "p50_ns": 62673,
+          "p99_ns": 426568
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3034,
+            "total_enqueue_ns": 125631382,
+            "mean_enqueue_ns": 41407.83849703362,
+            "max_enqueue_ns": 174232,
+            "cost_log2_ns_buckets": {
+              "14": 63,
+              "15": 79,
+              "13": 11,
+              "17": 49,
+              "16": 2829,
+              "18": 3
+            },
+            "writer_cpu_ns": 595200576,
+            "writer_wall_ns": 60679873353,
+            "writer_cpu_percent": 0.9808863188251421
+          },
+          "boundary": {
+            "calls": 3030,
+            "total_enqueue_ns": 116091538,
+            "mean_enqueue_ns": 38314.03894389439,
+            "max_enqueue_ns": 170697,
+            "cost_log2_ns_buckets": {
+              "14": 64,
+              "15": 51,
+              "13": 11,
+              "16": 2879,
+              "17": 23,
+              "18": 2
+            },
+            "writer_cpu_ns": 694076357,
+            "writer_wall_ns": 60836238782,
+            "writer_cpu_percent": 1.1408929462045585
+          },
+          "monitor": {
+            "calls": 3030,
+            "total_enqueue_ns": 136432795,
+            "mean_enqueue_ns": 45027.32508250825,
+            "max_enqueue_ns": 193566,
+            "cost_log2_ns_buckets": {
+              "14": 46,
+              "15": 78,
+              "16": 2795,
+              "18": 5,
+              "17": 98,
+              "13": 8
+            },
+            "writer_cpu_ns": 620122914,
+            "writer_wall_ns": 60841807565,
+            "writer_cpu_percent": 1.0192381502431453
+          },
+          "runner": {
+            "calls": 12565,
+            "total_enqueue_ns": 401501608,
+            "mean_enqueue_ns": 31953.968006366893,
+            "max_enqueue_ns": 231639,
+            "cost_log2_ns_buckets": {
+              "14": 2412,
+              "13": 131,
+              "15": 3495,
+              "12": 47,
+              "16": 6320,
+              "17": 145,
+              "18": 13,
+              "11": 2
+            },
+            "writer_cpu_ns": 1577942305,
+            "writer_wall_ns": 61524988300,
+            "writer_cpu_percent": 2.5647177652531146
+          }
+        },
+        "trace_bytes": 2961325,
+        "outcome": "not reproduced in short runs",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/01-sampling-on"
+    },
+    {
+      "run": "02-sampling-off",
+      "resource_sampling": false,
+      "classification": "diagnostic_resource_sampling_disabled",
+      "exit_status": 1,
+      "acceptance_success": false,
+      "failed_criteria": [
+        {
+          "name": "continuous_observations",
+          "passed": false,
+          "observed": {
+            "count": 3000,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.3246747509983834,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        }
+      ],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.00823417799984,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 149,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 149,
+          "required": 149
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.004919175674303098,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.41656113600038225,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": false,
+          "observed": {
+            "count": 3000,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.3246747509983834,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.00823417799984,
+      "simulation_seconds": 60.000000000027974,
+      "task_attempts": 149,
+      "task_successes": 149,
+      "task_failures": 0,
+      "max_error_metres": 0.004919175674303098,
+      "observations": {
+        "count": 3000,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.3246747509983834,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3000,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [
+          {
+            "event": {
+              "kind": "receive_gap",
+              "time_ns": 19040336065563,
+              "gap_ns": 324674751,
+              "before": [
+                {
+                  "kind": "receive",
+                  "time_ns": 19039791644929,
+                  "entry_ns": 19039791644929,
+                  "generation": 1,
+                  "sequence": 132,
+                  "simulation_stamp_ns": 2620000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039810934733,
+                  "entry_ns": 19039810934733,
+                  "generation": 1,
+                  "sequence": 133,
+                  "simulation_stamp_ns": 2640000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039830939824,
+                  "entry_ns": 19039830939824,
+                  "generation": 1,
+                  "sequence": 134,
+                  "simulation_stamp_ns": 2660000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039851404056,
+                  "entry_ns": 19039851404056,
+                  "generation": 1,
+                  "sequence": 135,
+                  "simulation_stamp_ns": 2680000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039871509900,
+                  "entry_ns": 19039871509900,
+                  "generation": 1,
+                  "sequence": 136,
+                  "simulation_stamp_ns": 2700000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039892375407,
+                  "entry_ns": 19039892375407,
+                  "generation": 1,
+                  "sequence": 137,
+                  "simulation_stamp_ns": 2720000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039912069968,
+                  "entry_ns": 19039912069968,
+                  "generation": 1,
+                  "sequence": 138,
+                  "simulation_stamp_ns": 2740000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039930392303,
+                  "entry_ns": 19039930392303,
+                  "generation": 1,
+                  "sequence": 139,
+                  "simulation_stamp_ns": 2760000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039951201323,
+                  "entry_ns": 19039951201323,
+                  "generation": 1,
+                  "sequence": 140,
+                  "simulation_stamp_ns": 2780000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039971200944,
+                  "entry_ns": 19039971200944,
+                  "generation": 1,
+                  "sequence": 141,
+                  "simulation_stamp_ns": 2800000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19039991346803,
+                  "entry_ns": 19039991346803,
+                  "generation": 1,
+                  "sequence": 142,
+                  "simulation_stamp_ns": 2820000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040011390812,
+                  "entry_ns": 19040011390812,
+                  "generation": 1,
+                  "sequence": 143,
+                  "simulation_stamp_ns": 2840000000
+                }
+              ],
+              "current": {
+                "kind": "receive",
+                "time_ns": 19040336065563,
+                "entry_ns": 19040336065563,
+                "generation": 1,
+                "sequence": 144,
+                "simulation_stamp_ns": 2860000000
+              },
+              "after": [
+                {
+                  "kind": "receive",
+                  "time_ns": 19040338477042,
+                  "entry_ns": 19040338477042,
+                  "generation": 1,
+                  "sequence": 145,
+                  "simulation_stamp_ns": 2880000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040340136344,
+                  "entry_ns": 19040340136344,
+                  "generation": 1,
+                  "sequence": 146,
+                  "simulation_stamp_ns": 2900000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040341278069,
+                  "entry_ns": 19040341278069,
+                  "generation": 1,
+                  "sequence": 147,
+                  "simulation_stamp_ns": 2920000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040343471112,
+                  "entry_ns": 19040343471112,
+                  "generation": 1,
+                  "sequence": 148,
+                  "simulation_stamp_ns": 2940000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040345910272,
+                  "entry_ns": 19040345910272,
+                  "generation": 1,
+                  "sequence": 149,
+                  "simulation_stamp_ns": 2960000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040347203136,
+                  "entry_ns": 19040347203136,
+                  "generation": 1,
+                  "sequence": 150,
+                  "simulation_stamp_ns": 2980000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040348340089,
+                  "entry_ns": 19040348340089,
+                  "generation": 1,
+                  "sequence": 151,
+                  "simulation_stamp_ns": 3000000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040349432935,
+                  "entry_ns": 19040349432935,
+                  "generation": 1,
+                  "sequence": 152,
+                  "simulation_stamp_ns": 3020000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040350508473,
+                  "entry_ns": 19040350508473,
+                  "generation": 1,
+                  "sequence": 153,
+                  "simulation_stamp_ns": 3040000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040351432879,
+                  "entry_ns": 19040351432879,
+                  "generation": 1,
+                  "sequence": 154,
+                  "simulation_stamp_ns": 3060000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040352340166,
+                  "entry_ns": 19040352340166,
+                  "generation": 1,
+                  "sequence": 155,
+                  "simulation_stamp_ns": 3080000000
+                },
+                {
+                  "kind": "receive",
+                  "time_ns": 19040353154147,
+                  "entry_ns": 19040353154147,
+                  "generation": 1,
+                  "sequence": 156,
+                  "simulation_stamp_ns": 3100000000
+                }
+              ],
+              "complete": true
+            },
+            "matched_context": [
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2620000000,
+                "boundary_sequence": 132,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039788771906,
+                  "generation": 1,
+                  "source_sequence": 136,
+                  "simulation_stamp_ns": 2620000000,
+                  "tick_entry_ns": 19039787643175,
+                  "publish_start_ns": 19039788694366,
+                  "publish_end_ns": 19039788763823
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039790359659,
+                  "generation": 1,
+                  "sequence": 132,
+                  "simulation_stamp_ns": 2620000000,
+                  "entry_ns": 19039790020982,
+                  "publish_start_ns": 19039790215272,
+                  "publish_end_ns": 19039790351186
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039790742091,
+                  "entry_ns": 19039790742091,
+                  "generation": 1,
+                  "sequence": 132,
+                  "simulation_stamp_ns": 2620000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039791644929,
+                  "entry_ns": 19039791644929,
+                  "generation": 1,
+                  "sequence": 132,
+                  "simulation_stamp_ns": 2620000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 69457,
+                  "source_to_boundary_entry": 1326616,
+                  "boundary_processing": 194290,
+                  "boundary_publish_api": 135914,
+                  "boundary_to_runner_entry": 1429657,
+                  "boundary_to_monitor_entry": 526819,
+                  "runner_minus_monitor_entry": 902838
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2640000000,
+                "boundary_sequence": 133,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039808866782,
+                  "generation": 1,
+                  "source_sequence": 137,
+                  "simulation_stamp_ns": 2640000000,
+                  "tick_entry_ns": 19039807718264,
+                  "publish_start_ns": 19039808794892,
+                  "publish_end_ns": 19039808858311
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039810289835,
+                  "generation": 1,
+                  "sequence": 133,
+                  "simulation_stamp_ns": 2640000000,
+                  "entry_ns": 19039809957709,
+                  "publish_start_ns": 19039810155075,
+                  "publish_end_ns": 19039810281908
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039810695272,
+                  "entry_ns": 19039810695272,
+                  "generation": 1,
+                  "sequence": 133,
+                  "simulation_stamp_ns": 2640000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039810934733,
+                  "entry_ns": 19039810934733,
+                  "generation": 1,
+                  "sequence": 133,
+                  "simulation_stamp_ns": 2640000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 63419,
+                  "source_to_boundary_entry": 1162817,
+                  "boundary_processing": 197366,
+                  "boundary_publish_api": 126833,
+                  "boundary_to_runner_entry": 779658,
+                  "boundary_to_monitor_entry": 540197,
+                  "runner_minus_monitor_entry": 239461
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2660000000,
+                "boundary_sequence": 134,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039828870498,
+                  "generation": 1,
+                  "source_sequence": 138,
+                  "simulation_stamp_ns": 2660000000,
+                  "tick_entry_ns": 19039827726220,
+                  "publish_start_ns": 19039828795122,
+                  "publish_end_ns": 19039828861237
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039830285429,
+                  "generation": 1,
+                  "sequence": 134,
+                  "simulation_stamp_ns": 2660000000,
+                  "entry_ns": 19039829951720,
+                  "publish_start_ns": 19039830154317,
+                  "publish_end_ns": 19039830274685
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039830683374,
+                  "entry_ns": 19039830683374,
+                  "generation": 1,
+                  "sequence": 134,
+                  "simulation_stamp_ns": 2660000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039830939824,
+                  "entry_ns": 19039830939824,
+                  "generation": 1,
+                  "sequence": 134,
+                  "simulation_stamp_ns": 2660000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 66115,
+                  "source_to_boundary_entry": 1156598,
+                  "boundary_processing": 202597,
+                  "boundary_publish_api": 120368,
+                  "boundary_to_runner_entry": 785507,
+                  "boundary_to_monitor_entry": 529057,
+                  "runner_minus_monitor_entry": 256450
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2680000000,
+                "boundary_sequence": 135,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039848830264,
+                  "generation": 1,
+                  "source_sequence": 139,
+                  "simulation_stamp_ns": 2680000000,
+                  "tick_entry_ns": 19039847722493,
+                  "publish_start_ns": 19039848756367,
+                  "publish_end_ns": 19039848821470
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039850347104,
+                  "generation": 1,
+                  "sequence": 135,
+                  "simulation_stamp_ns": 2680000000,
+                  "entry_ns": 19039849993914,
+                  "publish_start_ns": 19039850206332,
+                  "publish_end_ns": 19039850338355
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039850755304,
+                  "entry_ns": 19039850755304,
+                  "generation": 1,
+                  "sequence": 135,
+                  "simulation_stamp_ns": 2680000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039851404056,
+                  "entry_ns": 19039851404056,
+                  "generation": 1,
+                  "sequence": 135,
+                  "simulation_stamp_ns": 2680000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 65103,
+                  "source_to_boundary_entry": 1237547,
+                  "boundary_processing": 212418,
+                  "boundary_publish_api": 132023,
+                  "boundary_to_runner_entry": 1197724,
+                  "boundary_to_monitor_entry": 548972,
+                  "runner_minus_monitor_entry": 648752
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2700000000,
+                "boundary_sequence": 136,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039868803061,
+                  "generation": 1,
+                  "source_sequence": 140,
+                  "simulation_stamp_ns": 2700000000,
+                  "tick_entry_ns": 19039867656124,
+                  "publish_start_ns": 19039868730979,
+                  "publish_end_ns": 19039868794682
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039870385622,
+                  "generation": 1,
+                  "sequence": 136,
+                  "simulation_stamp_ns": 2700000000,
+                  "entry_ns": 19039870048850,
+                  "publish_start_ns": 19039870246572,
+                  "publish_end_ns": 19039870376444
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039871189303,
+                  "entry_ns": 19039871189303,
+                  "generation": 1,
+                  "sequence": 136,
+                  "simulation_stamp_ns": 2700000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039871509900,
+                  "entry_ns": 19039871509900,
+                  "generation": 1,
+                  "sequence": 136,
+                  "simulation_stamp_ns": 2700000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 63703,
+                  "source_to_boundary_entry": 1317871,
+                  "boundary_processing": 197722,
+                  "boundary_publish_api": 129872,
+                  "boundary_to_runner_entry": 1263328,
+                  "boundary_to_monitor_entry": 942731,
+                  "runner_minus_monitor_entry": 320597
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2720000000,
+                "boundary_sequence": 137,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039888917816,
+                  "generation": 1,
+                  "source_sequence": 141,
+                  "simulation_stamp_ns": 2720000000,
+                  "tick_entry_ns": 19039887641611,
+                  "publish_start_ns": 19039888843672,
+                  "publish_end_ns": 19039888909142
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039891667957,
+                  "generation": 1,
+                  "sequence": 137,
+                  "simulation_stamp_ns": 2720000000,
+                  "entry_ns": 19039891336638,
+                  "publish_start_ns": 19039891530926,
+                  "publish_end_ns": 19039891659800
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039892530962,
+                  "entry_ns": 19039892530962,
+                  "generation": 1,
+                  "sequence": 137,
+                  "simulation_stamp_ns": 2720000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039892375407,
+                  "entry_ns": 19039892375407,
+                  "generation": 1,
+                  "sequence": 137,
+                  "simulation_stamp_ns": 2720000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 65470,
+                  "source_to_boundary_entry": 2492966,
+                  "boundary_processing": 194288,
+                  "boundary_publish_api": 128874,
+                  "boundary_to_runner_entry": 844481,
+                  "boundary_to_monitor_entry": 1000036,
+                  "runner_minus_monitor_entry": -155555
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2740000000,
+                "boundary_sequence": 138,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039908886259,
+                  "generation": 1,
+                  "source_sequence": 142,
+                  "simulation_stamp_ns": 2740000000,
+                  "tick_entry_ns": 19039907721193,
+                  "publish_start_ns": 19039908815066,
+                  "publish_end_ns": 19039908877460
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039911378694,
+                  "generation": 1,
+                  "sequence": 138,
+                  "simulation_stamp_ns": 2740000000,
+                  "entry_ns": 19039911035456,
+                  "publish_start_ns": 19039911228906,
+                  "publish_end_ns": 19039911367965
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039912492958,
+                  "entry_ns": 19039912492958,
+                  "generation": 1,
+                  "sequence": 138,
+                  "simulation_stamp_ns": 2740000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039912069968,
+                  "entry_ns": 19039912069968,
+                  "generation": 1,
+                  "sequence": 138,
+                  "simulation_stamp_ns": 2740000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 62394,
+                  "source_to_boundary_entry": 2220390,
+                  "boundary_processing": 193450,
+                  "boundary_publish_api": 139059,
+                  "boundary_to_runner_entry": 841062,
+                  "boundary_to_monitor_entry": 1264052,
+                  "runner_minus_monitor_entry": -422990
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2760000000,
+                "boundary_sequence": 139,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039929077336,
+                  "generation": 1,
+                  "source_sequence": 143,
+                  "simulation_stamp_ns": 2760000000,
+                  "tick_entry_ns": 19039928114583,
+                  "publish_start_ns": 19039928992343,
+                  "publish_end_ns": 19039929068104
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039929855650,
+                  "generation": 1,
+                  "sequence": 139,
+                  "simulation_stamp_ns": 2760000000,
+                  "entry_ns": 19039929520946,
+                  "publish_start_ns": 19039929747679,
+                  "publish_end_ns": 19039929846911
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039930374856,
+                  "entry_ns": 19039930374856,
+                  "generation": 1,
+                  "sequence": 139,
+                  "simulation_stamp_ns": 2760000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039930392303,
+                  "entry_ns": 19039930392303,
+                  "generation": 1,
+                  "sequence": 139,
+                  "simulation_stamp_ns": 2760000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 75761,
+                  "source_to_boundary_entry": 528603,
+                  "boundary_processing": 226733,
+                  "boundary_publish_api": 99232,
+                  "boundary_to_runner_entry": 644624,
+                  "boundary_to_monitor_entry": 627177,
+                  "runner_minus_monitor_entry": 17447
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2780000000,
+                "boundary_sequence": 140,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039948821971,
+                  "generation": 1,
+                  "source_sequence": 144,
+                  "simulation_stamp_ns": 2780000000,
+                  "tick_entry_ns": 19039947713898,
+                  "publish_start_ns": 19039948742911,
+                  "publish_end_ns": 19039948813367
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039950486509,
+                  "generation": 1,
+                  "sequence": 140,
+                  "simulation_stamp_ns": 2780000000,
+                  "entry_ns": 19039950072466,
+                  "publish_start_ns": 19039950338486,
+                  "publish_end_ns": 19039950477962
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039951198093,
+                  "entry_ns": 19039951198093,
+                  "generation": 1,
+                  "sequence": 140,
+                  "simulation_stamp_ns": 2780000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039951201323,
+                  "entry_ns": 19039951201323,
+                  "generation": 1,
+                  "sequence": 140,
+                  "simulation_stamp_ns": 2780000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 70456,
+                  "source_to_boundary_entry": 1329555,
+                  "boundary_processing": 266020,
+                  "boundary_publish_api": 139476,
+                  "boundary_to_runner_entry": 862837,
+                  "boundary_to_monitor_entry": 859607,
+                  "runner_minus_monitor_entry": 3230
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2800000000,
+                "boundary_sequence": 141,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039968844905,
+                  "generation": 1,
+                  "source_sequence": 145,
+                  "simulation_stamp_ns": 2800000000,
+                  "tick_entry_ns": 19039967722503,
+                  "publish_start_ns": 19039968773939,
+                  "publish_end_ns": 19039968836309
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039970338153,
+                  "generation": 1,
+                  "sequence": 141,
+                  "simulation_stamp_ns": 2800000000,
+                  "entry_ns": 19039969991918,
+                  "publish_start_ns": 19039970194859,
+                  "publish_end_ns": 19039970327359
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039971044292,
+                  "entry_ns": 19039971044292,
+                  "generation": 1,
+                  "sequence": 141,
+                  "simulation_stamp_ns": 2800000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039971200944,
+                  "entry_ns": 19039971200944,
+                  "generation": 1,
+                  "sequence": 141,
+                  "simulation_stamp_ns": 2800000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 62370,
+                  "source_to_boundary_entry": 1217979,
+                  "boundary_processing": 202941,
+                  "boundary_publish_api": 132500,
+                  "boundary_to_runner_entry": 1006085,
+                  "boundary_to_monitor_entry": 849433,
+                  "runner_minus_monitor_entry": 156652
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2820000000,
+                "boundary_sequence": 142,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19039988784351,
+                  "generation": 1,
+                  "source_sequence": 146,
+                  "simulation_stamp_ns": 2820000000,
+                  "tick_entry_ns": 19039987655781,
+                  "publish_start_ns": 19039988715484,
+                  "publish_end_ns": 19039988776230
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19039990221986,
+                  "generation": 1,
+                  "sequence": 142,
+                  "simulation_stamp_ns": 2820000000,
+                  "entry_ns": 19039989889240,
+                  "publish_start_ns": 19039990087069,
+                  "publish_end_ns": 19039990213332
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19039991095561,
+                  "entry_ns": 19039991095561,
+                  "generation": 1,
+                  "sequence": 142,
+                  "simulation_stamp_ns": 2820000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19039991346803,
+                  "entry_ns": 19039991346803,
+                  "generation": 1,
+                  "sequence": 142,
+                  "simulation_stamp_ns": 2820000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 60746,
+                  "source_to_boundary_entry": 1173756,
+                  "boundary_processing": 197829,
+                  "boundary_publish_api": 126263,
+                  "boundary_to_runner_entry": 1259734,
+                  "boundary_to_monitor_entry": 1008492,
+                  "runner_minus_monitor_entry": 251242
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2840000000,
+                "boundary_sequence": 143,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040008878579,
+                  "generation": 1,
+                  "source_sequence": 147,
+                  "simulation_stamp_ns": 2840000000,
+                  "tick_entry_ns": 19040007725970,
+                  "publish_start_ns": 19040008804804,
+                  "publish_end_ns": 19040008870347
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040010582389,
+                  "generation": 1,
+                  "sequence": 143,
+                  "simulation_stamp_ns": 2840000000,
+                  "entry_ns": 19040010156951,
+                  "publish_start_ns": 19040010390461,
+                  "publish_end_ns": 19040010573491
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040011307994,
+                  "entry_ns": 19040011307994,
+                  "generation": 1,
+                  "sequence": 143,
+                  "simulation_stamp_ns": 2840000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040011390812,
+                  "entry_ns": 19040011390812,
+                  "generation": 1,
+                  "sequence": 143,
+                  "simulation_stamp_ns": 2840000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 65543,
+                  "source_to_boundary_entry": 1352147,
+                  "boundary_processing": 233510,
+                  "boundary_publish_api": 183030,
+                  "boundary_to_runner_entry": 1000351,
+                  "boundary_to_monitor_entry": 917533,
+                  "runner_minus_monitor_entry": 82818
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2860000000,
+                "boundary_sequence": 144,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040028791468,
+                  "generation": 1,
+                  "source_sequence": 148,
+                  "simulation_stamp_ns": 2860000000,
+                  "tick_entry_ns": 19040027650221,
+                  "publish_start_ns": 19040028718144,
+                  "publish_end_ns": 19040028782969
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040030293421,
+                  "generation": 1,
+                  "sequence": 144,
+                  "simulation_stamp_ns": 2860000000,
+                  "entry_ns": 19040029923932,
+                  "publish_start_ns": 19040030119388,
+                  "publish_end_ns": 19040030285278
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040031020472,
+                  "entry_ns": 19040031020472,
+                  "generation": 1,
+                  "sequence": 144,
+                  "simulation_stamp_ns": 2860000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040336065563,
+                  "entry_ns": 19040336065563,
+                  "generation": 1,
+                  "sequence": 144,
+                  "simulation_stamp_ns": 2860000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 64825,
+                  "source_to_boundary_entry": 1205788,
+                  "boundary_processing": 195456,
+                  "boundary_publish_api": 165890,
+                  "boundary_to_runner_entry": 305946175,
+                  "boundary_to_monitor_entry": 901084,
+                  "runner_minus_monitor_entry": 305045091
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2880000000,
+                "boundary_sequence": 145,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040048802179,
+                  "generation": 1,
+                  "source_sequence": 149,
+                  "simulation_stamp_ns": 2880000000,
+                  "tick_entry_ns": 19040047712410,
+                  "publish_start_ns": 19040048727357,
+                  "publish_end_ns": 19040048793537
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040050223988,
+                  "generation": 1,
+                  "sequence": 145,
+                  "simulation_stamp_ns": 2880000000,
+                  "entry_ns": 19040049898930,
+                  "publish_start_ns": 19040050105050,
+                  "publish_end_ns": 19040050215964
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040050917683,
+                  "entry_ns": 19040050917683,
+                  "generation": 1,
+                  "sequence": 145,
+                  "simulation_stamp_ns": 2880000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040338477042,
+                  "entry_ns": 19040338477042,
+                  "generation": 1,
+                  "sequence": 145,
+                  "simulation_stamp_ns": 2880000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 66180,
+                  "source_to_boundary_entry": 1171573,
+                  "boundary_processing": 206120,
+                  "boundary_publish_api": 110914,
+                  "boundary_to_runner_entry": 288371992,
+                  "boundary_to_monitor_entry": 812633,
+                  "runner_minus_monitor_entry": 287559359
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2900000000,
+                "boundary_sequence": 146,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040068860089,
+                  "generation": 1,
+                  "source_sequence": 150,
+                  "simulation_stamp_ns": 2900000000,
+                  "tick_entry_ns": 19040067722581,
+                  "publish_start_ns": 19040068789830,
+                  "publish_end_ns": 19040068851329
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040071278065,
+                  "generation": 1,
+                  "sequence": 146,
+                  "simulation_stamp_ns": 2900000000,
+                  "entry_ns": 19040070946503,
+                  "publish_start_ns": 19040071151645,
+                  "publish_end_ns": 19040071269716
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040072042387,
+                  "entry_ns": 19040072042387,
+                  "generation": 1,
+                  "sequence": 146,
+                  "simulation_stamp_ns": 2900000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040340136344,
+                  "entry_ns": 19040340136344,
+                  "generation": 1,
+                  "sequence": 146,
+                  "simulation_stamp_ns": 2900000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 61499,
+                  "source_to_boundary_entry": 2156673,
+                  "boundary_processing": 205142,
+                  "boundary_publish_api": 118071,
+                  "boundary_to_runner_entry": 268984699,
+                  "boundary_to_monitor_entry": 890742,
+                  "runner_minus_monitor_entry": 268093957
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2920000000,
+                "boundary_sequence": 147,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040088753200,
+                  "generation": 1,
+                  "source_sequence": 151,
+                  "simulation_stamp_ns": 2920000000,
+                  "tick_entry_ns": 19040087653242,
+                  "publish_start_ns": 19040088686840,
+                  "publish_end_ns": 19040088745000
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040090447985,
+                  "generation": 1,
+                  "sequence": 147,
+                  "simulation_stamp_ns": 2920000000,
+                  "entry_ns": 19040090124796,
+                  "publish_start_ns": 19040090317751,
+                  "publish_end_ns": 19040090438670
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040091378187,
+                  "entry_ns": 19040091378187,
+                  "generation": 1,
+                  "sequence": 147,
+                  "simulation_stamp_ns": 2920000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040341278069,
+                  "entry_ns": 19040341278069,
+                  "generation": 1,
+                  "sequence": 147,
+                  "simulation_stamp_ns": 2920000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 58160,
+                  "source_to_boundary_entry": 1437956,
+                  "boundary_processing": 192955,
+                  "boundary_publish_api": 120919,
+                  "boundary_to_runner_entry": 250960318,
+                  "boundary_to_monitor_entry": 1060436,
+                  "runner_minus_monitor_entry": 249899882
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2940000000,
+                "boundary_sequence": 148,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040108759280,
+                  "generation": 1,
+                  "source_sequence": 152,
+                  "simulation_stamp_ns": 2940000000,
+                  "tick_entry_ns": 19040107654483,
+                  "publish_start_ns": 19040108685623,
+                  "publish_end_ns": 19040108751039
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040110746835,
+                  "generation": 1,
+                  "sequence": 148,
+                  "simulation_stamp_ns": 2940000000,
+                  "entry_ns": 19040110440605,
+                  "publish_start_ns": 19040110628151,
+                  "publish_end_ns": 19040110738799
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040111452097,
+                  "entry_ns": 19040111452097,
+                  "generation": 1,
+                  "sequence": 148,
+                  "simulation_stamp_ns": 2940000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040343471112,
+                  "entry_ns": 19040343471112,
+                  "generation": 1,
+                  "sequence": 148,
+                  "simulation_stamp_ns": 2940000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 65416,
+                  "source_to_boundary_entry": 1754982,
+                  "boundary_processing": 187546,
+                  "boundary_publish_api": 110648,
+                  "boundary_to_runner_entry": 232842961,
+                  "boundary_to_monitor_entry": 823946,
+                  "runner_minus_monitor_entry": 232019015
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2960000000,
+                "boundary_sequence": 149,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040128770150,
+                  "generation": 1,
+                  "source_sequence": 153,
+                  "simulation_stamp_ns": 2960000000,
+                  "tick_entry_ns": 19040127642304,
+                  "publish_start_ns": 19040128698742,
+                  "publish_end_ns": 19040128762077
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040130289790,
+                  "generation": 1,
+                  "sequence": 149,
+                  "simulation_stamp_ns": 2960000000,
+                  "entry_ns": 19040129971333,
+                  "publish_start_ns": 19040130166938,
+                  "publish_end_ns": 19040130281283
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040130980762,
+                  "entry_ns": 19040130980762,
+                  "generation": 1,
+                  "sequence": 149,
+                  "simulation_stamp_ns": 2960000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040345910272,
+                  "entry_ns": 19040345910272,
+                  "generation": 1,
+                  "sequence": 149,
+                  "simulation_stamp_ns": 2960000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 63335,
+                  "source_to_boundary_entry": 1272591,
+                  "boundary_processing": 195605,
+                  "boundary_publish_api": 114345,
+                  "boundary_to_runner_entry": 215743334,
+                  "boundary_to_monitor_entry": 813824,
+                  "runner_minus_monitor_entry": 214929510
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 2980000000,
+                "boundary_sequence": 150,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040148821922,
+                  "generation": 1,
+                  "source_sequence": 154,
+                  "simulation_stamp_ns": 2980000000,
+                  "tick_entry_ns": 19040147716609,
+                  "publish_start_ns": 19040148750320,
+                  "publish_end_ns": 19040148813748
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040151223356,
+                  "generation": 1,
+                  "sequence": 150,
+                  "simulation_stamp_ns": 2980000000,
+                  "entry_ns": 19040150901379,
+                  "publish_start_ns": 19040151100087,
+                  "publish_end_ns": 19040151214578
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040151692158,
+                  "entry_ns": 19040151692158,
+                  "generation": 1,
+                  "sequence": 150,
+                  "simulation_stamp_ns": 2980000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040347203136,
+                  "entry_ns": 19040347203136,
+                  "generation": 1,
+                  "sequence": 150,
+                  "simulation_stamp_ns": 2980000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 63428,
+                  "source_to_boundary_entry": 2151059,
+                  "boundary_processing": 198708,
+                  "boundary_publish_api": 114491,
+                  "boundary_to_runner_entry": 196103049,
+                  "boundary_to_monitor_entry": 592071,
+                  "runner_minus_monitor_entry": 195510978
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3000000000,
+                "boundary_sequence": 151,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040168828372,
+                  "generation": 1,
+                  "source_sequence": 155,
+                  "simulation_stamp_ns": 3000000000,
+                  "tick_entry_ns": 19040167665701,
+                  "publish_start_ns": 19040168746426,
+                  "publish_end_ns": 19040168820031
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040171220630,
+                  "generation": 1,
+                  "sequence": 151,
+                  "simulation_stamp_ns": 3000000000,
+                  "entry_ns": 19040170887193,
+                  "publish_start_ns": 19040171092577,
+                  "publish_end_ns": 19040171211744
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040171726150,
+                  "entry_ns": 19040171726150,
+                  "generation": 1,
+                  "sequence": 151,
+                  "simulation_stamp_ns": 3000000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040348340089,
+                  "entry_ns": 19040348340089,
+                  "generation": 1,
+                  "sequence": 151,
+                  "simulation_stamp_ns": 3000000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 73605,
+                  "source_to_boundary_entry": 2140767,
+                  "boundary_processing": 205384,
+                  "boundary_publish_api": 119167,
+                  "boundary_to_runner_entry": 177247512,
+                  "boundary_to_monitor_entry": 633573,
+                  "runner_minus_monitor_entry": 176613939
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3020000000,
+                "boundary_sequence": 152,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040188896702,
+                  "generation": 1,
+                  "source_sequence": 156,
+                  "simulation_stamp_ns": 3020000000,
+                  "tick_entry_ns": 19040187740218,
+                  "publish_start_ns": 19040188825520,
+                  "publish_end_ns": 19040188887821
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040190680154,
+                  "generation": 1,
+                  "sequence": 152,
+                  "simulation_stamp_ns": 3020000000,
+                  "entry_ns": 19040190339624,
+                  "publish_start_ns": 19040190544229,
+                  "publish_end_ns": 19040190671449
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040191246686,
+                  "entry_ns": 19040191246686,
+                  "generation": 1,
+                  "sequence": 152,
+                  "simulation_stamp_ns": 3020000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040349432935,
+                  "entry_ns": 19040349432935,
+                  "generation": 1,
+                  "sequence": 152,
+                  "simulation_stamp_ns": 3020000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 62301,
+                  "source_to_boundary_entry": 1514104,
+                  "boundary_processing": 204605,
+                  "boundary_publish_api": 127220,
+                  "boundary_to_runner_entry": 158888706,
+                  "boundary_to_monitor_entry": 702457,
+                  "runner_minus_monitor_entry": 158186249
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3040000000,
+                "boundary_sequence": 153,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040208788264,
+                  "generation": 1,
+                  "source_sequence": 157,
+                  "simulation_stamp_ns": 3040000000,
+                  "tick_entry_ns": 19040207628085,
+                  "publish_start_ns": 19040208721147,
+                  "publish_end_ns": 19040208779965
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040210337555,
+                  "generation": 1,
+                  "sequence": 153,
+                  "simulation_stamp_ns": 3040000000,
+                  "entry_ns": 19040209975159,
+                  "publish_start_ns": 19040210210011,
+                  "publish_end_ns": 19040210327578
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040210891345,
+                  "entry_ns": 19040210891345,
+                  "generation": 1,
+                  "sequence": 153,
+                  "simulation_stamp_ns": 3040000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040350508473,
+                  "entry_ns": 19040350508473,
+                  "generation": 1,
+                  "sequence": 153,
+                  "simulation_stamp_ns": 3040000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 58818,
+                  "source_to_boundary_entry": 1254012,
+                  "boundary_processing": 234852,
+                  "boundary_publish_api": 117567,
+                  "boundary_to_runner_entry": 140298462,
+                  "boundary_to_monitor_entry": 681334,
+                  "runner_minus_monitor_entry": 139617128
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3060000000,
+                "boundary_sequence": 154,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040228802799,
+                  "generation": 1,
+                  "source_sequence": 158,
+                  "simulation_stamp_ns": 3060000000,
+                  "tick_entry_ns": 19040227637555,
+                  "publish_start_ns": 19040228729176,
+                  "publish_end_ns": 19040228794346
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040230340046,
+                  "generation": 1,
+                  "sequence": 154,
+                  "simulation_stamp_ns": 3060000000,
+                  "entry_ns": 19040230009217,
+                  "publish_start_ns": 19040230203114,
+                  "publish_end_ns": 19040230331835
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040230890057,
+                  "entry_ns": 19040230890057,
+                  "generation": 1,
+                  "sequence": 154,
+                  "simulation_stamp_ns": 3060000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040351432879,
+                  "entry_ns": 19040351432879,
+                  "generation": 1,
+                  "sequence": 154,
+                  "simulation_stamp_ns": 3060000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 65170,
+                  "source_to_boundary_entry": 1280041,
+                  "boundary_processing": 193897,
+                  "boundary_publish_api": 128721,
+                  "boundary_to_runner_entry": 121229765,
+                  "boundary_to_monitor_entry": 686943,
+                  "runner_minus_monitor_entry": 120542822
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3080000000,
+                "boundary_sequence": 155,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040248822584,
+                  "generation": 1,
+                  "source_sequence": 159,
+                  "simulation_stamp_ns": 3080000000,
+                  "tick_entry_ns": 19040247718157,
+                  "publish_start_ns": 19040248748070,
+                  "publish_end_ns": 19040248814126
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040250459930,
+                  "generation": 1,
+                  "sequence": 155,
+                  "simulation_stamp_ns": 3080000000,
+                  "entry_ns": 19040250126063,
+                  "publish_start_ns": 19040250331318,
+                  "publish_end_ns": 19040250451675
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040251077102,
+                  "entry_ns": 19040251077102,
+                  "generation": 1,
+                  "sequence": 155,
+                  "simulation_stamp_ns": 3080000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040352340166,
+                  "entry_ns": 19040352340166,
+                  "generation": 1,
+                  "sequence": 155,
+                  "simulation_stamp_ns": 3080000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 66056,
+                  "source_to_boundary_entry": 1377993,
+                  "boundary_processing": 205255,
+                  "boundary_publish_api": 120357,
+                  "boundary_to_runner_entry": 102008848,
+                  "boundary_to_monitor_entry": 745784,
+                  "runner_minus_monitor_entry": 101263064
+                }
+              },
+              {
+                "generation": 1,
+                "simulation_stamp_ns": 3100000000,
+                "boundary_sequence": 156,
+                "complete": true,
+                "source": {
+                  "kind": "source_publish",
+                  "time_ns": 19040268774649,
+                  "generation": 1,
+                  "source_sequence": 160,
+                  "simulation_stamp_ns": 3100000000,
+                  "tick_entry_ns": 19040267657224,
+                  "publish_start_ns": 19040268702210,
+                  "publish_end_ns": 19040268766048
+                },
+                "boundary": {
+                  "kind": "boundary",
+                  "time_ns": 19040270276057,
+                  "generation": 1,
+                  "sequence": 156,
+                  "simulation_stamp_ns": 3100000000,
+                  "entry_ns": 19040269958776,
+                  "publish_start_ns": 19040270158782,
+                  "publish_end_ns": 19040270267766
+                },
+                "monitor": {
+                  "kind": "receive",
+                  "time_ns": 19040270822961,
+                  "entry_ns": 19040270822961,
+                  "generation": 1,
+                  "sequence": 156,
+                  "simulation_stamp_ns": 3100000000
+                },
+                "runner": {
+                  "kind": "receive",
+                  "time_ns": 19040353154147,
+                  "entry_ns": 19040353154147,
+                  "generation": 1,
+                  "sequence": 156,
+                  "simulation_stamp_ns": 3100000000
+                },
+                "durations_ns": {
+                  "source_publish_api": 63838,
+                  "source_to_boundary_entry": 1256566,
+                  "boundary_processing": 200006,
+                  "boundary_publish_api": 108984,
+                  "boundary_to_runner_entry": 82995365,
+                  "boundary_to_monitor_entry": 664179,
+                  "runner_minus_monitor_entry": 82331186
+                }
+              }
+            ],
+            "resource_sample_overlaps": [],
+            "spin_overlaps": [
+              {
+                "kind": "spin",
+                "time_ns": 19040011506479,
+                "start_ns": 19040010539200,
+                "end_ns": 19040011504422
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040022049464,
+                "start_ns": 19040011545692,
+                "end_ns": 19040022045732
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040032556644,
+                "start_ns": 19040022121954,
+                "end_ns": 19040032553324
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040043113493,
+                "start_ns": 19040032763723,
+                "end_ns": 19040043111150
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040053485287,
+                "start_ns": 19040043163089,
+                "end_ns": 19040053483396
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040063897620,
+                "start_ns": 19040053641949,
+                "end_ns": 19040063896417
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040074311704,
+                "start_ns": 19040064041539,
+                "end_ns": 19040074310667
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040084692299,
+                "start_ns": 19040074342063,
+                "end_ns": 19040084689509
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040095057279,
+                "start_ns": 19040084743742,
+                "end_ns": 19040095055503
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040105405919,
+                "start_ns": 19040095097421,
+                "end_ns": 19040105404130
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040115739027,
+                "start_ns": 19040105452098,
+                "end_ns": 19040115737455
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040126073114,
+                "start_ns": 19040115777722,
+                "end_ns": 19040126071540
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040136521558,
+                "start_ns": 19040126118210,
+                "end_ns": 19040136518214
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040147127436,
+                "start_ns": 19040136591850,
+                "end_ns": 19040147123712
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040157647331,
+                "start_ns": 19040147197576,
+                "end_ns": 19040157643724
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040168161910,
+                "start_ns": 19040157712879,
+                "end_ns": 19040168158550
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040178550642,
+                "start_ns": 19040168226789,
+                "end_ns": 19040178548398
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040188855653,
+                "start_ns": 19040178597649,
+                "end_ns": 19040188854150
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040199244125,
+                "start_ns": 19040188888949,
+                "end_ns": 19040199241859
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040209679037,
+                "start_ns": 19040199417637,
+                "end_ns": 19040209677462
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040219992405,
+                "start_ns": 19040209712604,
+                "end_ns": 19040219990913
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040230427468,
+                "start_ns": 19040220148538,
+                "end_ns": 19040230425994
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040240753743,
+                "start_ns": 19040230463027,
+                "end_ns": 19040240751805
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040251165139,
+                "start_ns": 19040240792352,
+                "end_ns": 19040251162525
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040261470135,
+                "start_ns": 19040251214854,
+                "end_ns": 19040261468929
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040271897675,
+                "start_ns": 19040261602830,
+                "end_ns": 19040271895293
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040282184319,
+                "start_ns": 19040271932521,
+                "end_ns": 19040282182241
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040292598188,
+                "start_ns": 19040282353589,
+                "end_ns": 19040292596672
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040302906629,
+                "start_ns": 19040292629794,
+                "end_ns": 19040302904712
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040313395527,
+                "start_ns": 19040303091076,
+                "end_ns": 19040313393774
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040323954738,
+                "start_ns": 19040313437031,
+                "end_ns": 19040323950647
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040334778746,
+                "start_ns": 19040324279265,
+                "end_ns": 19040334775265
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040335734599,
+                "start_ns": 19040334973805,
+                "end_ns": 19040335732430
+              },
+              {
+                "kind": "spin",
+                "time_ns": 19040336175821,
+                "start_ns": 19040335778408,
+                "end_ns": 19040336174673
+              }
+            ],
+            "adjacent_stage_intervals_ns": {
+              "source_publish": 19913340,
+              "simulator_tick": 19924251,
+              "boundary_receipt": 19766981,
+              "boundary_publish": 19728927,
+              "monitor_entry": 19712478,
+              "runner_entry": 324674751
+            },
+            "resource_block_overlap_ns": 0
+          }
+        ],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3000,
+            "max_ns": 362472,
+            "p50_ns": 64687,
+            "p99_ns": 120735
+          },
+          "source_to_boundary_entry": {
+            "count": 3000,
+            "max_ns": 3500114,
+            "p50_ns": 1628711,
+            "p99_ns": 3075008
+          },
+          "boundary_processing": {
+            "count": 3000,
+            "max_ns": 488190,
+            "p50_ns": 199973,
+            "p99_ns": 334708
+          },
+          "boundary_publish_api": {
+            "count": 3000,
+            "max_ns": 451505,
+            "p50_ns": 119690,
+            "p99_ns": 199400
+          },
+          "boundary_to_runner_entry": {
+            "count": 3000,
+            "max_ns": 305946175,
+            "p50_ns": 795962,
+            "p99_ns": 7475097
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3000,
+            "max_ns": 1766219,
+            "p50_ns": 684346,
+            "p99_ns": 1301713
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3000,
+            "max_ns": 305045091,
+            "p50_ns": 142242,
+            "p99_ns": 6780701
+          }
+        },
+        "resource_sampling": {
+          "count": 0,
+          "max_ns": null,
+          "p50_ns": null,
+          "p99_ns": null
+        },
+        "spin_duration": {
+          "count": 9181,
+          "max_ns": 17407207,
+          "p50_ns": 7958224,
+          "p99_ns": 11122691
+        },
+        "between_spins": {
+          "count": 9180,
+          "max_ns": 765458,
+          "p50_ns": 59132,
+          "p99_ns": 370488
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3034,
+            "total_enqueue_ns": 117858570,
+            "mean_enqueue_ns": 38845.936058009225,
+            "max_enqueue_ns": 188673,
+            "cost_log2_ns_buckets": {
+              "15": 103,
+              "16": 2787,
+              "17": 33,
+              "14": 92,
+              "13": 18,
+              "18": 1
+            },
+            "writer_cpu_ns": 657535773,
+            "writer_wall_ns": 60689978104,
+            "writer_cpu_percent": 1.083433860979862
+          },
+          "boundary": {
+            "calls": 3034,
+            "total_enqueue_ns": 113767275,
+            "mean_enqueue_ns": 37497.45385629532,
+            "max_enqueue_ns": 197030,
+            "cost_log2_ns_buckets": {
+              "14": 81,
+              "16": 2838,
+              "15": 69,
+              "17": 10,
+              "18": 2,
+              "13": 34
+            },
+            "writer_cpu_ns": 639725781,
+            "writer_wall_ns": 60812869783,
+            "writer_cpu_percent": 1.0519578886553926
+          },
+          "monitor": {
+            "calls": 3033,
+            "total_enqueue_ns": 135741325,
+            "mean_enqueue_ns": 44754.805473128916,
+            "max_enqueue_ns": 134281,
+            "cost_log2_ns_buckets": {
+              "14": 81,
+              "17": 106,
+              "16": 2742,
+              "15": 72,
+              "13": 31,
+              "18": 1
+            },
+            "writer_cpu_ns": 595988220,
+            "writer_wall_ns": 60827316257,
+            "writer_cpu_percent": 0.979803576212215
+          },
+          "runner": {
+            "calls": 12347,
+            "total_enqueue_ns": 370006015,
+            "mean_enqueue_ns": 29967.280715963392,
+            "max_enqueue_ns": 188135,
+            "cost_log2_ns_buckets": {
+              "14": 2721,
+              "15": 3531,
+              "16": 5588,
+              "13": 206,
+              "17": 166,
+              "18": 4,
+              "12": 114,
+              "11": 17
+            },
+            "writer_cpu_ns": 1532443568,
+            "writer_wall_ns": 61713426058,
+            "writer_cpu_percent": 2.4831607413268006
+          }
+        },
+        "trace_bytes": 2945822,
+        "outcome": "receive gaps observed",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/02-sampling-off"
+    },
+    {
+      "run": "03-sampling-on",
+      "resource_sampling": true,
+      "classification": "healthy_with_resource_sampling",
+      "exit_status": 0,
+      "acceptance_success": true,
+      "failed_criteria": [],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.006326595001156,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 156,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 156,
+          "required": 156
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.004921238423217852,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.39913434100162704,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": true,
+          "observed": {
+            "count": 3002,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.03398275899962755,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": true,
+          "observed": 5,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": true,
+          "observed": [
+            [
+              "/usr/bin/python3",
+              "/opt/ros/jazzy/bin/ros2",
+              "launch",
+              "robot_reliability_testbench",
+              "normal.launch.py"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+              "--ros-args",
+              "-r",
+              "__node:=panda_simulator",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+              "--ros-args",
+              "-r",
+              "__node:=task_server",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+              "--ros-args",
+              "-r",
+              "__node:=fault_boundary",
+              "-r",
+              "__ns:=/testbench"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+              "--ros-args",
+              "-r",
+              "__node:=health_monitor",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ]
+          ],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": true,
+          "observed": 296.05859375,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.006326595001156,
+      "simulation_seconds": 60.04000000002802,
+      "task_attempts": 156,
+      "task_successes": 156,
+      "task_failures": 0,
+      "max_error_metres": 0.004921238423217852,
+      "observations": {
+        "count": 3002,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.03398275899962755,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3002,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3002,
+            "max_ns": 300334,
+            "p50_ns": 65421,
+            "p99_ns": 120337
+          },
+          "source_to_boundary_entry": {
+            "count": 3002,
+            "max_ns": 3441067,
+            "p50_ns": 1358731,
+            "p99_ns": 2637576
+          },
+          "boundary_processing": {
+            "count": 3002,
+            "max_ns": 506051,
+            "p50_ns": 204047,
+            "p99_ns": 340029
+          },
+          "boundary_publish_api": {
+            "count": 3002,
+            "max_ns": 351469,
+            "p50_ns": 128071,
+            "p99_ns": 214311
+          },
+          "boundary_to_runner_entry": {
+            "count": 3002,
+            "max_ns": 17871200,
+            "p50_ns": 768477,
+            "p99_ns": 2112230
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3002,
+            "max_ns": 2035414,
+            "p50_ns": 584104,
+            "p99_ns": 1176737
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3002,
+            "max_ns": 17022563,
+            "p50_ns": 160206,
+            "p99_ns": 1569731
+          }
+        },
+        "resource_sampling": {
+          "count": 60,
+          "max_ns": 3412979,
+          "p50_ns": 2016984,
+          "p99_ns": 3400245
+        },
+        "spin_duration": {
+          "count": 9382,
+          "max_ns": 12240684,
+          "p50_ns": 6748747,
+          "p99_ns": 10796111
+        },
+        "between_spins": {
+          "count": 9381,
+          "max_ns": 3529582,
+          "p50_ns": 62032,
+          "p99_ns": 427563
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3037,
+            "total_enqueue_ns": 129076251,
+            "mean_enqueue_ns": 42501.23510042806,
+            "max_enqueue_ns": 194414,
+            "cost_log2_ns_buckets": {
+              "15": 50,
+              "16": 2882,
+              "18": 1,
+              "17": 45,
+              "14": 56,
+              "13": 3
+            },
+            "writer_cpu_ns": 660092301,
+            "writer_wall_ns": 60748798475,
+            "writer_cpu_percent": 1.0865931797344903
+          },
+          "boundary": {
+            "calls": 3037,
+            "total_enqueue_ns": 114305643,
+            "mean_enqueue_ns": 37637.6829107672,
+            "max_enqueue_ns": 103780,
+            "cost_log2_ns_buckets": {
+              "14": 39,
+              "16": 2909,
+              "15": 50,
+              "17": 16,
+              "13": 23
+            },
+            "writer_cpu_ns": 636536109,
+            "writer_wall_ns": 60912305372,
+            "writer_cpu_percent": 1.0450041335861198
+          },
+          "monitor": {
+            "calls": 3037,
+            "total_enqueue_ns": 135876409,
+            "mean_enqueue_ns": 44740.338821205136,
+            "max_enqueue_ns": 143498,
+            "cost_log2_ns_buckets": {
+              "14": 53,
+              "16": 2886,
+              "15": 39,
+              "17": 55,
+              "13": 3,
+              "18": 1
+            },
+            "writer_cpu_ns": 690930273,
+            "writer_wall_ns": 60897963429,
+            "writer_cpu_percent": 1.1345704094120406
+          },
+          "runner": {
+            "calls": 12747,
+            "total_enqueue_ns": 402079533,
+            "mean_enqueue_ns": 31543.071546246174,
+            "max_enqueue_ns": 243617,
+            "cost_log2_ns_buckets": {
+              "14": 2385,
+              "16": 6568,
+              "15": 3456,
+              "13": 127,
+              "17": 132,
+              "18": 6,
+              "12": 55,
+              "11": 18
+            },
+            "writer_cpu_ns": 1710987988,
+            "writer_wall_ns": 61703124134,
+            "writer_cpu_percent": 2.7729357500347405
+          }
+        },
+        "trace_bytes": 2981055,
+        "outcome": "not reproduced in short runs",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/03-sampling-on"
+    },
+    {
+      "run": "04-sampling-off",
+      "resource_sampling": false,
+      "classification": "diagnostic_resource_sampling_disabled",
+      "exit_status": 1,
+      "acceptance_success": false,
+      "failed_criteria": [
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        }
+      ],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.00847182299913,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 148,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 148,
+          "required": 148
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.004919317364848779,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.40380606899998384,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": true,
+          "observed": {
+            "count": 3000,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.027131479000672698,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.00847182299913,
+      "simulation_seconds": 60.000000000027974,
+      "task_attempts": 148,
+      "task_successes": 148,
+      "task_failures": 0,
+      "max_error_metres": 0.004919317364848779,
+      "observations": {
+        "count": 3000,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.027131479000672698,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3000,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3000,
+            "max_ns": 497486,
+            "p50_ns": 67963,
+            "p99_ns": 143699
+          },
+          "source_to_boundary_entry": {
+            "count": 3000,
+            "max_ns": 3715906,
+            "p50_ns": 1695122,
+            "p99_ns": 3314314
+          },
+          "boundary_processing": {
+            "count": 3000,
+            "max_ns": 485664,
+            "p50_ns": 198030,
+            "p99_ns": 322923
+          },
+          "boundary_publish_api": {
+            "count": 3000,
+            "max_ns": 355035,
+            "p50_ns": 121102,
+            "p99_ns": 200818
+          },
+          "boundary_to_runner_entry": {
+            "count": 3000,
+            "max_ns": 7735687,
+            "p50_ns": 722933,
+            "p99_ns": 2793708
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3000,
+            "max_ns": 2851421,
+            "p50_ns": 709336,
+            "p99_ns": 1049576
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3000,
+            "max_ns": 7025783,
+            "p50_ns": 26295,
+            "p99_ns": 2195326
+          }
+        },
+        "resource_sampling": {
+          "count": 0,
+          "max_ns": null,
+          "p50_ns": null,
+          "p99_ns": null
+        },
+        "spin_duration": {
+          "count": 9381,
+          "max_ns": 13313303,
+          "p50_ns": 5203263,
+          "p99_ns": 10712764
+        },
+        "between_spins": {
+          "count": 9380,
+          "max_ns": 839444,
+          "p50_ns": 57903,
+          "p99_ns": 367136
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3034,
+            "total_enqueue_ns": 125560971,
+            "mean_enqueue_ns": 41384.63117996045,
+            "max_enqueue_ns": 137302,
+            "cost_log2_ns_buckets": {
+              "16": 2842,
+              "15": 72,
+              "17": 29,
+              "14": 78,
+              "13": 12,
+              "18": 1
+            },
+            "writer_cpu_ns": 603646123,
+            "writer_wall_ns": 60700226313,
+            "writer_cpu_percent": 0.9944709594447076
+          },
+          "boundary": {
+            "calls": 3031,
+            "total_enqueue_ns": 115206242,
+            "mean_enqueue_ns": 38009.31771692511,
+            "max_enqueue_ns": 113501,
+            "cost_log2_ns_buckets": {
+              "14": 65,
+              "16": 2832,
+              "15": 82,
+              "17": 15,
+              "13": 37
+            },
+            "writer_cpu_ns": 675718604,
+            "writer_wall_ns": 60853737786,
+            "writer_cpu_percent": 1.1103978631127827
+          },
+          "monitor": {
+            "calls": 3031,
+            "total_enqueue_ns": 142170213,
+            "mean_enqueue_ns": 46905.382052128014,
+            "max_enqueue_ns": 1315170,
+            "cost_log2_ns_buckets": {
+              "14": 90,
+              "16": 2771,
+              "17": 127,
+              "15": 37,
+              "13": 1,
+              "21": 1,
+              "18": 4
+            },
+            "writer_cpu_ns": 616171369,
+            "writer_wall_ns": 60864846808,
+            "writer_cpu_percent": 1.012360009618904
+          },
+          "runner": {
+            "calls": 12522,
+            "total_enqueue_ns": 382760660,
+            "mean_enqueue_ns": 30567.054783580897,
+            "max_enqueue_ns": 173885,
+            "cost_log2_ns_buckets": {
+              "14": 2705,
+              "13": 232,
+              "12": 83,
+              "15": 3413,
+              "16": 5908,
+              "17": 155,
+              "11": 20,
+              "18": 6
+            },
+            "writer_cpu_ns": 1699354045,
+            "writer_wall_ns": 61535156487,
+            "writer_cpu_percent": 2.7615986405413753
+          }
+        },
+        "trace_bytes": 2957008,
+        "outcome": "not reproduced in short runs",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/04-sampling-off"
+    },
+    {
+      "run": "05-sampling-on",
+      "resource_sampling": true,
+      "classification": "healthy_with_resource_sampling",
+      "exit_status": 0,
+      "acceptance_success": true,
+      "failed_criteria": [],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.00741567600198,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 154,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 154,
+          "required": 154
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.004921238423217852,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.40155895999851055,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": true,
+          "observed": {
+            "count": 3002,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.03330522499891231,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": true,
+          "observed": 5,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": true,
+          "observed": [
+            [
+              "/usr/bin/python3",
+              "/opt/ros/jazzy/bin/ros2",
+              "launch",
+              "robot_reliability_testbench",
+              "normal.launch.py"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/simulator",
+              "--ros-args",
+              "-r",
+              "__node:=panda_simulator",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/task_server",
+              "--ros-args",
+              "-r",
+              "__node:=task_server",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/fault_boundary",
+              "--ros-args",
+              "-r",
+              "__node:=fault_boundary",
+              "-r",
+              "__ns:=/testbench"
+            ],
+            [
+              "/opt/venv/bin/python",
+              "/workspace/install/robot_reliability_testbench/lib/robot_reliability_testbench/health_monitor",
+              "--ros-args",
+              "-r",
+              "__node:=health_monitor",
+              "-r",
+              "__ns:=/testbench",
+              "--params-file",
+              "/workspace/install/robot_reliability_testbench/share/robot_reliability_testbench/config/normal.yaml"
+            ]
+          ],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": true,
+          "observed": 295.40625,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.00741567600198,
+      "simulation_seconds": 60.04000000002802,
+      "task_attempts": 154,
+      "task_successes": 154,
+      "task_failures": 0,
+      "max_error_metres": 0.004921238423217852,
+      "observations": {
+        "count": 3002,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.03330522499891231,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3002,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3002,
+            "max_ns": 295796,
+            "p50_ns": 65372,
+            "p99_ns": 119556
+          },
+          "source_to_boundary_entry": {
+            "count": 3002,
+            "max_ns": 4510221,
+            "p50_ns": 2041692,
+            "p99_ns": 3345482
+          },
+          "boundary_processing": {
+            "count": 3002,
+            "max_ns": 786414,
+            "p50_ns": 206160,
+            "p99_ns": 387115
+          },
+          "boundary_publish_api": {
+            "count": 3002,
+            "max_ns": 347761,
+            "p50_ns": 120129,
+            "p99_ns": 200158
+          },
+          "boundary_to_runner_entry": {
+            "count": 3002,
+            "max_ns": 17482638,
+            "p50_ns": 732497,
+            "p99_ns": 3752764
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3002,
+            "max_ns": 2319808,
+            "p50_ns": 697679,
+            "p99_ns": 1065431
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3002,
+            "max_ns": 16719844,
+            "p50_ns": 34430,
+            "p99_ns": 2998512
+          }
+        },
+        "resource_sampling": {
+          "count": 60,
+          "max_ns": 3649211,
+          "p50_ns": 2068958,
+          "p99_ns": 3446251
+        },
+        "spin_duration": {
+          "count": 9373,
+          "max_ns": 12330447,
+          "p50_ns": 5140337,
+          "p99_ns": 10780131
+        },
+        "between_spins": {
+          "count": 9372,
+          "max_ns": 3836404,
+          "p50_ns": 61974,
+          "p99_ns": 405581
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3038,
+            "total_enqueue_ns": 118704844,
+            "mean_enqueue_ns": 39073.35220539829,
+            "max_enqueue_ns": 162143,
+            "cost_log2_ns_buckets": {
+              "14": 82,
+              "15": 66,
+              "16": 2860,
+              "17": 17,
+              "13": 12,
+              "18": 1
+            },
+            "writer_cpu_ns": 659676773,
+            "writer_wall_ns": 60750704548,
+            "writer_cpu_percent": 1.0858750987468464
+          },
+          "boundary": {
+            "calls": 3038,
+            "total_enqueue_ns": 117132844,
+            "mean_enqueue_ns": 38555.906517445685,
+            "max_enqueue_ns": 185350,
+            "cost_log2_ns_buckets": {
+              "14": 65,
+              "15": 41,
+              "16": 2891,
+              "17": 12,
+              "18": 2,
+              "13": 27
+            },
+            "writer_cpu_ns": 683790821,
+            "writer_wall_ns": 60960475978,
+            "writer_cpu_percent": 1.12169534445035
+          },
+          "monitor": {
+            "calls": 3036,
+            "total_enqueue_ns": 145138605,
+            "mean_enqueue_ns": 47805.86462450593,
+            "max_enqueue_ns": 213759,
+            "cost_log2_ns_buckets": {
+              "14": 86,
+              "16": 2731,
+              "17": 170,
+              "15": 38,
+              "18": 6,
+              "13": 5
+            },
+            "writer_cpu_ns": 608291217,
+            "writer_wall_ns": 60961705447,
+            "writer_cpu_percent": 0.9978251306122781
+          },
+          "runner": {
+            "calls": 12601,
+            "total_enqueue_ns": 396645057,
+            "mean_enqueue_ns": 31477.268232679948,
+            "max_enqueue_ns": 259923,
+            "cost_log2_ns_buckets": {
+              "14": 2597,
+              "15": 3131,
+              "13": 199,
+              "16": 6333,
+              "17": 201,
+              "12": 100,
+              "11": 30,
+              "18": 10
+            },
+            "writer_cpu_ns": 1542572203,
+            "writer_wall_ns": 61761657859,
+            "writer_cpu_percent": 2.497621107454152
+          }
+        },
+        "trace_bytes": 2968102,
+        "outcome": "not reproduced in short runs",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/05-sampling-on"
+    },
+    {
+      "run": "06-sampling-off",
+      "resource_sampling": false,
+      "classification": "diagnostic_resource_sampling_disabled",
+      "exit_status": 1,
+      "acceptance_success": false,
+      "failed_criteria": [
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        }
+      ],
+      "criteria": [
+        {
+          "name": "completed_window",
+          "passed": true,
+          "observed": 60.00777969699993,
+          "required": 60.0
+        },
+        {
+          "name": "minimum_tasks",
+          "passed": true,
+          "observed": 156,
+          "required": 10
+        },
+        {
+          "name": "all_tasks_succeeded",
+          "passed": true,
+          "observed": 156,
+          "required": 156
+        },
+        {
+          "name": "final_position_error",
+          "passed": true,
+          "observed": 0.00492124821751697,
+          "required": 0.005
+        },
+        {
+          "name": "bounded_task_wall_time",
+          "passed": true,
+          "observed": 0.38579428600132815,
+          "required": 6.0
+        },
+        {
+          "name": "continuous_observations",
+          "passed": true,
+          "observed": {
+            "count": 3000,
+            "missing_sequences": 0,
+            "max_receive_interval_seconds": 0.02954730200144695,
+            "max_simulation_interval_seconds": 0.020000000000024443
+          },
+          "required": {
+            "min_count": 1,
+            "missing_sequences": 0,
+            "max_interval": 0.15
+          }
+        },
+        {
+          "name": "no_unexpected_diagnostics",
+          "passed": true,
+          "observed": {},
+          "required": []
+        },
+        {
+          "name": "no_injected_faults",
+          "passed": true,
+          "observed": [],
+          "required": []
+        },
+        {
+          "name": "resources_collected",
+          "passed": false,
+          "observed": 0,
+          "required": "all tracked processes >=2 samples"
+        },
+        {
+          "name": "all_nodes_measured",
+          "passed": false,
+          "observed": [],
+          "required": "simulator, task_server, fault_boundary, health_monitor"
+        },
+        {
+          "name": "per_process_rss_bound",
+          "passed": false,
+          "observed": null,
+          "required": 512.0
+        },
+        {
+          "name": "no_infrastructure_failure",
+          "passed": true,
+          "observed": [],
+          "required": []
+        }
+      ],
+      "measurement_wall_seconds": 60.00777969699993,
+      "simulation_seconds": 60.000000000027974,
+      "task_attempts": 156,
+      "task_successes": 156,
+      "task_failures": 0,
+      "max_error_metres": 0.00492124821751697,
+      "observations": {
+        "count": 3000,
+        "missing_sequences": 0,
+        "max_receive_interval_seconds": 0.02954730200144695,
+        "max_simulation_interval_seconds": 0.020000000000024443
+      },
+      "diagnostics": {},
+      "runtime_failures": [],
+      "timing": {
+        "clock": {
+          "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+          "resolution_seconds": 1e-09,
+          "boot_id": "ebea9c29-77d7-4fc4-b52a-621bf1fbffd1",
+          "time_namespace": "time:[4026531834]"
+        },
+        "clock_comparable": true,
+        "matched_observations": 3000,
+        "incomplete_matches": 0,
+        "duplicate_keys_rejected": true,
+        "sequence_mismatches": 0,
+        "dropped_records": {
+          "simulator": 0,
+          "boundary": 0,
+          "monitor": 0,
+          "runner": 0
+        },
+        "coverage_valid": true,
+        "retained_runner_gaps": [],
+        "retained_monitor_gap_count": 0,
+        "stage_durations": {
+          "source_publish_api": {
+            "count": 3000,
+            "max_ns": 203213,
+            "p50_ns": 66744,
+            "p99_ns": 124344
+          },
+          "source_to_boundary_entry": {
+            "count": 3000,
+            "max_ns": 3917573,
+            "p50_ns": 2122987,
+            "p99_ns": 3483357
+          },
+          "boundary_processing": {
+            "count": 3000,
+            "max_ns": 491538,
+            "p50_ns": 203018,
+            "p99_ns": 341606
+          },
+          "boundary_publish_api": {
+            "count": 3000,
+            "max_ns": 422296,
+            "p50_ns": 118929,
+            "p99_ns": 201741
+          },
+          "boundary_to_runner_entry": {
+            "count": 3000,
+            "max_ns": 10795305,
+            "p50_ns": 869706,
+            "p99_ns": 6011102
+          },
+          "boundary_to_monitor_entry": {
+            "count": 3000,
+            "max_ns": 2082015,
+            "p50_ns": 793082,
+            "p99_ns": 1570920
+          },
+          "runner_minus_monitor_entry": {
+            "count": 3000,
+            "max_ns": 10065200,
+            "p50_ns": 97068,
+            "p99_ns": 5171432
+          }
+        },
+        "resource_sampling": {
+          "count": 0,
+          "max_ns": null,
+          "p50_ns": null,
+          "p99_ns": null
+        },
+        "spin_duration": {
+          "count": 9352,
+          "max_ns": 17077282,
+          "p50_ns": 8289762,
+          "p99_ns": 10807233
+        },
+        "between_spins": {
+          "count": 9351,
+          "max_ns": 752279,
+          "p50_ns": 58925,
+          "p99_ns": 385666
+        },
+        "overhead": {
+          "simulator": {
+            "calls": 3033,
+            "total_enqueue_ns": 121671322,
+            "mean_enqueue_ns": 40115.83316848005,
+            "max_enqueue_ns": 126956,
+            "cost_log2_ns_buckets": {
+              "16": 2901,
+              "17": 28,
+              "15": 51,
+              "14": 49,
+              "13": 4
+            },
+            "writer_cpu_ns": 663512585,
+            "writer_wall_ns": 60663825202,
+            "writer_cpu_percent": 1.0937532916703132
+          },
+          "boundary": {
+            "calls": 3030,
+            "total_enqueue_ns": 117501951,
+            "mean_enqueue_ns": 38779.52178217822,
+            "max_enqueue_ns": 200113,
+            "cost_log2_ns_buckets": {
+              "14": 38,
+              "16": 2917,
+              "17": 15,
+              "18": 2,
+              "15": 37,
+              "13": 21
+            },
+            "writer_cpu_ns": 700949451,
+            "writer_wall_ns": 60846568555,
+            "writer_cpu_percent": 1.151995038744712
+          },
+          "monitor": {
+            "calls": 3030,
+            "total_enqueue_ns": 137612446,
+            "mean_enqueue_ns": 45416.64884488449,
+            "max_enqueue_ns": 188505,
+            "cost_log2_ns_buckets": {
+              "14": 43,
+              "16": 2849,
+              "17": 83,
+              "15": 42,
+              "18": 3,
+              "13": 10
+            },
+            "writer_cpu_ns": 667947777,
+            "writer_wall_ns": 60861489893,
+            "writer_cpu_percent": 1.0974883759407017
+          },
+          "runner": {
+            "calls": 12504,
+            "total_enqueue_ns": 383662299,
+            "mean_enqueue_ns": 30683.165307101728,
+            "max_enqueue_ns": 204900,
+            "cost_log2_ns_buckets": {
+              "14": 2614,
+              "16": 5822,
+              "15": 3710,
+              "13": 120,
+              "17": 146,
+              "12": 66,
+              "11": 12,
+              "18": 14
+            },
+            "writer_cpu_ns": 1446908674,
+            "writer_wall_ns": 61810523549,
+            "writer_cpu_percent": 2.3408775576103475
+          }
+        },
+        "trace_bytes": 2954782,
+        "outcome": "not reproduced in short runs",
+        "limitations": [
+          "Publish timestamps bracket Python publish API calls, not network wire time.",
+          "Publish-to-callback durations combine transport and executor scheduling; they do not separate them.",
+          "Recorder encoding/I/O occurs on writer threads; measured enqueue cost excludes writer CPU and observer effects.",
+          "No uninstrumented matched workload was run; incremental end-to-end overhead is not established."
+        ]
+      },
+      "provenance": {
+        "git_revision": null,
+        "git_revision_state": "unborn",
+        "dirty_worktree": true,
+        "source_sha256": "a0696026074a17f0a53f096edc6e5673daf030403f67ae098d2b7ea4fecf5646",
+        "python": "3.12.3",
+        "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+        "dependencies": {
+          "mujoco": "3.16.0",
+          "numpy": "1.26.4",
+          "pytest": "7.4.4",
+          "psutil": "5.9.8",
+          "rclpy": "7.1.12",
+          "rosbag2_py": "0.26.11",
+          "colcon-core": "0.21.3"
+        },
+        "ros_distro": "jazzy"
+      },
+      "source_directory": "artifacts/timing-comparison/reports/timing-comparison/06-sampling-off"
+    }
+  ],
+  "total_runner_gaps": 1,
+  "all_runner_gap_evidence": [
+    {
+      "run": "02-sampling-off",
+      "resource_sampling": false,
+      "event": {
+        "kind": "receive_gap",
+        "time_ns": 19040336065563,
+        "gap_ns": 324674751,
+        "before": [
+          {
+            "kind": "receive",
+            "time_ns": 19039791644929,
+            "entry_ns": 19039791644929,
+            "generation": 1,
+            "sequence": 132,
+            "simulation_stamp_ns": 2620000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039810934733,
+            "entry_ns": 19039810934733,
+            "generation": 1,
+            "sequence": 133,
+            "simulation_stamp_ns": 2640000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039830939824,
+            "entry_ns": 19039830939824,
+            "generation": 1,
+            "sequence": 134,
+            "simulation_stamp_ns": 2660000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039851404056,
+            "entry_ns": 19039851404056,
+            "generation": 1,
+            "sequence": 135,
+            "simulation_stamp_ns": 2680000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039871509900,
+            "entry_ns": 19039871509900,
+            "generation": 1,
+            "sequence": 136,
+            "simulation_stamp_ns": 2700000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039892375407,
+            "entry_ns": 19039892375407,
+            "generation": 1,
+            "sequence": 137,
+            "simulation_stamp_ns": 2720000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039912069968,
+            "entry_ns": 19039912069968,
+            "generation": 1,
+            "sequence": 138,
+            "simulation_stamp_ns": 2740000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039930392303,
+            "entry_ns": 19039930392303,
+            "generation": 1,
+            "sequence": 139,
+            "simulation_stamp_ns": 2760000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039951201323,
+            "entry_ns": 19039951201323,
+            "generation": 1,
+            "sequence": 140,
+            "simulation_stamp_ns": 2780000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039971200944,
+            "entry_ns": 19039971200944,
+            "generation": 1,
+            "sequence": 141,
+            "simulation_stamp_ns": 2800000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19039991346803,
+            "entry_ns": 19039991346803,
+            "generation": 1,
+            "sequence": 142,
+            "simulation_stamp_ns": 2820000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040011390812,
+            "entry_ns": 19040011390812,
+            "generation": 1,
+            "sequence": 143,
+            "simulation_stamp_ns": 2840000000
+          }
+        ],
+        "current": {
+          "kind": "receive",
+          "time_ns": 19040336065563,
+          "entry_ns": 19040336065563,
+          "generation": 1,
+          "sequence": 144,
+          "simulation_stamp_ns": 2860000000
+        },
+        "after": [
+          {
+            "kind": "receive",
+            "time_ns": 19040338477042,
+            "entry_ns": 19040338477042,
+            "generation": 1,
+            "sequence": 145,
+            "simulation_stamp_ns": 2880000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040340136344,
+            "entry_ns": 19040340136344,
+            "generation": 1,
+            "sequence": 146,
+            "simulation_stamp_ns": 2900000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040341278069,
+            "entry_ns": 19040341278069,
+            "generation": 1,
+            "sequence": 147,
+            "simulation_stamp_ns": 2920000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040343471112,
+            "entry_ns": 19040343471112,
+            "generation": 1,
+            "sequence": 148,
+            "simulation_stamp_ns": 2940000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040345910272,
+            "entry_ns": 19040345910272,
+            "generation": 1,
+            "sequence": 149,
+            "simulation_stamp_ns": 2960000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040347203136,
+            "entry_ns": 19040347203136,
+            "generation": 1,
+            "sequence": 150,
+            "simulation_stamp_ns": 2980000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040348340089,
+            "entry_ns": 19040348340089,
+            "generation": 1,
+            "sequence": 151,
+            "simulation_stamp_ns": 3000000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040349432935,
+            "entry_ns": 19040349432935,
+            "generation": 1,
+            "sequence": 152,
+            "simulation_stamp_ns": 3020000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040350508473,
+            "entry_ns": 19040350508473,
+            "generation": 1,
+            "sequence": 153,
+            "simulation_stamp_ns": 3040000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040351432879,
+            "entry_ns": 19040351432879,
+            "generation": 1,
+            "sequence": 154,
+            "simulation_stamp_ns": 3060000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040352340166,
+            "entry_ns": 19040352340166,
+            "generation": 1,
+            "sequence": 155,
+            "simulation_stamp_ns": 3080000000
+          },
+          {
+            "kind": "receive",
+            "time_ns": 19040353154147,
+            "entry_ns": 19040353154147,
+            "generation": 1,
+            "sequence": 156,
+            "simulation_stamp_ns": 3100000000
+          }
+        ],
+        "complete": true
+      },
+      "matched_context": [
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2620000000,
+          "boundary_sequence": 132,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039788771906,
+            "generation": 1,
+            "source_sequence": 136,
+            "simulation_stamp_ns": 2620000000,
+            "tick_entry_ns": 19039787643175,
+            "publish_start_ns": 19039788694366,
+            "publish_end_ns": 19039788763823
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039790359659,
+            "generation": 1,
+            "sequence": 132,
+            "simulation_stamp_ns": 2620000000,
+            "entry_ns": 19039790020982,
+            "publish_start_ns": 19039790215272,
+            "publish_end_ns": 19039790351186
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039790742091,
+            "entry_ns": 19039790742091,
+            "generation": 1,
+            "sequence": 132,
+            "simulation_stamp_ns": 2620000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039791644929,
+            "entry_ns": 19039791644929,
+            "generation": 1,
+            "sequence": 132,
+            "simulation_stamp_ns": 2620000000
+          },
+          "durations_ns": {
+            "source_publish_api": 69457,
+            "source_to_boundary_entry": 1326616,
+            "boundary_processing": 194290,
+            "boundary_publish_api": 135914,
+            "boundary_to_runner_entry": 1429657,
+            "boundary_to_monitor_entry": 526819,
+            "runner_minus_monitor_entry": 902838
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2640000000,
+          "boundary_sequence": 133,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039808866782,
+            "generation": 1,
+            "source_sequence": 137,
+            "simulation_stamp_ns": 2640000000,
+            "tick_entry_ns": 19039807718264,
+            "publish_start_ns": 19039808794892,
+            "publish_end_ns": 19039808858311
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039810289835,
+            "generation": 1,
+            "sequence": 133,
+            "simulation_stamp_ns": 2640000000,
+            "entry_ns": 19039809957709,
+            "publish_start_ns": 19039810155075,
+            "publish_end_ns": 19039810281908
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039810695272,
+            "entry_ns": 19039810695272,
+            "generation": 1,
+            "sequence": 133,
+            "simulation_stamp_ns": 2640000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039810934733,
+            "entry_ns": 19039810934733,
+            "generation": 1,
+            "sequence": 133,
+            "simulation_stamp_ns": 2640000000
+          },
+          "durations_ns": {
+            "source_publish_api": 63419,
+            "source_to_boundary_entry": 1162817,
+            "boundary_processing": 197366,
+            "boundary_publish_api": 126833,
+            "boundary_to_runner_entry": 779658,
+            "boundary_to_monitor_entry": 540197,
+            "runner_minus_monitor_entry": 239461
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2660000000,
+          "boundary_sequence": 134,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039828870498,
+            "generation": 1,
+            "source_sequence": 138,
+            "simulation_stamp_ns": 2660000000,
+            "tick_entry_ns": 19039827726220,
+            "publish_start_ns": 19039828795122,
+            "publish_end_ns": 19039828861237
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039830285429,
+            "generation": 1,
+            "sequence": 134,
+            "simulation_stamp_ns": 2660000000,
+            "entry_ns": 19039829951720,
+            "publish_start_ns": 19039830154317,
+            "publish_end_ns": 19039830274685
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039830683374,
+            "entry_ns": 19039830683374,
+            "generation": 1,
+            "sequence": 134,
+            "simulation_stamp_ns": 2660000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039830939824,
+            "entry_ns": 19039830939824,
+            "generation": 1,
+            "sequence": 134,
+            "simulation_stamp_ns": 2660000000
+          },
+          "durations_ns": {
+            "source_publish_api": 66115,
+            "source_to_boundary_entry": 1156598,
+            "boundary_processing": 202597,
+            "boundary_publish_api": 120368,
+            "boundary_to_runner_entry": 785507,
+            "boundary_to_monitor_entry": 529057,
+            "runner_minus_monitor_entry": 256450
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2680000000,
+          "boundary_sequence": 135,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039848830264,
+            "generation": 1,
+            "source_sequence": 139,
+            "simulation_stamp_ns": 2680000000,
+            "tick_entry_ns": 19039847722493,
+            "publish_start_ns": 19039848756367,
+            "publish_end_ns": 19039848821470
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039850347104,
+            "generation": 1,
+            "sequence": 135,
+            "simulation_stamp_ns": 2680000000,
+            "entry_ns": 19039849993914,
+            "publish_start_ns": 19039850206332,
+            "publish_end_ns": 19039850338355
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039850755304,
+            "entry_ns": 19039850755304,
+            "generation": 1,
+            "sequence": 135,
+            "simulation_stamp_ns": 2680000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039851404056,
+            "entry_ns": 19039851404056,
+            "generation": 1,
+            "sequence": 135,
+            "simulation_stamp_ns": 2680000000
+          },
+          "durations_ns": {
+            "source_publish_api": 65103,
+            "source_to_boundary_entry": 1237547,
+            "boundary_processing": 212418,
+            "boundary_publish_api": 132023,
+            "boundary_to_runner_entry": 1197724,
+            "boundary_to_monitor_entry": 548972,
+            "runner_minus_monitor_entry": 648752
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2700000000,
+          "boundary_sequence": 136,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039868803061,
+            "generation": 1,
+            "source_sequence": 140,
+            "simulation_stamp_ns": 2700000000,
+            "tick_entry_ns": 19039867656124,
+            "publish_start_ns": 19039868730979,
+            "publish_end_ns": 19039868794682
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039870385622,
+            "generation": 1,
+            "sequence": 136,
+            "simulation_stamp_ns": 2700000000,
+            "entry_ns": 19039870048850,
+            "publish_start_ns": 19039870246572,
+            "publish_end_ns": 19039870376444
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039871189303,
+            "entry_ns": 19039871189303,
+            "generation": 1,
+            "sequence": 136,
+            "simulation_stamp_ns": 2700000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039871509900,
+            "entry_ns": 19039871509900,
+            "generation": 1,
+            "sequence": 136,
+            "simulation_stamp_ns": 2700000000
+          },
+          "durations_ns": {
+            "source_publish_api": 63703,
+            "source_to_boundary_entry": 1317871,
+            "boundary_processing": 197722,
+            "boundary_publish_api": 129872,
+            "boundary_to_runner_entry": 1263328,
+            "boundary_to_monitor_entry": 942731,
+            "runner_minus_monitor_entry": 320597
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2720000000,
+          "boundary_sequence": 137,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039888917816,
+            "generation": 1,
+            "source_sequence": 141,
+            "simulation_stamp_ns": 2720000000,
+            "tick_entry_ns": 19039887641611,
+            "publish_start_ns": 19039888843672,
+            "publish_end_ns": 19039888909142
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039891667957,
+            "generation": 1,
+            "sequence": 137,
+            "simulation_stamp_ns": 2720000000,
+            "entry_ns": 19039891336638,
+            "publish_start_ns": 19039891530926,
+            "publish_end_ns": 19039891659800
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039892530962,
+            "entry_ns": 19039892530962,
+            "generation": 1,
+            "sequence": 137,
+            "simulation_stamp_ns": 2720000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039892375407,
+            "entry_ns": 19039892375407,
+            "generation": 1,
+            "sequence": 137,
+            "simulation_stamp_ns": 2720000000
+          },
+          "durations_ns": {
+            "source_publish_api": 65470,
+            "source_to_boundary_entry": 2492966,
+            "boundary_processing": 194288,
+            "boundary_publish_api": 128874,
+            "boundary_to_runner_entry": 844481,
+            "boundary_to_monitor_entry": 1000036,
+            "runner_minus_monitor_entry": -155555
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2740000000,
+          "boundary_sequence": 138,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039908886259,
+            "generation": 1,
+            "source_sequence": 142,
+            "simulation_stamp_ns": 2740000000,
+            "tick_entry_ns": 19039907721193,
+            "publish_start_ns": 19039908815066,
+            "publish_end_ns": 19039908877460
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039911378694,
+            "generation": 1,
+            "sequence": 138,
+            "simulation_stamp_ns": 2740000000,
+            "entry_ns": 19039911035456,
+            "publish_start_ns": 19039911228906,
+            "publish_end_ns": 19039911367965
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039912492958,
+            "entry_ns": 19039912492958,
+            "generation": 1,
+            "sequence": 138,
+            "simulation_stamp_ns": 2740000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039912069968,
+            "entry_ns": 19039912069968,
+            "generation": 1,
+            "sequence": 138,
+            "simulation_stamp_ns": 2740000000
+          },
+          "durations_ns": {
+            "source_publish_api": 62394,
+            "source_to_boundary_entry": 2220390,
+            "boundary_processing": 193450,
+            "boundary_publish_api": 139059,
+            "boundary_to_runner_entry": 841062,
+            "boundary_to_monitor_entry": 1264052,
+            "runner_minus_monitor_entry": -422990
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2760000000,
+          "boundary_sequence": 139,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039929077336,
+            "generation": 1,
+            "source_sequence": 143,
+            "simulation_stamp_ns": 2760000000,
+            "tick_entry_ns": 19039928114583,
+            "publish_start_ns": 19039928992343,
+            "publish_end_ns": 19039929068104
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039929855650,
+            "generation": 1,
+            "sequence": 139,
+            "simulation_stamp_ns": 2760000000,
+            "entry_ns": 19039929520946,
+            "publish_start_ns": 19039929747679,
+            "publish_end_ns": 19039929846911
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039930374856,
+            "entry_ns": 19039930374856,
+            "generation": 1,
+            "sequence": 139,
+            "simulation_stamp_ns": 2760000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039930392303,
+            "entry_ns": 19039930392303,
+            "generation": 1,
+            "sequence": 139,
+            "simulation_stamp_ns": 2760000000
+          },
+          "durations_ns": {
+            "source_publish_api": 75761,
+            "source_to_boundary_entry": 528603,
+            "boundary_processing": 226733,
+            "boundary_publish_api": 99232,
+            "boundary_to_runner_entry": 644624,
+            "boundary_to_monitor_entry": 627177,
+            "runner_minus_monitor_entry": 17447
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2780000000,
+          "boundary_sequence": 140,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039948821971,
+            "generation": 1,
+            "source_sequence": 144,
+            "simulation_stamp_ns": 2780000000,
+            "tick_entry_ns": 19039947713898,
+            "publish_start_ns": 19039948742911,
+            "publish_end_ns": 19039948813367
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039950486509,
+            "generation": 1,
+            "sequence": 140,
+            "simulation_stamp_ns": 2780000000,
+            "entry_ns": 19039950072466,
+            "publish_start_ns": 19039950338486,
+            "publish_end_ns": 19039950477962
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039951198093,
+            "entry_ns": 19039951198093,
+            "generation": 1,
+            "sequence": 140,
+            "simulation_stamp_ns": 2780000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039951201323,
+            "entry_ns": 19039951201323,
+            "generation": 1,
+            "sequence": 140,
+            "simulation_stamp_ns": 2780000000
+          },
+          "durations_ns": {
+            "source_publish_api": 70456,
+            "source_to_boundary_entry": 1329555,
+            "boundary_processing": 266020,
+            "boundary_publish_api": 139476,
+            "boundary_to_runner_entry": 862837,
+            "boundary_to_monitor_entry": 859607,
+            "runner_minus_monitor_entry": 3230
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2800000000,
+          "boundary_sequence": 141,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039968844905,
+            "generation": 1,
+            "source_sequence": 145,
+            "simulation_stamp_ns": 2800000000,
+            "tick_entry_ns": 19039967722503,
+            "publish_start_ns": 19039968773939,
+            "publish_end_ns": 19039968836309
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039970338153,
+            "generation": 1,
+            "sequence": 141,
+            "simulation_stamp_ns": 2800000000,
+            "entry_ns": 19039969991918,
+            "publish_start_ns": 19039970194859,
+            "publish_end_ns": 19039970327359
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039971044292,
+            "entry_ns": 19039971044292,
+            "generation": 1,
+            "sequence": 141,
+            "simulation_stamp_ns": 2800000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039971200944,
+            "entry_ns": 19039971200944,
+            "generation": 1,
+            "sequence": 141,
+            "simulation_stamp_ns": 2800000000
+          },
+          "durations_ns": {
+            "source_publish_api": 62370,
+            "source_to_boundary_entry": 1217979,
+            "boundary_processing": 202941,
+            "boundary_publish_api": 132500,
+            "boundary_to_runner_entry": 1006085,
+            "boundary_to_monitor_entry": 849433,
+            "runner_minus_monitor_entry": 156652
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2820000000,
+          "boundary_sequence": 142,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19039988784351,
+            "generation": 1,
+            "source_sequence": 146,
+            "simulation_stamp_ns": 2820000000,
+            "tick_entry_ns": 19039987655781,
+            "publish_start_ns": 19039988715484,
+            "publish_end_ns": 19039988776230
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19039990221986,
+            "generation": 1,
+            "sequence": 142,
+            "simulation_stamp_ns": 2820000000,
+            "entry_ns": 19039989889240,
+            "publish_start_ns": 19039990087069,
+            "publish_end_ns": 19039990213332
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19039991095561,
+            "entry_ns": 19039991095561,
+            "generation": 1,
+            "sequence": 142,
+            "simulation_stamp_ns": 2820000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19039991346803,
+            "entry_ns": 19039991346803,
+            "generation": 1,
+            "sequence": 142,
+            "simulation_stamp_ns": 2820000000
+          },
+          "durations_ns": {
+            "source_publish_api": 60746,
+            "source_to_boundary_entry": 1173756,
+            "boundary_processing": 197829,
+            "boundary_publish_api": 126263,
+            "boundary_to_runner_entry": 1259734,
+            "boundary_to_monitor_entry": 1008492,
+            "runner_minus_monitor_entry": 251242
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2840000000,
+          "boundary_sequence": 143,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040008878579,
+            "generation": 1,
+            "source_sequence": 147,
+            "simulation_stamp_ns": 2840000000,
+            "tick_entry_ns": 19040007725970,
+            "publish_start_ns": 19040008804804,
+            "publish_end_ns": 19040008870347
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040010582389,
+            "generation": 1,
+            "sequence": 143,
+            "simulation_stamp_ns": 2840000000,
+            "entry_ns": 19040010156951,
+            "publish_start_ns": 19040010390461,
+            "publish_end_ns": 19040010573491
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040011307994,
+            "entry_ns": 19040011307994,
+            "generation": 1,
+            "sequence": 143,
+            "simulation_stamp_ns": 2840000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040011390812,
+            "entry_ns": 19040011390812,
+            "generation": 1,
+            "sequence": 143,
+            "simulation_stamp_ns": 2840000000
+          },
+          "durations_ns": {
+            "source_publish_api": 65543,
+            "source_to_boundary_entry": 1352147,
+            "boundary_processing": 233510,
+            "boundary_publish_api": 183030,
+            "boundary_to_runner_entry": 1000351,
+            "boundary_to_monitor_entry": 917533,
+            "runner_minus_monitor_entry": 82818
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2860000000,
+          "boundary_sequence": 144,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040028791468,
+            "generation": 1,
+            "source_sequence": 148,
+            "simulation_stamp_ns": 2860000000,
+            "tick_entry_ns": 19040027650221,
+            "publish_start_ns": 19040028718144,
+            "publish_end_ns": 19040028782969
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040030293421,
+            "generation": 1,
+            "sequence": 144,
+            "simulation_stamp_ns": 2860000000,
+            "entry_ns": 19040029923932,
+            "publish_start_ns": 19040030119388,
+            "publish_end_ns": 19040030285278
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040031020472,
+            "entry_ns": 19040031020472,
+            "generation": 1,
+            "sequence": 144,
+            "simulation_stamp_ns": 2860000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040336065563,
+            "entry_ns": 19040336065563,
+            "generation": 1,
+            "sequence": 144,
+            "simulation_stamp_ns": 2860000000
+          },
+          "durations_ns": {
+            "source_publish_api": 64825,
+            "source_to_boundary_entry": 1205788,
+            "boundary_processing": 195456,
+            "boundary_publish_api": 165890,
+            "boundary_to_runner_entry": 305946175,
+            "boundary_to_monitor_entry": 901084,
+            "runner_minus_monitor_entry": 305045091
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2880000000,
+          "boundary_sequence": 145,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040048802179,
+            "generation": 1,
+            "source_sequence": 149,
+            "simulation_stamp_ns": 2880000000,
+            "tick_entry_ns": 19040047712410,
+            "publish_start_ns": 19040048727357,
+            "publish_end_ns": 19040048793537
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040050223988,
+            "generation": 1,
+            "sequence": 145,
+            "simulation_stamp_ns": 2880000000,
+            "entry_ns": 19040049898930,
+            "publish_start_ns": 19040050105050,
+            "publish_end_ns": 19040050215964
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040050917683,
+            "entry_ns": 19040050917683,
+            "generation": 1,
+            "sequence": 145,
+            "simulation_stamp_ns": 2880000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040338477042,
+            "entry_ns": 19040338477042,
+            "generation": 1,
+            "sequence": 145,
+            "simulation_stamp_ns": 2880000000
+          },
+          "durations_ns": {
+            "source_publish_api": 66180,
+            "source_to_boundary_entry": 1171573,
+            "boundary_processing": 206120,
+            "boundary_publish_api": 110914,
+            "boundary_to_runner_entry": 288371992,
+            "boundary_to_monitor_entry": 812633,
+            "runner_minus_monitor_entry": 287559359
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2900000000,
+          "boundary_sequence": 146,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040068860089,
+            "generation": 1,
+            "source_sequence": 150,
+            "simulation_stamp_ns": 2900000000,
+            "tick_entry_ns": 19040067722581,
+            "publish_start_ns": 19040068789830,
+            "publish_end_ns": 19040068851329
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040071278065,
+            "generation": 1,
+            "sequence": 146,
+            "simulation_stamp_ns": 2900000000,
+            "entry_ns": 19040070946503,
+            "publish_start_ns": 19040071151645,
+            "publish_end_ns": 19040071269716
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040072042387,
+            "entry_ns": 19040072042387,
+            "generation": 1,
+            "sequence": 146,
+            "simulation_stamp_ns": 2900000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040340136344,
+            "entry_ns": 19040340136344,
+            "generation": 1,
+            "sequence": 146,
+            "simulation_stamp_ns": 2900000000
+          },
+          "durations_ns": {
+            "source_publish_api": 61499,
+            "source_to_boundary_entry": 2156673,
+            "boundary_processing": 205142,
+            "boundary_publish_api": 118071,
+            "boundary_to_runner_entry": 268984699,
+            "boundary_to_monitor_entry": 890742,
+            "runner_minus_monitor_entry": 268093957
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2920000000,
+          "boundary_sequence": 147,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040088753200,
+            "generation": 1,
+            "source_sequence": 151,
+            "simulation_stamp_ns": 2920000000,
+            "tick_entry_ns": 19040087653242,
+            "publish_start_ns": 19040088686840,
+            "publish_end_ns": 19040088745000
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040090447985,
+            "generation": 1,
+            "sequence": 147,
+            "simulation_stamp_ns": 2920000000,
+            "entry_ns": 19040090124796,
+            "publish_start_ns": 19040090317751,
+            "publish_end_ns": 19040090438670
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040091378187,
+            "entry_ns": 19040091378187,
+            "generation": 1,
+            "sequence": 147,
+            "simulation_stamp_ns": 2920000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040341278069,
+            "entry_ns": 19040341278069,
+            "generation": 1,
+            "sequence": 147,
+            "simulation_stamp_ns": 2920000000
+          },
+          "durations_ns": {
+            "source_publish_api": 58160,
+            "source_to_boundary_entry": 1437956,
+            "boundary_processing": 192955,
+            "boundary_publish_api": 120919,
+            "boundary_to_runner_entry": 250960318,
+            "boundary_to_monitor_entry": 1060436,
+            "runner_minus_monitor_entry": 249899882
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2940000000,
+          "boundary_sequence": 148,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040108759280,
+            "generation": 1,
+            "source_sequence": 152,
+            "simulation_stamp_ns": 2940000000,
+            "tick_entry_ns": 19040107654483,
+            "publish_start_ns": 19040108685623,
+            "publish_end_ns": 19040108751039
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040110746835,
+            "generation": 1,
+            "sequence": 148,
+            "simulation_stamp_ns": 2940000000,
+            "entry_ns": 19040110440605,
+            "publish_start_ns": 19040110628151,
+            "publish_end_ns": 19040110738799
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040111452097,
+            "entry_ns": 19040111452097,
+            "generation": 1,
+            "sequence": 148,
+            "simulation_stamp_ns": 2940000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040343471112,
+            "entry_ns": 19040343471112,
+            "generation": 1,
+            "sequence": 148,
+            "simulation_stamp_ns": 2940000000
+          },
+          "durations_ns": {
+            "source_publish_api": 65416,
+            "source_to_boundary_entry": 1754982,
+            "boundary_processing": 187546,
+            "boundary_publish_api": 110648,
+            "boundary_to_runner_entry": 232842961,
+            "boundary_to_monitor_entry": 823946,
+            "runner_minus_monitor_entry": 232019015
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2960000000,
+          "boundary_sequence": 149,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040128770150,
+            "generation": 1,
+            "source_sequence": 153,
+            "simulation_stamp_ns": 2960000000,
+            "tick_entry_ns": 19040127642304,
+            "publish_start_ns": 19040128698742,
+            "publish_end_ns": 19040128762077
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040130289790,
+            "generation": 1,
+            "sequence": 149,
+            "simulation_stamp_ns": 2960000000,
+            "entry_ns": 19040129971333,
+            "publish_start_ns": 19040130166938,
+            "publish_end_ns": 19040130281283
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040130980762,
+            "entry_ns": 19040130980762,
+            "generation": 1,
+            "sequence": 149,
+            "simulation_stamp_ns": 2960000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040345910272,
+            "entry_ns": 19040345910272,
+            "generation": 1,
+            "sequence": 149,
+            "simulation_stamp_ns": 2960000000
+          },
+          "durations_ns": {
+            "source_publish_api": 63335,
+            "source_to_boundary_entry": 1272591,
+            "boundary_processing": 195605,
+            "boundary_publish_api": 114345,
+            "boundary_to_runner_entry": 215743334,
+            "boundary_to_monitor_entry": 813824,
+            "runner_minus_monitor_entry": 214929510
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 2980000000,
+          "boundary_sequence": 150,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040148821922,
+            "generation": 1,
+            "source_sequence": 154,
+            "simulation_stamp_ns": 2980000000,
+            "tick_entry_ns": 19040147716609,
+            "publish_start_ns": 19040148750320,
+            "publish_end_ns": 19040148813748
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040151223356,
+            "generation": 1,
+            "sequence": 150,
+            "simulation_stamp_ns": 2980000000,
+            "entry_ns": 19040150901379,
+            "publish_start_ns": 19040151100087,
+            "publish_end_ns": 19040151214578
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040151692158,
+            "entry_ns": 19040151692158,
+            "generation": 1,
+            "sequence": 150,
+            "simulation_stamp_ns": 2980000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040347203136,
+            "entry_ns": 19040347203136,
+            "generation": 1,
+            "sequence": 150,
+            "simulation_stamp_ns": 2980000000
+          },
+          "durations_ns": {
+            "source_publish_api": 63428,
+            "source_to_boundary_entry": 2151059,
+            "boundary_processing": 198708,
+            "boundary_publish_api": 114491,
+            "boundary_to_runner_entry": 196103049,
+            "boundary_to_monitor_entry": 592071,
+            "runner_minus_monitor_entry": 195510978
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3000000000,
+          "boundary_sequence": 151,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040168828372,
+            "generation": 1,
+            "source_sequence": 155,
+            "simulation_stamp_ns": 3000000000,
+            "tick_entry_ns": 19040167665701,
+            "publish_start_ns": 19040168746426,
+            "publish_end_ns": 19040168820031
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040171220630,
+            "generation": 1,
+            "sequence": 151,
+            "simulation_stamp_ns": 3000000000,
+            "entry_ns": 19040170887193,
+            "publish_start_ns": 19040171092577,
+            "publish_end_ns": 19040171211744
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040171726150,
+            "entry_ns": 19040171726150,
+            "generation": 1,
+            "sequence": 151,
+            "simulation_stamp_ns": 3000000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040348340089,
+            "entry_ns": 19040348340089,
+            "generation": 1,
+            "sequence": 151,
+            "simulation_stamp_ns": 3000000000
+          },
+          "durations_ns": {
+            "source_publish_api": 73605,
+            "source_to_boundary_entry": 2140767,
+            "boundary_processing": 205384,
+            "boundary_publish_api": 119167,
+            "boundary_to_runner_entry": 177247512,
+            "boundary_to_monitor_entry": 633573,
+            "runner_minus_monitor_entry": 176613939
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3020000000,
+          "boundary_sequence": 152,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040188896702,
+            "generation": 1,
+            "source_sequence": 156,
+            "simulation_stamp_ns": 3020000000,
+            "tick_entry_ns": 19040187740218,
+            "publish_start_ns": 19040188825520,
+            "publish_end_ns": 19040188887821
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040190680154,
+            "generation": 1,
+            "sequence": 152,
+            "simulation_stamp_ns": 3020000000,
+            "entry_ns": 19040190339624,
+            "publish_start_ns": 19040190544229,
+            "publish_end_ns": 19040190671449
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040191246686,
+            "entry_ns": 19040191246686,
+            "generation": 1,
+            "sequence": 152,
+            "simulation_stamp_ns": 3020000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040349432935,
+            "entry_ns": 19040349432935,
+            "generation": 1,
+            "sequence": 152,
+            "simulation_stamp_ns": 3020000000
+          },
+          "durations_ns": {
+            "source_publish_api": 62301,
+            "source_to_boundary_entry": 1514104,
+            "boundary_processing": 204605,
+            "boundary_publish_api": 127220,
+            "boundary_to_runner_entry": 158888706,
+            "boundary_to_monitor_entry": 702457,
+            "runner_minus_monitor_entry": 158186249
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3040000000,
+          "boundary_sequence": 153,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040208788264,
+            "generation": 1,
+            "source_sequence": 157,
+            "simulation_stamp_ns": 3040000000,
+            "tick_entry_ns": 19040207628085,
+            "publish_start_ns": 19040208721147,
+            "publish_end_ns": 19040208779965
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040210337555,
+            "generation": 1,
+            "sequence": 153,
+            "simulation_stamp_ns": 3040000000,
+            "entry_ns": 19040209975159,
+            "publish_start_ns": 19040210210011,
+            "publish_end_ns": 19040210327578
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040210891345,
+            "entry_ns": 19040210891345,
+            "generation": 1,
+            "sequence": 153,
+            "simulation_stamp_ns": 3040000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040350508473,
+            "entry_ns": 19040350508473,
+            "generation": 1,
+            "sequence": 153,
+            "simulation_stamp_ns": 3040000000
+          },
+          "durations_ns": {
+            "source_publish_api": 58818,
+            "source_to_boundary_entry": 1254012,
+            "boundary_processing": 234852,
+            "boundary_publish_api": 117567,
+            "boundary_to_runner_entry": 140298462,
+            "boundary_to_monitor_entry": 681334,
+            "runner_minus_monitor_entry": 139617128
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3060000000,
+          "boundary_sequence": 154,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040228802799,
+            "generation": 1,
+            "source_sequence": 158,
+            "simulation_stamp_ns": 3060000000,
+            "tick_entry_ns": 19040227637555,
+            "publish_start_ns": 19040228729176,
+            "publish_end_ns": 19040228794346
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040230340046,
+            "generation": 1,
+            "sequence": 154,
+            "simulation_stamp_ns": 3060000000,
+            "entry_ns": 19040230009217,
+            "publish_start_ns": 19040230203114,
+            "publish_end_ns": 19040230331835
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040230890057,
+            "entry_ns": 19040230890057,
+            "generation": 1,
+            "sequence": 154,
+            "simulation_stamp_ns": 3060000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040351432879,
+            "entry_ns": 19040351432879,
+            "generation": 1,
+            "sequence": 154,
+            "simulation_stamp_ns": 3060000000
+          },
+          "durations_ns": {
+            "source_publish_api": 65170,
+            "source_to_boundary_entry": 1280041,
+            "boundary_processing": 193897,
+            "boundary_publish_api": 128721,
+            "boundary_to_runner_entry": 121229765,
+            "boundary_to_monitor_entry": 686943,
+            "runner_minus_monitor_entry": 120542822
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3080000000,
+          "boundary_sequence": 155,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040248822584,
+            "generation": 1,
+            "source_sequence": 159,
+            "simulation_stamp_ns": 3080000000,
+            "tick_entry_ns": 19040247718157,
+            "publish_start_ns": 19040248748070,
+            "publish_end_ns": 19040248814126
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040250459930,
+            "generation": 1,
+            "sequence": 155,
+            "simulation_stamp_ns": 3080000000,
+            "entry_ns": 19040250126063,
+            "publish_start_ns": 19040250331318,
+            "publish_end_ns": 19040250451675
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040251077102,
+            "entry_ns": 19040251077102,
+            "generation": 1,
+            "sequence": 155,
+            "simulation_stamp_ns": 3080000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040352340166,
+            "entry_ns": 19040352340166,
+            "generation": 1,
+            "sequence": 155,
+            "simulation_stamp_ns": 3080000000
+          },
+          "durations_ns": {
+            "source_publish_api": 66056,
+            "source_to_boundary_entry": 1377993,
+            "boundary_processing": 205255,
+            "boundary_publish_api": 120357,
+            "boundary_to_runner_entry": 102008848,
+            "boundary_to_monitor_entry": 745784,
+            "runner_minus_monitor_entry": 101263064
+          }
+        },
+        {
+          "generation": 1,
+          "simulation_stamp_ns": 3100000000,
+          "boundary_sequence": 156,
+          "complete": true,
+          "source": {
+            "kind": "source_publish",
+            "time_ns": 19040268774649,
+            "generation": 1,
+            "source_sequence": 160,
+            "simulation_stamp_ns": 3100000000,
+            "tick_entry_ns": 19040267657224,
+            "publish_start_ns": 19040268702210,
+            "publish_end_ns": 19040268766048
+          },
+          "boundary": {
+            "kind": "boundary",
+            "time_ns": 19040270276057,
+            "generation": 1,
+            "sequence": 156,
+            "simulation_stamp_ns": 3100000000,
+            "entry_ns": 19040269958776,
+            "publish_start_ns": 19040270158782,
+            "publish_end_ns": 19040270267766
+          },
+          "monitor": {
+            "kind": "receive",
+            "time_ns": 19040270822961,
+            "entry_ns": 19040270822961,
+            "generation": 1,
+            "sequence": 156,
+            "simulation_stamp_ns": 3100000000
+          },
+          "runner": {
+            "kind": "receive",
+            "time_ns": 19040353154147,
+            "entry_ns": 19040353154147,
+            "generation": 1,
+            "sequence": 156,
+            "simulation_stamp_ns": 3100000000
+          },
+          "durations_ns": {
+            "source_publish_api": 63838,
+            "source_to_boundary_entry": 1256566,
+            "boundary_processing": 200006,
+            "boundary_publish_api": 108984,
+            "boundary_to_runner_entry": 82995365,
+            "boundary_to_monitor_entry": 664179,
+            "runner_minus_monitor_entry": 82331186
+          }
+        }
+      ],
+      "resource_sample_overlaps": [],
+      "spin_overlaps": [
+        {
+          "kind": "spin",
+          "time_ns": 19040011506479,
+          "start_ns": 19040010539200,
+          "end_ns": 19040011504422
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040022049464,
+          "start_ns": 19040011545692,
+          "end_ns": 19040022045732
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040032556644,
+          "start_ns": 19040022121954,
+          "end_ns": 19040032553324
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040043113493,
+          "start_ns": 19040032763723,
+          "end_ns": 19040043111150
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040053485287,
+          "start_ns": 19040043163089,
+          "end_ns": 19040053483396
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040063897620,
+          "start_ns": 19040053641949,
+          "end_ns": 19040063896417
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040074311704,
+          "start_ns": 19040064041539,
+          "end_ns": 19040074310667
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040084692299,
+          "start_ns": 19040074342063,
+          "end_ns": 19040084689509
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040095057279,
+          "start_ns": 19040084743742,
+          "end_ns": 19040095055503
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040105405919,
+          "start_ns": 19040095097421,
+          "end_ns": 19040105404130
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040115739027,
+          "start_ns": 19040105452098,
+          "end_ns": 19040115737455
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040126073114,
+          "start_ns": 19040115777722,
+          "end_ns": 19040126071540
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040136521558,
+          "start_ns": 19040126118210,
+          "end_ns": 19040136518214
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040147127436,
+          "start_ns": 19040136591850,
+          "end_ns": 19040147123712
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040157647331,
+          "start_ns": 19040147197576,
+          "end_ns": 19040157643724
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040168161910,
+          "start_ns": 19040157712879,
+          "end_ns": 19040168158550
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040178550642,
+          "start_ns": 19040168226789,
+          "end_ns": 19040178548398
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040188855653,
+          "start_ns": 19040178597649,
+          "end_ns": 19040188854150
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040199244125,
+          "start_ns": 19040188888949,
+          "end_ns": 19040199241859
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040209679037,
+          "start_ns": 19040199417637,
+          "end_ns": 19040209677462
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040219992405,
+          "start_ns": 19040209712604,
+          "end_ns": 19040219990913
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040230427468,
+          "start_ns": 19040220148538,
+          "end_ns": 19040230425994
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040240753743,
+          "start_ns": 19040230463027,
+          "end_ns": 19040240751805
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040251165139,
+          "start_ns": 19040240792352,
+          "end_ns": 19040251162525
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040261470135,
+          "start_ns": 19040251214854,
+          "end_ns": 19040261468929
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040271897675,
+          "start_ns": 19040261602830,
+          "end_ns": 19040271895293
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040282184319,
+          "start_ns": 19040271932521,
+          "end_ns": 19040282182241
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040292598188,
+          "start_ns": 19040282353589,
+          "end_ns": 19040292596672
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040302906629,
+          "start_ns": 19040292629794,
+          "end_ns": 19040302904712
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040313395527,
+          "start_ns": 19040303091076,
+          "end_ns": 19040313393774
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040323954738,
+          "start_ns": 19040313437031,
+          "end_ns": 19040323950647
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040334778746,
+          "start_ns": 19040324279265,
+          "end_ns": 19040334775265
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040335734599,
+          "start_ns": 19040334973805,
+          "end_ns": 19040335732430
+        },
+        {
+          "kind": "spin",
+          "time_ns": 19040336175821,
+          "start_ns": 19040335778408,
+          "end_ns": 19040336174673
+        }
+      ],
+      "adjacent_stage_intervals_ns": {
+        "source_publish": 19913340,
+        "simulator_tick": 19924251,
+        "boundary_receipt": 19766981,
+        "boundary_publish": 19728927,
+        "monitor_entry": 19712478,
+        "runner_entry": 324674751
+      },
+      "resource_block_overlap_ns": 0
+    }
+  ],
+  "original_reports_unchanged": true,
+  "long_profile_rerun": false,
+  "committed": false,
+  "pushed": false,
+  "implementation": {
+    "control_behavior_changed": false,
+    "acceptance_thresholds_changed": false,
+    "resource_sampling_moved": false,
+    "reason": "No reproduced gap identified as blocking resource sampling; no speculative fix"
+  },
+  "conclusion": "Receive gaps reproduced. Stage-specific evidence is reported below; do not assume the historical gaps share a cause.",
+  "limitations": [
+    "Only three runs per condition; neither causal frequency claims nor absence of future gaps can be inferred.",
+    "Sampling-disabled resource criteria remain failed, with the original acceptance function; these are diagnostic experiments.",
+    "Synchronous publish-to-callback delay still combines DDS transport/deserialization, readiness, executor selection and scheduling.",
+    "Measured enqueue and writer overhead are components; total observer effect was not calibrated with an uninstrumented matched batch.",
+    "Historical 232/354 ms gaps lack traces, so a shared cause is unproven."
+  ],
+  "next_measurement": "Capture runner wait-set readiness, selected callback entity and subscription take timestamps alongside reader-side DDS delivery; preserve sequence identities and current thresholds.",
+  "findings": {
+    "total_successful_tasks": 911,
+    "total_matched_observations": 18006,
+    "source_and_boundary_publication_scheduling_explains_reproduced_gap": false,
+    "reproduced_gap_location": "Runner-specific downstream delivery/readiness/callback selection after boundary publication; executor continued spinning",
+    "reproduced_gap_resource_sampling": false,
+    "resource_sampling_not_necessary_for_reproduction": true,
+    "blocking_resource_sampling_identified": false,
+    "runner_spins_overlapping_gap": 34,
+    "longest_overlapping_spin_ns": 10531862,
+    "longest_between_overlapping_spins_ns": 328618,
+    "longest_resource_sample_ns": 3649211,
+    "historical_shared_cause_established": false,
+    "unresolved": "Transport/reliable-reader recovery, middleware readiness/deserialization and executor entity selection are not separately timestamped",
+    "interpretation": "No speculative resource-sampling redesign. Instrument wait-set readiness, selected entity and subscription take, with DDS reader evidence, in another bounded investigation."
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "bag": "/home/hafiz/projects/ros2-robot-reliability-testbench/bags/milestone_c_test_ff33b60a4a/cancellation",
+  "storage_id": "sqlite3",
+  "topics": {
+    "/testbench/raw/joint_states": {
+      "type": "sensor_msgs/msg/JointState",
+      "count": 6,
+      "sha256": "b5dcd31505644789cda1d71b688558a3bf0675630e214a8a945520198ad1378b",
+      "bag_receive": {
+        "first_ns": 1793445345208253487,
+        "last_ns": 1793445345288176749,
+        "minimum_ns": 1793445345208253487,
+        "maximum_ns": 1793445345288176749,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 8314744,
+          "maximum": 20080864,
+          "mean": 15984652.4,
+          "median": 19975765
+        }
+      },
+      "message_stamp": {
+        "first_ns": 11440000000,
+        "last_ns": 80000000,
+        "minimum_ns": 0,
+        "maximum_ns": 11440000000,
+        "backwards_jumps": 1,
+        "intervals_ns": {
+          "minimum": -11440000000,
+          "maximum": 20000000,
+          "mean": -2272000000,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/raw/ee_pose": {
+      "type": "geometry_msgs/msg/PoseStamped",
+      "count": 6,
+      "sha256": "49268b5341cb44962736db2a5ea3e6ed2831329b0a087fdc498ca2f4f60724b5",
+      "bag_receive": {
+        "first_ns": 1793445345208400176,
+        "last_ns": 1793445345288404089,
+        "minimum_ns": 1793445345208400176,
+        "maximum_ns": 1793445345288404089,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 8303716,
+          "maximum": 20134773,
+          "mean": 16000782.6,
+          "median": 19985834
+        }
+      },
+      "message_stamp": {
+        "first_ns": 11440000000,
+        "last_ns": 80000000,
+        "minimum_ns": 0,
+        "maximum_ns": 11440000000,
+        "backwards_jumps": 1,
+        "intervals_ns": {
+          "minimum": -11440000000,
+          "maximum": 20000000,
+          "mean": -2272000000,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/simulation_state": {
+      "type": "reliability_interfaces/msg/SimulationState",
+      "count": 6,
+      "sha256": "a601b41dde4f40de2034c512a64836984673a83a6234d5f4ee91788df915577a",
+      "bag_receive": {
+        "first_ns": 1793445345208509230,
+        "last_ns": 1793445345288431912,
+        "minimum_ns": 1793445345208509230,
+        "maximum_ns": 1793445345288431912,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 8297900,
+          "maximum": 20076403,
+          "mean": 15984536.4,
+          "median": 19970865
+        }
+      },
+      "message_stamp": {
+        "first_ns": 11440000000,
+        "last_ns": 80000000,
+        "minimum_ns": 0,
+        "maximum_ns": 11440000000,
+        "backwards_jumps": 1,
+        "intervals_ns": {
+          "minimum": -11440000000,
+          "maximum": 20000000,
+          "mean": -2272000000,
+          "median": 20000000
+        }
+      }
+    },
+    "/testbench/task_events": {
+      "type": "reliability_interfaces/msg/TaskEvent",
+      "count": 5,
+      "sha256": "26bb67cf1cfab9660d66ae433611ddc1653b8449065b1649f7dc5818604fdb9a",
+      "bag_receive": {
+        "first_ns": 1793445345220747609,
+        "last_ns": 1793445345303744445,
+        "minimum_ns": 1793445345220747609,
+        "maximum_ns": 1793445345303744445,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 37669,
+          "maximum": 77049294,
+          "mean": 20749209,
+          "median": 2954936.5
+        }
+      },
+      "message_stamp": {
+        "first_ns": 0,
+        "last_ns": 60000000,
+        "minimum_ns": 0,
+        "maximum_ns": 60000000,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 0,
+          "maximum": 60000000,
+          "mean": 15000000,
+          "median": 0.0
+        }
+      }
+    },
+    "/clock": {
+      "type": "rosgraph_msgs/msg/Clock",
+      "count": 6,
+      "sha256": "cd59acd7528ebbec20694b3bd93f7d44d4daa718a79250827c8ff511d1c45144",
+      "bag_receive": {
+        "first_ns": 1793445345208020946,
+        "last_ns": 1793445345288064271,
+        "minimum_ns": 1793445345208020946,
+        "maximum_ns": 1793445345288064271,
+        "backwards_jumps": 0,
+        "intervals_ns": {
+          "minimum": 8363847,
+          "maximum": 20169831,
+          "mean": 16008665,
+          "median": 19951411
+        }
+      },
+      "message_stamp": {
+        "first_ns": 11440000000,
+        "last_ns": 80000000,
+        "minimum_ns": 0,
+        "maximum_ns": 11440000000,
+        "backwards_jumps": 1,
+        "intervals_ns": {
+          "minimum": -11440000000,
+          "maximum": 20000000,
+          "mean": -2272000000,
+          "median": 20000000
+        }
+      }
+    }
+  },
+  "bag_receive_duration_seconds": 0.095723499,
+  "task_events": [
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "sequence": 14,
+      "goal_id": "reset:fcfb61b828164f9188f31d5ce3f2c5a9",
+      "event": "RESET",
+      "outcome": "",
+      "generation": 5,
+      "target": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "has_position": false,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "final_error": 0.0,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.0,
+      "tolerance": 0.005,
+      "detail": "Initial state restored; simulation time reset to zero",
+      "bag_receive_ns": 1793445345220747609,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "sequence": 15,
+      "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+      "event": "ACCEPTED",
+      "outcome": "",
+      "generation": 5,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.3222906123454051,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.00023144700026023202,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793445345226544504,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "sequence": 16,
+      "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+      "event": "TARGET",
+      "outcome": "",
+      "generation": 5,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5544994780317353,
+        "y": -6.5943841295818954e-34,
+        "z": 0.6245024294875894
+      },
+      "final_error": 0.3222906123454051,
+      "elapsed_simulation_seconds": 0.0,
+      "elapsed_wall_seconds": 0.00037596699985442683,
+      "tolerance": 0.005,
+      "detail": "",
+      "bag_receive_ns": 1793445345226657482,
+      "message_stamp_ns": 0
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "sequence": 17,
+      "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+      "event": "CANCELED",
+      "outcome": "canceled",
+      "generation": 5,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5479903544257378,
+        "y": 0.0368590034935178,
+        "z": 0.5902170023093386
+      },
+      "final_error": 0.27329837483760316,
+      "elapsed_simulation_seconds": 0.06000000000000004,
+      "elapsed_wall_seconds": 0.07727589599926432,
+      "tolerance": 0.005,
+      "detail": "Canceled; holding current joint positions",
+      "bag_receive_ns": 1793445345303706776,
+      "message_stamp_ns": 60000000
+    },
+    {
+      "stamp": {
+        "sec": 0,
+        "nanosec": 60000000
+      },
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "sequence": 18,
+      "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+      "event": "COMPLETED",
+      "outcome": "canceled",
+      "generation": 5,
+      "target": {
+        "x": 0.45,
+        "y": 0.25,
+        "z": 0.45
+      },
+      "has_position": true,
+      "position": {
+        "x": 0.5479903544257378,
+        "y": 0.0368590034935178,
+        "z": 0.5902170023093386
+      },
+      "final_error": 0.27329837483760316,
+      "elapsed_simulation_seconds": 0.06000000000000004,
+      "elapsed_wall_seconds": 0.0774265079999168,
+      "tolerance": 0.005,
+      "detail": "Canceled; holding current joint positions",
+      "bag_receive_ns": 1793445345303744445,
+      "message_stamp_ns": 60000000
+    }
+  ],
+  "outcomes": [
+    {
+      "goal_id": "84bd8d1a26d742d383c852cc096a3032",
+      "session_id": "3e0ccc04c6074f08927094f484292916",
+      "outcome": "canceled",
+      "target_metres": [
+        0.45,
+        0.25,
+        0.45
+      ],
+      "final_position_metres": [
+        0.5479903544257378,
+        0.0368590034935178,
+        0.5902170023093386
+      ],
+      "final_error_metres": 0.27329837483760316,
+      "event_final_error_metres": 0.27329837483760316,
+      "matching_state_snapshot": true,
+      "elapsed_simulation_seconds": 0.06000000000000004,
+      "elapsed_wall_seconds": 0.0774265079999168,
+      "bag_receive_duration_seconds": 0.077199941,
+      "terminal_message_stamp_ns": 60000000,
+      "generation": 5
+    }
+  ],
+  "total_stored_messages": 29,
+  "ignored_topics": [],
+  "numerical_error_tolerance_metres": 1e-09,
+  "timing_notes": "Bag receive ns use recorder system time. Message stamps are simulation time, with backwards jumps at reset. Task simulation and monotonic wall durations come from recorded events. Receive duration includes DDS transport/scheduling."
+}
